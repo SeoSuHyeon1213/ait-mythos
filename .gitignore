@@ -1,0 +1,25 @@
+node_modules/
+dist/
+*.ait
+**/bin/
+**/obj/
+**/TestResults/
+**/data/
+*.db
+*.db-shm
+*.db-wal
+.env
+.env.*
+!.env.example
+*.local
+*.tsbuildinfo
+.vs/
+test-results/
+playwright-report/
+
+# Cloudflare local state and generated outputs
+.wrangler/
+.generated/
+.build/
+.dev.vars
+.dev.vars.*

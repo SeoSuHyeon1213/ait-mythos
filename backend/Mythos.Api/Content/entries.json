@@ -1,0 +1,48 @@
+{
+  "cultures": [
+    {
+      "id": "norse",
+      "name": "북유럽"
+    }
+  ],
+  "categories": [
+    {
+      "id": "god",
+      "name": "신"
+    }
+  ],
+  "tags": [
+    {
+      "id": "wisdom",
+      "name": "지혜"
+    }
+  ],
+  "entries": [
+    {
+      "slug": "odin",
+      "name": "오딘",
+      "originalName": "Óðinn",
+      "summary": "북유럽 신화에서 지혜와 연결되는 신.",
+      "description": "오딘은 북유럽 신화의 신으로, 『산문 에다』의 「길피의 속임수」에서 여러 이름을 지닌 존재로 설명된다. 이 개발용 항목은 해당 전승을 바탕으로 한 짧은 요약이다.",
+      "materialType": "중세 문학에 기록된 북유럽 전승",
+      "culture": "norse",
+      "category": "god",
+      "aliases": [
+        "Odin",
+        "Woden",
+        "알파더"
+      ],
+      "tags": [
+        "wisdom"
+      ],
+      "sources": [
+        {
+          "title": "Snorri Sturluson, The Younger Edda (Rasmus B. Anderson 번역, 1901)",
+          "url": "https://www.gutenberg.org/ebooks/18947",
+          "locator": "The Fooling of Gylfe, Chapter VIII: The Asas (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": []
+    }
+  ]
+}

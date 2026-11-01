@@ -1,0 +1,27 @@
+{
+  "name": "mythos-worker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --port 5080 --ip 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "build": "wrangler deploy --dry-run --outdir .build",
+    "test": "npm run typecheck && npm run build && tsx --test test/*.test.ts",
+    "db:migrate:local": "wrangler d1 migrations apply DB --local",
+    "db:migrate:remote": "node scripts/check-deploy.mjs && wrangler d1 migrations apply DB --remote",
+    "seed:generate": "tsx scripts/generate-seed.ts",
+    "seed:local": "npm run seed:generate && wrangler d1 execute DB --local --file .generated/seed.sql",
+    "seed:remote": "node scripts/check-deploy.mjs && npm run seed:generate && wrangler d1 execute DB --remote --file .generated/seed.sql",
+    "setup:local": "npm run db:migrate:local && npm run seed:local",
+    "deploy": "node scripts/check-deploy.mjs && wrangler deploy",
+    "dev:e2e": "npm run db:migrate:local -- --persist-to .wrangler/e2e && npm run seed:local -- --persist-to .wrangler/e2e && npm run dev -- --persist-to .wrangler/e2e"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261101.1",
+    "@types/node": "^26.6.6",
+    "miniflare": "^5.20261023.3-beta",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "wrangler": "^4.156.0"
+  }
+}
