@@ -7,6 +7,14 @@
     {
       "id": "greek",
       "name": "그리스·로마"
+    },
+    {
+      "id": "egypt",
+      "name": "이집트"
+    },
+    {
+      "id": "mesopotamia",
+      "name": "메소포타미아"
     }
   ],
   "categories": [
@@ -83,6 +91,30 @@
     {
       "id": "trickery",
       "name": "계략"
+    },
+    {
+      "id": "justice",
+      "name": "정의·심판"
+    },
+    {
+      "id": "magic",
+      "name": "마법"
+    },
+    {
+      "id": "chaos",
+      "name": "혼돈"
+    },
+    {
+      "id": "sumerian",
+      "name": "수메르"
+    },
+    {
+      "id": "babylonian",
+      "name": "바빌로니아"
+    },
+    {
+      "id": "assyrian",
+      "name": "아시리아"
     }
   ],
   "entries": [
@@ -1385,6 +1417,994 @@
         {
           "slug": "zeus",
           "kind": "적대"
+        }
+      ]
+    },
+    {
+      "slug": "ra",
+      "name": "라",
+      "originalName": "Rꜥ",
+      "summary": "하늘을 건너는 태양신이자 세상을 창조한 이집트의 최고신.",
+      "description": "라는 낮에는 하늘을, 밤에는 저승 두아트를 배로 건너는 태양신이다. 『아펩을 쓰러뜨리는 책』에 실린 창조 전설에서 그는 스스로 생겨나 신들과 세상을 만든 존재로 말해진다. 「인류 멸망의 전설」에서는 늙은 라가 반역한 인간들을 벌하려 했고, 「라와 이시스」에서는 이시스가 만든 뱀에 물려 자신의 비밀 이름을 내주었다.",
+      "materialType": "고대 이집트 장례 문헌·신화 전승",
+      "culture": "egypt",
+      "category": "god",
+      "aliases": [
+        "Ra",
+        "Re",
+        "레",
+        "Ra-Harmakhis",
+        "라-하르마키스"
+      ],
+      "tags": [
+        "sky",
+        "creation"
+      ],
+      "sources": [
+        {
+          "title": "E. A. Wallis Budge, Legends of the Gods (1912)",
+          "url": "https://www.gutenberg.org/ebooks/9411",
+          "locator": "I. The Legend of the God Neb-er-tcher, and the History of Creation (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "E. A. Wallis Budge, Legends of the Gods (1912)",
+          "url": "https://www.gutenberg.org/ebooks/9411",
+          "locator": "II. The Legend of the Destruction of Mankind (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "E. A. Wallis Budge, Legends of the Gods (1912)",
+          "url": "https://www.gutenberg.org/ebooks/9411",
+          "locator": "III. The Legend of Ra and Isis (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "apep",
+          "kind": "대적"
+        },
+        {
+          "slug": "isis",
+          "kind": "비밀 이름을 빼앗김"
+        },
+        {
+          "slug": "duat",
+          "kind": "밤에 지나는 곳"
+        }
+      ]
+    },
+    {
+      "slug": "osiris",
+      "name": "오시리스",
+      "originalName": "Wsjr",
+      "summary": "죽었다가 되살아나 저승의 왕이자 심판자가 된 신.",
+      "description": "『사자의 서』 전통에서 오시리스는 저승의 왕으로, \"두 마아트의 전당\"에 앉아 죽은 자의 심장을 다는 심판을 주재한다. 그는 동생 세트에게 살해되었으나 아내 이시스가 시신을 찾아 되살렸고, 그 사이에서 호루스가 태어났다. 이 이야기를 하나의 줄거리로 전하는 기록은 그리스 저술가 플루타르코스의 『이시스와 오시리스』이며, 이집트 문헌에는 단편적으로 나타난다.",
+      "materialType": "고대 이집트 문헌과 후대 그리스 기록(플루타르코스)에 전하는 전승",
+      "culture": "egypt",
+      "category": "god",
+      "aliases": [
+        "Osiris",
+        "Usir",
+        "우시르",
+        "Asar"
+      ],
+      "tags": [
+        "death",
+        "justice"
+      ],
+      "sources": [
+        {
+          "title": "E. A. Wallis Budge, The Book of the Dead (해설·발췌 번역)",
+          "url": "https://www.gutenberg.org/ebooks/7145",
+          "locator": "Chapter VI: Osiris as Judge of the Dead and King of the Under World; Chapter VII: The Judgment of Osiris (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "E. A. Wallis Budge, Legends of the Gods (1912)",
+          "url": "https://www.gutenberg.org/ebooks/9411",
+          "locator": "IX. The History of Isis and Osiris (classical writers) (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "isis",
+          "kind": "배우자"
+        },
+        {
+          "slug": "horus",
+          "kind": "자녀"
+        },
+        {
+          "slug": "set",
+          "kind": "살해한 자"
+        },
+        {
+          "slug": "duat",
+          "kind": "다스리는 곳"
+        },
+        {
+          "slug": "maat",
+          "kind": "심판의 기준"
+        }
+      ]
+    },
+    {
+      "slug": "isis",
+      "name": "이시스",
+      "originalName": "Ꜣst",
+      "summary": "강력한 마법으로 남편 오시리스를 되살리고 아들 호루스를 지킨 여신.",
+      "description": "「라와 이시스」에서 이시스는 흙과 라의 침으로 뱀을 만들어 라를 물게 한 뒤, 치료해 주는 대가로 그의 비밀 이름과 힘을 얻는다. 그녀는 살해된 오시리스의 시신을 찾아 되살리고 호루스를 낳아 숨겨 길렀으며, 전갈에 물려 죽은 호루스를 토트의 도움으로 되살렸다는 마법 문헌도 있다. 그리스·로마 시대에는 이집트 밖으로 숭배가 널리 퍼졌다.",
+      "materialType": "고대 이집트 문헌과 후대 그리스 기록(플루타르코스)에 전하는 전승",
+      "culture": "egypt",
+      "category": "god",
+      "aliases": [
+        "Isis",
+        "Aset",
+        "아세트",
+        "Eset"
+      ],
+      "tags": [
+        "magic",
+        "love"
+      ],
+      "sources": [
+        {
+          "title": "E. A. Wallis Budge, Legends of the Gods (1912)",
+          "url": "https://www.gutenberg.org/ebooks/9411",
+          "locator": "III. The Legend of Ra and Isis (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "E. A. Wallis Budge, Legends of the Gods (1912)",
+          "url": "https://www.gutenberg.org/ebooks/9411",
+          "locator": "VIII. The Legend of the Death and Resurrection of Horus (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "E. A. Wallis Budge, Legends of the Gods (1912)",
+          "url": "https://www.gutenberg.org/ebooks/9411",
+          "locator": "IX. The History of Isis and Osiris (classical writers) (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "osiris",
+          "kind": "배우자"
+        },
+        {
+          "slug": "horus",
+          "kind": "자녀"
+        },
+        {
+          "slug": "ra",
+          "kind": "비밀 이름을 얻어냄"
+        },
+        {
+          "slug": "thoth",
+          "kind": "도움받음"
+        }
+      ]
+    },
+    {
+      "slug": "horus",
+      "name": "호루스",
+      "originalName": "Ḥrw",
+      "summary": "매의 모습을 한 하늘의 신으로, 세트와 싸워 아버지의 왕위를 되찾은 신.",
+      "description": "호루스는 이시스와 오시리스의 아들로, 아버지를 죽인 세트와 싸워 왕위를 되찾는다. 에드푸(베후테트)의 신전 전설에서는 날개 달린 태양 원반의 모습으로 라의 적들을 물리친다. 이집트에는 여러 \"호루스\"가 있었으며, 이들은 시대와 지역에 따라 하나로 합쳐지거나 구별되었다.",
+      "materialType": "고대 이집트 장례 문헌·신화 전승",
+      "culture": "egypt",
+      "category": "god",
+      "aliases": [
+        "Horus",
+        "Heru",
+        "헤루",
+        "Horus of Behutet",
+        "에드푸의 호루스"
+      ],
+      "tags": [
+        "sky",
+        "war"
+      ],
+      "sources": [
+        {
+          "title": "E. A. Wallis Budge, Legends of the Gods (1912)",
+          "url": "https://www.gutenberg.org/ebooks/9411",
+          "locator": "IV. The Legend of Horus of Behutet and the Winged Disk (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "E. A. Wallis Budge, Legends of the Gods (1912)",
+          "url": "https://www.gutenberg.org/ebooks/9411",
+          "locator": "VIII. The Legend of the Death and Resurrection of Horus (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "osiris",
+          "kind": "부모"
+        },
+        {
+          "slug": "isis",
+          "kind": "부모"
+        },
+        {
+          "slug": "set",
+          "kind": "대적"
+        },
+        {
+          "slug": "ra",
+          "kind": "섬기는 신"
+        }
+      ]
+    },
+    {
+      "slug": "set",
+      "name": "세트",
+      "originalName": "Stẖ",
+      "summary": "사막과 폭풍, 혼란을 상징하며 오시리스를 죽인 신.",
+      "description": "세트는 형 오시리스를 죽이고 왕위를 차지했으나 호루스와의 오랜 싸움 끝에 패한다. 에드푸의 전설에서는 세트의 무리가 하마나 악어 같은 짐승의 모습으로 호루스에게 쓰러진다. 그리스인들은 그를 괴물 티폰과 동일시했다. 이집트 안에서는 시대에 따라 숭배받는 신이기도 했다.",
+      "materialType": "고대 이집트 문헌과 후대 그리스 기록(플루타르코스)에 전하는 전승",
+      "culture": "egypt",
+      "category": "god",
+      "aliases": [
+        "Set",
+        "Seth",
+        "Sutekh",
+        "수테크",
+        "Typhon"
+      ],
+      "tags": [
+        "war",
+        "chaos"
+      ],
+      "sources": [
+        {
+          "title": "E. A. Wallis Budge, Legends of the Gods (1912)",
+          "url": "https://www.gutenberg.org/ebooks/9411",
+          "locator": "IV. The Legend of Horus of Behutet and the Winged Disk (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "E. A. Wallis Budge, Legends of the Gods (1912)",
+          "url": "https://www.gutenberg.org/ebooks/9411",
+          "locator": "IX. The History of Isis and Osiris (classical writers) (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "osiris",
+          "kind": "살해함"
+        },
+        {
+          "slug": "horus",
+          "kind": "대적"
+        }
+      ]
+    },
+    {
+      "slug": "anubis",
+      "name": "아누비스",
+      "originalName": "Jnpw",
+      "summary": "미라와 장례를 지키고 심판의 저울을 맡은 자칼 머리의 신.",
+      "description": "『사자의 서』의 심판 장면에서 아누비스는 \"큰 저울\"을 맡아, 죽은 자의 심장을 진리(마아트)와 견주어 단다. 그는 장례와 미라 만들기를 지키는 신으로 여겨졌다. 그리스 저술가들은 그를 오시리스와 네프티스의 아들로 전한다.",
+      "materialType": "고대 이집트 장례 문헌·신화 전승",
+      "culture": "egypt",
+      "category": "god",
+      "aliases": [
+        "Anubis",
+        "Anpu",
+        "안푸",
+        "Inpu"
+      ],
+      "tags": [
+        "death",
+        "justice"
+      ],
+      "sources": [
+        {
+          "title": "E. A. Wallis Budge, The Book of the Dead (해설·발췌 번역)",
+          "url": "https://www.gutenberg.org/ebooks/7145",
+          "locator": "Chapter VII: The Judgment of Osiris (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "E. A. Wallis Budge, Legends of the Gods (1912)",
+          "url": "https://www.gutenberg.org/ebooks/9411",
+          "locator": "IX. The History of Isis and Osiris (classical writers) (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "osiris",
+          "kind": "섬기는 신"
+        },
+        {
+          "slug": "maat",
+          "kind": "저울의 기준"
+        }
+      ]
+    },
+    {
+      "slug": "thoth",
+      "name": "토트",
+      "originalName": "Ḏḥwtj",
+      "summary": "지혜와 문자, 기록을 관장하는 신들의 서기.",
+      "description": "토트는 지혜와 말, 문자의 신으로, 『사자의 서』의 저자로 여겨졌다. 죽은 자의 심장을 다는 심판에서 그 결과를 기록하는 서기 역할을 한다. 전갈에 물려 죽은 어린 호루스를 이시스의 부탁으로 되살렸다는 마법 문헌도 전한다.",
+      "materialType": "고대 이집트 장례 문헌·신화 전승",
+      "culture": "egypt",
+      "category": "god",
+      "aliases": [
+        "Thoth",
+        "Djehuty",
+        "제후티",
+        "Tehuti"
+      ],
+      "tags": [
+        "wisdom",
+        "magic"
+      ],
+      "sources": [
+        {
+          "title": "E. A. Wallis Budge, The Book of the Dead (해설·발췌 번역)",
+          "url": "https://www.gutenberg.org/ebooks/7145",
+          "locator": "Chapter IV: Thoth, the Author of the Book of the Dead; Chapter VII: The Judgment of Osiris (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "E. A. Wallis Budge, Legends of the Gods (1912)",
+          "url": "https://www.gutenberg.org/ebooks/9411",
+          "locator": "VIII. The Legend of the Death and Resurrection of Horus (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "osiris",
+          "kind": "섬기는 신"
+        },
+        {
+          "slug": "isis",
+          "kind": "도움을 줌"
+        }
+      ]
+    },
+    {
+      "slug": "maat",
+      "name": "마아트",
+      "originalName": "Mꜣꜥt",
+      "summary": "진리와 정의, 우주의 질서를 뜻하는 개념이자 그것을 나타내는 여신.",
+      "description": "마아트는 세상이 올바르게 유지되는 질서와 진리를 뜻하며, 깃털을 단 여신으로도 표현되었다. 『사자의 서』에서 죽은 자는 \"두 마아트의 전당\"에 들어가 자신이 저지르지 않은 죄를 하나씩 고백하고, 그 심장은 진리와 견주어 저울에 달린다. 심판을 통과한 자는 \"목소리가 참된 자\"로 불렸다.",
+      "materialType": "고대 이집트 장례 문헌·신화 전승",
+      "culture": "egypt",
+      "category": "concept",
+      "aliases": [
+        "Maat",
+        "Ma'at",
+        "Maati",
+        "두 마아트"
+      ],
+      "tags": [
+        "justice",
+        "fate"
+      ],
+      "sources": [
+        {
+          "title": "E. A. Wallis Budge, The Book of the Dead (해설·발췌 번역)",
+          "url": "https://www.gutenberg.org/ebooks/7145",
+          "locator": "Chapter VII: The Judgment of Osiris (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "osiris",
+          "kind": "심판을 주재하는 신"
+        },
+        {
+          "slug": "anubis",
+          "kind": "저울을 맡은 신"
+        },
+        {
+          "slug": "thoth",
+          "kind": "기록하는 신"
+        }
+      ]
+    },
+    {
+      "slug": "duat",
+      "name": "두아트",
+      "originalName": "Dwꜣt",
+      "summary": "죽은 자들이 가는 이집트 신화의 저승.",
+      "description": "두아트는 오시리스가 다스리는 저승으로, 태양신이 밤마다 배를 타고 지나는 곳이기도 하다. 버지(Budge)는 이집트인이 그곳을 어디라고 생각했는지 분명하지 않다고 하며, 나무도 식물도 없는 어둠의 세계로 묘사되었다고 설명한다. 『사자의 서』의 주문들은 죽은 자가 이곳을 안전하게 지나가도록 돕기 위한 것이었다.",
+      "materialType": "고대 이집트 장례 문헌·신화 전승",
+      "culture": "egypt",
+      "category": "place",
+      "aliases": [
+        "Duat",
+        "Tuat",
+        "투아트",
+        "Dat"
+      ],
+      "tags": [
+        "death"
+      ],
+      "sources": [
+        {
+          "title": "E. A. Wallis Budge, The Book of the Dead (해설·발췌 번역)",
+          "url": "https://www.gutenberg.org/ebooks/7145",
+          "locator": "Chapter III: The Book Per-t em hru; Chapter VI: Osiris as Judge of the Dead and King of the Under World (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "osiris",
+          "kind": "다스리는 신"
+        },
+        {
+          "slug": "ra",
+          "kind": "밤에 지나는 신"
+        }
+      ]
+    },
+    {
+      "slug": "apep",
+      "name": "아펩",
+      "originalName": "ꜥꜣpp",
+      "summary": "어둠 속에서 날마다 태양신의 길을 막는 혼돈의 거대한 뱀.",
+      "description": "아펩은 어둠 속에 사는 거대한 뱀으로, 매일 태양신 라의 항해를 막으려 하는 적이다. 신전 사제들은 『라의 변화를 알고 아펩을 쓰러뜨리는 책』 같은 주문 모음을 읽고, 아펩의 이름을 쓴 형상을 부수는 의례로 그를 물리치려 했다. 그는 창조된 질서를 위협하는 혼돈을 상징한다.",
+      "materialType": "고대 이집트 장례 문헌·신화 전승",
+      "culture": "egypt",
+      "category": "monster",
+      "aliases": [
+        "Apep",
+        "Apophis",
+        "아포피스",
+        "Aapep"
+      ],
+      "tags": [
+        "chaos"
+      ],
+      "sources": [
+        {
+          "title": "E. A. Wallis Budge, Legends of the Gods (1912)",
+          "url": "https://www.gutenberg.org/ebooks/9411",
+          "locator": "I. The Legend of the God Neb-er-tcher, and the History of Creation (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "ra",
+          "kind": "대적"
+        }
+      ]
+    },
+    {
+      "slug": "an",
+      "name": "안",
+      "originalName": "An",
+      "summary": "하늘의 신으로, 신들의 아버지이자 최고 권위로 여겨진 수메르의 신.",
+      "description": "[수메르] 안은 하늘 자체를 뜻하는 이름의 신으로, 신들 위의 최고 권위를 지닌다. 「양과 곡식의 논쟁」은 \"하늘과 땅의 언덕에서 안이 아눈나 신들을 낳았을 때\"로 시작하며, 「엔키와 세계 질서」는 엔키를 \"거룩한 안에게 사랑받는 자\"라 부른다.\n\n[아카드·바빌로니아] 아카드어로 아누라 불리며 하늘의 최고신 지위를 이어 갔다. 다만 『에누마 엘리시』에서 그는 티아마트에 맞서러 나섰다가 물러서고, 신들의 왕권은 결국 마르두크에게 넘어간다.",
+      "materialType": "수메르어 문학 점토판에 기록된 전승 (현대 학술 번역)",
+      "culture": "mesopotamia",
+      "category": "god",
+      "aliases": [
+        "An",
+        "Anu",
+        "아누",
+        "Anum"
+      ],
+      "tags": [
+        "sky",
+        "creation",
+        "sumerian"
+      ],
+      "sources": [
+        {
+          "title": "ETCSL 5.3.2 The debate between Sheep and Grain (The Electronic Text Corpus of Sumerian Literature, Oxford)",
+          "url": "https://etcsl.orinst.ox.ac.uk/section5/tr532.htm",
+          "locator": "lines 1-11 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "ETCSL 1.1.3 Enki and the world order (The Electronic Text Corpus of Sumerian Literature, Oxford)",
+          "url": "https://etcsl.orinst.ox.ac.uk/section1/tr113.htm",
+          "locator": "lines 1-16 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "L. W. King, The Seven Tablets of Creation, Vol. I (1902)",
+          "url": "https://archive.org/details/the-seven-tablets-of-creation.-vol.-1",
+          "locator": "Enuma Elish, Tablet II (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "anunnaki",
+          "kind": "낳은 신들"
+        }
+      ]
+    },
+    {
+      "slug": "enlil",
+      "name": "엔릴",
+      "originalName": "Enlil",
+      "summary": "니푸르의 에쿠르 신전에 머물며 신들의 운명을 정하는 수메르의 주신.",
+      "description": "[수메르] 엔릴은 니푸르의 에쿠르 신전을 거처로 삼은 \"큰 산\"으로, 신들의 왕이자 운명을 정하는 신이다. 「엔릴과 닌릴」에서 그는 닌릴을 범한 죄로 신들의 회의에 붙잡혀 \"부정한 자\"로 도시에서 쫓겨나고, 그를 따라간 닌릴에게서 달의 신 난나 등이 태어난다. 「엔키와 세계 질서」에서는 엔키에게 일을 맡기는 윗자리의 신으로 나온다.\n\n[아카드·바빌로니아] 아카드어로 엘릴이라 불렸다. 바빌로니아에서 마르두크가 신들의 왕으로 높아지면서, 엔릴이 지녔던 권위와 칭호가 상당 부분 마르두크에게 옮겨졌다.",
+      "materialType": "수메르어 문학 점토판에 기록된 전승 (현대 학술 번역)",
+      "culture": "mesopotamia",
+      "category": "god",
+      "aliases": [
+        "Enlil",
+        "Ellil",
+        "엘릴",
+        "Nunamnir",
+        "누남니르"
+      ],
+      "tags": [
+        "fate",
+        "sumerian"
+      ],
+      "sources": [
+        {
+          "title": "ETCSL 1.2.1 Enlil and Ninlil (The Electronic Text Corpus of Sumerian Literature, Oxford)",
+          "url": "https://etcsl.orinst.ox.ac.uk/section1/tr121.htm",
+          "locator": "lines 54-64 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "ETCSL 1.5.1 Nanna-Suen's journey to Nibru (The Electronic Text Corpus of Sumerian Literature, Oxford)",
+          "url": "https://etcsl.orinst.ox.ac.uk/section1/tr151.htm",
+          "locator": "lines 1-16 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "ETCSL 1.1.3 Enki and the world order (The Electronic Text Corpus of Sumerian Literature, Oxford)",
+          "url": "https://etcsl.orinst.ox.ac.uk/section1/tr113.htm",
+          "locator": "lines 38-47 (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "nanna",
+          "kind": "자녀"
+        },
+        {
+          "slug": "enki",
+          "kind": "관련 신"
+        }
+      ]
+    },
+    {
+      "slug": "enki",
+      "name": "엔키",
+      "originalName": "Enki",
+      "summary": "지하 담수 압주와 에리두의 주인이자 지혜와 꾀의 신.",
+      "description": "[수메르] 엔키는 에리두의 신전과 땅 밑 단물의 바다 압주(Abzu)를 다스리는 지혜의 신이다. 「엔키와 세계 질서」에서 그는 날과 달을 정하고 땅의 질서와 생업을 마련한다. 「인안나의 저승 하강」에서는 다른 신들이 도움을 거절할 때 생명의 풀과 물로 인안나를 되살릴 방법을 마련한다.\n\n[아카드·바빌로니아] 아카드어로 에아라 불렸다. 『에누마 엘리시』에서 에아는 태초의 압수를 잠재워 죽이고 그 위에 거처를 세우며, 그곳에서 아들 마르두크가 태어난다.",
+      "materialType": "수메르어 문학 점토판에 기록된 전승 (현대 학술 번역)",
+      "culture": "mesopotamia",
+      "category": "god",
+      "aliases": [
+        "Enki",
+        "Ea",
+        "에아",
+        "Nudimmud",
+        "누딤무드"
+      ],
+      "tags": [
+        "wisdom",
+        "nature",
+        "sumerian"
+      ],
+      "sources": [
+        {
+          "title": "ETCSL 1.1.3 Enki and the world order (The Electronic Text Corpus of Sumerian Literature, Oxford)",
+          "url": "https://etcsl.orinst.ox.ac.uk/section1/tr113.htm",
+          "locator": "lines 1-31 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "ETCSL 1.4.1 Inana's descent to the nether world (The Electronic Text Corpus of Sumerian Literature, Oxford)",
+          "url": "https://etcsl.orinst.ox.ac.uk/section1/tr141.htm",
+          "locator": "lines 57-67, 217-225 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "L. W. King, The Seven Tablets of Creation, Vol. I (1902)",
+          "url": "https://archive.org/details/the-seven-tablets-of-creation.-vol.-1",
+          "locator": "Enuma Elish, Tablet I (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "inanna",
+          "kind": "도움을 줌"
+        },
+        {
+          "slug": "marduk",
+          "kind": "자녀"
+        },
+        {
+          "slug": "enlil",
+          "kind": "관련 신"
+        }
+      ]
+    },
+    {
+      "slug": "inanna",
+      "name": "인안나",
+      "originalName": "Inana",
+      "summary": "사랑과 전쟁의 여신으로, 저승에 내려갔다 돌아온 이야기로 유명한 수메르의 여신.",
+      "description": "[수메르] 인안나는 사랑과 성, 전쟁을 아우르는 여신으로, 우눅(우루크)의 에안나 신전이 대표 거처다. 「인안나의 저승 하강」에서 그녀는 하늘과 땅을 버리고 저승으로 내려가 언니 에레시키갈의 왕좌에 앉지만, 아눈나 일곱 재판관의 판결로 시체가 되어 갈고리에 걸린다. 엔키의 도움으로 되살아난 뒤, 자신을 대신할 자로 남편 두무지를 악령들에게 내준다.\n\n[아카드·바빌로니아] 아카드어로 이슈타르라 불리며 금성과 동일시되었고, 바빌로니아·아시리아 전역에서 가장 널리 숭배된 여신이 되었다. 아카드어로 된 「이슈타르의 저승 하강」도 전해진다.",
+      "materialType": "수메르어 문학 점토판에 기록된 전승 (현대 학술 번역)",
+      "culture": "mesopotamia",
+      "category": "god",
+      "aliases": [
+        "Inanna",
+        "Inana",
+        "이난나",
+        "Ishtar",
+        "이슈타르",
+        "Ištar"
+      ],
+      "tags": [
+        "love",
+        "war",
+        "sumerian"
+      ],
+      "sources": [
+        {
+          "title": "ETCSL 1.4.1 Inana's descent to the nether world (The Electronic Text Corpus of Sumerian Literature, Oxford)",
+          "url": "https://etcsl.orinst.ox.ac.uk/section1/tr141.htm",
+          "locator": "lines 1-13, 164-172, 348-358 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "Donald A. Mackenzie, Myths of Babylonia and Assyria (1915, 근대 개설서)",
+          "url": "https://www.gutenberg.org/ebooks/16653",
+          "locator": "Chapter V: Myths of Tammuz and Ishtar; Chapter XIII: Astrology and Astronomy (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "ereshkigal",
+          "kind": "자매"
+        },
+        {
+          "slug": "enki",
+          "kind": "도움받음"
+        },
+        {
+          "slug": "anunnaki",
+          "kind": "판결받음"
+        },
+        {
+          "slug": "nanna",
+          "kind": "도움을 거절당함"
+        }
+      ]
+    },
+    {
+      "slug": "utu",
+      "name": "우투",
+      "originalName": "Utu",
+      "summary": "하늘을 가로지르는 태양신이자 정의와 재판의 신.",
+      "description": "[수메르] 우투는 태양신이자 정의의 신으로, 「우투 찬가」는 그를 \"검은 머리 사람들(수메르인)의 아버지\"이자 에밥바르 신전의 주인으로 노래한다. 「길가메시와 후와와」에서 길가메시는 삼나무 산으로 떠나기 전 우투에게 제물을 바치고 도움을 청한다.\n\n[아카드·바빌로니아] 아카드어로 샤마시라 불렸으며, 법과 재판, 맹세를 지키는 신으로서 그 성격이 더 두드러졌다.",
+      "materialType": "수메르어 문학 점토판에 기록된 전승 (현대 학술 번역)",
+      "culture": "mesopotamia",
+      "category": "god",
+      "aliases": [
+        "Utu",
+        "Shamash",
+        "샤마시",
+        "Šamaš"
+      ],
+      "tags": [
+        "sky",
+        "justice",
+        "sumerian"
+      ],
+      "sources": [
+        {
+          "title": "ETCSL 4.32.2 A hymn to Utu (Utu B) (The Electronic Text Corpus of Sumerian Literature, Oxford)",
+          "url": "https://etcsl.orinst.ox.ac.uk/section4/tr4322.htm",
+          "locator": "lines 1-12 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "ETCSL 1.8.1.5 Gilgamesh and Huwawa, version A (The Electronic Text Corpus of Sumerian Literature, Oxford)",
+          "url": "https://etcsl.orinst.ox.ac.uk/section1/tr1815.htm",
+          "locator": "lines 8-16 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "Donald A. Mackenzie, Myths of Babylonia and Assyria (1915, 근대 개설서)",
+          "url": "https://www.gutenberg.org/ebooks/16653",
+          "locator": "Chapter III: Rival Pantheons and Representative Deities (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "gilgamesh",
+          "kind": "돕는 영웅"
+        }
+      ]
+    },
+    {
+      "slug": "nanna",
+      "name": "난나",
+      "originalName": "Nanna",
+      "summary": "엔릴과 닌릴의 아들로 태어난 달의 신.",
+      "description": "[수메르] 난나(수엔)는 달의 신으로, 엔릴과 닌릴의 아들이다. 「난나-수엔의 니푸르 여행」에서 그는 배에 선물을 싣고 부모의 도시 니푸르로 가서 아버지 엔릴에게 풍요를 받아 돌아온다. 「인안나의 저승 하강」에서는 인안나의 시종이 도움을 청하지만 거절한다.\n\n[아카드·바빌로니아] 아카드어로 신(Sin)이라 불리며 달의 신으로 계속 숭배되었다.",
+      "materialType": "수메르어 문학 점토판에 기록된 전승 (현대 학술 번역)",
+      "culture": "mesopotamia",
+      "category": "god",
+      "aliases": [
+        "Nanna",
+        "Suen",
+        "수엔",
+        "Sin",
+        "Nanna-Suen",
+        "아심바바르"
+      ],
+      "tags": [
+        "sky",
+        "sumerian"
+      ],
+      "sources": [
+        {
+          "title": "ETCSL 1.5.1 Nanna-Suen's journey to Nibru (The Electronic Text Corpus of Sumerian Literature, Oxford)",
+          "url": "https://etcsl.orinst.ox.ac.uk/section1/tr151.htm",
+          "locator": "lines 1-16 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "ETCSL 1.4.1 Inana's descent to the nether world (The Electronic Text Corpus of Sumerian Literature, Oxford)",
+          "url": "https://etcsl.orinst.ox.ac.uk/section1/tr141.htm",
+          "locator": "lines 57-64, 209-216 (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "enlil",
+          "kind": "부모"
+        },
+        {
+          "slug": "inanna",
+          "kind": "도움을 거절함"
+        }
+      ]
+    },
+    {
+      "slug": "ereshkigal",
+      "name": "에레시키갈",
+      "originalName": "Ereškigala",
+      "summary": "저승을 다스리는 여왕이자 인안나의 언니.",
+      "description": "[수메르] 에레시키갈은 \"큰 땅의 여주인\"이라는 뜻의 이름을 지닌 저승의 여왕이다. 「인안나의 저승 하강」에서 동생 인안나가 찾아오자, 문지기 네티에게 저승의 일곱 문을 잠갔다가 하나씩 열게 하여 인안나가 모든 옷과 장신구를 빼앗긴 채 들어오게 한다. 이후 아눈나 일곱 재판관이 인안나에게 죽음의 판결을 내린다.\n\n[아카드·바빌로니아] 아카드어 문헌에서도 같은 이름의 저승 여왕으로 이어진다.",
+      "materialType": "수메르어 문학 점토판에 기록된 전승 (현대 학술 번역)",
+      "culture": "mesopotamia",
+      "category": "god",
+      "aliases": [
+        "Ereshkigal",
+        "Ereškigal",
+        "에레슈키갈",
+        "Erec-ki-gala"
+      ],
+      "tags": [
+        "death",
+        "sumerian"
+      ],
+      "sources": [
+        {
+          "title": "ETCSL 1.4.1 Inana's descent to the nether world (The Electronic Text Corpus of Sumerian Literature, Oxford)",
+          "url": "https://etcsl.orinst.ox.ac.uk/section1/tr141.htm",
+          "locator": "lines 94-101, 114-122, 164-172 (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "inanna",
+          "kind": "자매"
+        },
+        {
+          "slug": "anunnaki",
+          "kind": "함께 심판하는 신들"
+        }
+      ]
+    },
+    {
+      "slug": "gilgamesh",
+      "name": "길가메시",
+      "originalName": "Gilgameš",
+      "summary": "우루크의 왕으로, 친구 엔키두와의 모험과 죽음에 대한 고민으로 알려진 영웅.",
+      "description": "[수메르] 수메르어 시에서 길가메시는 우눅(우루크)과 쿨라바의 왕이다. 「길가메시와 후와와」에서 그는 이름을 남기기 위해 종 엔키두와 함께 삼나무 산의 후와와를 찾아 나서고, 「길가메시, 엔키두와 저승」과 「길가메시의 죽음」은 저승과 죽음의 문제를 다룬다.\n\n[아카드·바빌로니아] 고바빌로니아 시대에 이 이야기들이 하나의 아카드어 서사시로 엮이며, 엔키두는 종이 아니라 대등한 친구로 등장한다. 이후 열두 점토판으로 된 표준판 서사시에는 영생을 찾는 여정과 대홍수 이야기가 더해졌다.",
+      "materialType": "수메르어 문학 점토판에 기록된 전승 (현대 학술 번역)",
+      "culture": "mesopotamia",
+      "category": "hero",
+      "aliases": [
+        "Gilgamesh",
+        "Bilgames",
+        "빌가메스",
+        "Gilgameš"
+      ],
+      "tags": [
+        "death",
+        "sumerian"
+      ],
+      "sources": [
+        {
+          "title": "ETCSL 1.8.1.5 Gilgamesh and Huwawa, version A (The Electronic Text Corpus of Sumerian Literature, Oxford)",
+          "url": "https://etcsl.orinst.ox.ac.uk/section1/tr1815.htm",
+          "locator": "lines 1-16 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "ETCSL 1.8.1.4 Gilgamesh, Enkidu and the nether world (The Electronic Text Corpus of Sumerian Literature, Oxford)",
+          "url": "https://etcsl.orinst.ox.ac.uk/section1/tr1814.htm",
+          "locator": "lines 176-183 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "ETCSL 1.8.1.3 The death of Gilgamesh (The Electronic Text Corpus of Sumerian Literature, Oxford)",
+          "url": "https://etcsl.orinst.ox.ac.uk/section1/tr1813.htm",
+          "locator": "lines 1-14 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "Morris Jastrow Jr. & Albert T. Clay, An Old Babylonian Version of the Gilgamesh Epic (1920)",
+          "url": "https://www.gutenberg.org/ebooks/11000",
+          "locator": "Pennsylvania Tablet; Yale Tablet (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "Donald A. Mackenzie, Myths of Babylonia and Assyria (1915, 근대 개설서)",
+          "url": "https://www.gutenberg.org/ebooks/16653",
+          "locator": "Chapter VIII: Deified Heroes: Etana and Gilgamesh (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "utu",
+          "kind": "도움받음"
+        }
+      ]
+    },
+    {
+      "slug": "anunnaki",
+      "name": "아눈나키",
+      "originalName": "Anuna",
+      "summary": "하늘의 신 안이 낳은 큰 신들의 무리.",
+      "description": "[수메르] 아눈나는 안에게서 태어난 \"큰 신들\"을 함께 부르는 이름이다. 「양과 곡식의 논쟁」은 안이 아눈나 신들을 낳은 태초를 노래하며, 「인안나의 저승 하강」에서는 저승의 일곱 재판관으로서 인안나에게 판결을 내린다.\n\n[아카드·바빌로니아] 아카드어 문헌에서는 아눈나쿠라 불리며, 『에누마 엘리시』에서 마르두크가 신들의 자리를 하늘과 땅 아래로 나누는 장면에 나타난다. 현대 대중문화의 \"고대 외계인\" 설은 이 원전과 관계가 없다.",
+      "materialType": "수메르어 문학 점토판에 기록된 전승 (현대 학술 번역)",
+      "culture": "mesopotamia",
+      "category": "race",
+      "aliases": [
+        "Anunnaki",
+        "Anunna",
+        "Anuna",
+        "아눈나",
+        "Anunnaku"
+      ],
+      "tags": [
+        "fate",
+        "sumerian"
+      ],
+      "sources": [
+        {
+          "title": "ETCSL 5.3.2 The debate between Sheep and Grain (The Electronic Text Corpus of Sumerian Literature, Oxford)",
+          "url": "https://etcsl.orinst.ox.ac.uk/section5/tr532.htm",
+          "locator": "lines 1-11 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "ETCSL 1.4.1 Inana's descent to the nether world (The Electronic Text Corpus of Sumerian Literature, Oxford)",
+          "url": "https://etcsl.orinst.ox.ac.uk/section1/tr141.htm",
+          "locator": "lines 164-172 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "L. W. King, The Seven Tablets of Creation, Vol. I (1902)",
+          "url": "https://archive.org/details/the-seven-tablets-of-creation.-vol.-1",
+          "locator": "Enuma Elish, Tablet VI (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "an",
+          "kind": "낳은 신"
+        }
+      ]
+    },
+    {
+      "slug": "marduk",
+      "name": "마르두크",
+      "originalName": "Marduk",
+      "summary": "티아마트를 물리치고 신들의 왕이 된 바빌론의 주신.",
+      "description": "마르두크는 바빌론의 수호신으로, 바빌로니아가 강성해지면서 신들의 왕으로 높아졌다. 『에누마 엘리시』에서 그는 에아의 아들로 태어나, 티아마트와 그 무리가 신들을 위협하자 왕권을 약속받고 나선다. 그는 바람과 그물로 티아마트를 쓰러뜨린 뒤 그 몸을 둘로 갈라 하늘과 땅을 만들고, 인간을 만들게 한다. 서사시의 마지막에서 신들은 그를 쉰 개의 이름으로 찬양하며, 그는 \"주(벨)\"라는 칭호로도 불렸다.",
+      "materialType": "바빌로니아 서사시에 기록된 전승",
+      "culture": "mesopotamia",
+      "category": "god",
+      "aliases": [
+        "Marduk",
+        "Merodach",
+        "메로닥",
+        "Bel",
+        "벨"
+      ],
+      "tags": [
+        "war",
+        "creation",
+        "babylonian"
+      ],
+      "sources": [
+        {
+          "title": "L. W. King, The Seven Tablets of Creation, Vol. I (1902)",
+          "url": "https://archive.org/details/the-seven-tablets-of-creation.-vol.-1",
+          "locator": "Enuma Elish, Tablets IV, VI, VII (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "Donald A. Mackenzie, Myths of Babylonia and Assyria (1915, 근대 개설서)",
+          "url": "https://www.gutenberg.org/ebooks/16653",
+          "locator": "Chapter VII: Creation Legend: Merodach the Dragon Slayer (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "tiamat",
+          "kind": "처치함"
+        },
+        {
+          "slug": "enki",
+          "kind": "부모"
+        },
+        {
+          "slug": "anunnaki",
+          "kind": "자리를 나눠 줌"
+        }
+      ]
+    },
+    {
+      "slug": "tiamat",
+      "name": "티아마트",
+      "originalName": "Tiāmat",
+      "summary": "태초의 짠물 바다이자 신들의 어머니로, 마르두크와 싸운 존재.",
+      "description": "『에누마 엘리시』의 태초에 티아마트(짠물)는 압수(단물)와 섞여 있었고, 그 사이에서 신들이 태어났다. 압수가 에아에게 죽자 티아마트는 킹구를 우두머리로 세우고 괴물들을 낳아 신들과 전쟁을 벌인다. 마르두크에게 쓰러진 뒤 그녀의 몸은 둘로 갈려 하늘과 땅이 된다. 근대 이후 거대한 용으로 그려지는 경우가 많지만, 원문에서 그녀의 모습은 분명하게 묘사되지 않는다.",
+      "materialType": "바빌로니아 서사시에 기록된 전승",
+      "culture": "mesopotamia",
+      "category": "monster",
+      "aliases": [
+        "Tiamat",
+        "Tiāmat"
+      ],
+      "tags": [
+        "chaos",
+        "sea",
+        "creation",
+        "babylonian"
+      ],
+      "sources": [
+        {
+          "title": "L. W. King, The Seven Tablets of Creation, Vol. I (1902)",
+          "url": "https://archive.org/details/the-seven-tablets-of-creation.-vol.-1",
+          "locator": "Enuma Elish, Tablets I, IV (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "Donald A. Mackenzie, Myths of Babylonia and Assyria (1915, 근대 개설서)",
+          "url": "https://www.gutenberg.org/ebooks/16653",
+          "locator": "Chapter VII: Creation Legend: Merodach the Dragon Slayer (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "marduk",
+          "kind": "처치한 신"
+        }
+      ]
+    },
+    {
+      "slug": "ashur",
+      "name": "아슈르",
+      "originalName": "Aššur",
+      "summary": "도시 아수르와 아시리아 제국을 대표하는 국가신.",
+      "description": "아슈르는 같은 이름의 도시 아수르의 신으로, 아시리아가 강대해지면서 제국 전체의 최고신이 되었다. 아시리아 왕들은 그의 이름으로 전쟁을 벌였으며, 그와 관련된 상징으로는 황소, 독수리, 사자 등이 꼽힌다. 일부 학자는 그를 『에누마 엘리시』의 태초 신 안샤르와 같은 존재로 보기도 했으며, 바빌로니아의 마르두크와 비슷한 위치에 놓였다.",
+      "materialType": "아시리아 왕실 문헌·도상 전승 (근대 개설서 기반)",
+      "culture": "mesopotamia",
+      "category": "god",
+      "aliases": [
+        "Ashur",
+        "Assur",
+        "Aššur",
+        "앗수르",
+        "아수르"
+      ],
+      "tags": [
+        "war",
+        "assyrian"
+      ],
+      "sources": [
+        {
+          "title": "Donald A. Mackenzie, Myths of Babylonia and Assyria (1915, 근대 개설서)",
+          "url": "https://www.gutenberg.org/ebooks/16653",
+          "locator": "Chapter XIV: Ashur the National God of Assyria (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "marduk",
+          "kind": "대응하는 신"
         }
       ]
     }
