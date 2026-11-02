@@ -13,12 +13,12 @@
 
 body {
   margin: 0;
-  font-family: "Tossface", -apple-system, system-ui, "Malgun Gothic", sans-serif;
+  font-family: var(--font-sans);
   word-break: keep-all;
   overflow-wrap: break-word;
   letter-spacing: 0;
   color: var(--color-text-default);
-  background: var(--color-bg);
+  background: var(--color-bg-page);
 }
 
 /* 본문·데이터 안에 섞인 이모지를 감싸는 클래스 — Tossface 폰트 스택이 이미

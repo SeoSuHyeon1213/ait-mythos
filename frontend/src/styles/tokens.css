@@ -1,31 +1,55 @@
 /**
  * 디자인 토큰 — 값의 정본은 이 파일 하나다.
  * render-rules.md·design-guide.md는 이 파일을 가리킬 뿐 값을 다시 싣지 않는다.
- * 중립 기본값이다 — TDS 호환·인증을 뜻하지 않고, 프로젝트가 자체 값을 정하면
- * (Figma에서 읽어 온 토큰 포함) 그쪽이 항상 우선한다. 필요하면 이 파일을 직접
- * 고쳐 쓴다.
+ * 값은 Mythos 디자인 시스템(전한 칠기·그리스 도기 팔레트)의 light 테마에서 가져왔다.
+ * 기존 이름(--color-text-*, --brand-primary 등)은 유지하고 시스템 토큰에 대응시킨다.
  */
 
 :root {
-  /* 텍스트 — 중립 그레이스케일. #000은 쓰지 않는다(예외는 아래 --dim). */
-  --color-text-strong: #191f28; /* 제목·금액·핵심 숫자 */
-  --color-text-default: #333d4b; /* 본문·리스트 타이틀 */
-  --color-text-subtle: #4e5968; /* 설명·부제·메타데이터 */
-  --color-text-hint: #8b95a1; /* placeholder·타임스탬프·약한 힌트 */
-  --color-text-disabled: #b0b8c1; /* 비활성·장식 라벨 */
-  --color-text-inverse: #ffffff; /* 브랜드·강조로 채운 표면 위 텍스트 */
+  /* 텍스트 — 칠흑 계열. 모든 surface 위 4.5:1 이상. */
+  --color-text-strong: #1f1813; /* ink — 제목·항목명 */
+  --color-text-default: #3a2f27; /* ink-default — 본문 */
+  --color-text-subtle: #5e5045; /* ink-subtle — 원어명·설명·메타데이터 */
+  --color-text-hint: #75645a; /* ink-hint — placeholder·약한 힌트 */
+  --color-text-disabled: #b0a291; /* 비활성·장식 라벨 */
+  --color-text-inverse: #fffaf2; /* on-cinnabar — 주색으로 채운 면 위 텍스트 */
 
-  /* 배경 */
-  --color-bg: #ffffff; /* 기본 배경 */
-  --color-bg-canvas: #f2f4f6; /* 회색 캔버스 배경 */
+  /* 배경 — 바랜 비단·도기 바탕 */
+  --color-bg: #fffaf2; /* surface-raised — 카드·검색창 */
+  --color-bg-page: #f6efe3; /* surface — 페이지 바탕 */
+  --color-bg-canvas: #ece2d1; /* surface-sunken — 출처 영역·섹션 캔버스 */
 
-  /* 상태색 — harness 기준(H), 공식 규격 단정 아님 */
-  --color-danger: #f04452; /* 위험·에러 상태 */
-  --color-success: #03b26c; /* 성공·완료 상태 */
-  --color-warning: #fe9800; /* 경고·주의 상태 */
+  /* 선 */
+  --color-line: #d6c7b0; /* 장식 구분선·카드 외곽선 */
+  --color-line-strong: #8f7c64; /* 컨트롤 테두리, 3:1 이상 */
 
-  /* 브랜드 강조색 — 중립 기본값이다. 브랜드 색으로 바꾸세요. */
-  --brand-primary: #191f28;
+  /* 칠기 띠 — 홈 히어로처럼 넓은 어두운 면 */
+  --color-lacquer: #1c1714;
+  --color-on-lacquer: #f6efe3;
+
+  /* 장식 전용 — 텍스트로 쓰지 않는다 */
+  --color-ochre: #c79a3a; /* 메안더 문양 */
+  --color-terracotta: #b8592a;
+
+  /* 상태색 — 오류는 반드시 문구와 함께 */
+  --color-danger: #a21d3c;
+  --color-success: #2f6b5e; /* verdigris */
+  --color-warning: #8a5a00;
+  --color-focus: #2a4a8a; /* lapis — 포커스 링 */
+
+  /* 브랜드 강조색 — 주칠(朱漆) */
+  --brand-primary: #a3301e;
+
+  /* 문화권 표식 — 마름모 점에만, 항상 이름과 함께 */
+  --culture-greek: #b8592a;
+  --culture-norse: #4a5866;
+  --culture-east: #a3301e;
+  --culture-egypt: #2a4a8a;
+  --culture-fantasy: #7a5a32;
+
+  /* 글꼴 — 제목·원어명은 명조, 본문·UI는 고딕 */
+  --font-serif: "Noto Serif KR", "Noto Serif", "AppleMyungjo", serif;
+  --font-sans: "IBM Plex Sans KR", "Tossface", -apple-system, system-ui, "Malgun Gothic", sans-serif;
 
   /* 타이포 스케일 — 크기는 이 6단계 안에서만 고른다. weight는 400~700만 쓴다. */
   --font-size-display: 28px; /* Display·히어로 (26~32px 범위 안에서 조정 가능) */
@@ -48,6 +72,11 @@
   --space-4: 16px;
   --space-5: 24px;
   --space-6: 32px;
+
+  /* 모서리 — 도장처럼 거의 각지게 */
+  --radius-xs: 2px; /* 검색창·카드·선택 */
+  --radius-sm: 4px; /* 버튼 */
+  --radius-lg: 12px; /* 바텀시트 상단만 */
 
   /* 전면 오버레이 전용 — #000 금지의 예외다. 텍스트·배경색이 아니므로 대비
      문제를 만들지 않는다(다이얼로그·바텀시트 뒤 dim 등에만 쓴다). */

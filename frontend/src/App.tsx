@@ -19,14 +19,14 @@ function SearchForm({filters = false}: {filters?: boolean}) {
  </form>{filters && filterError && <Feedback error={filterError} retry={() => {cultures.retry(); categories.retry(); tags.retry();}}/>}</>;
 }
 function Card({entry}: {entry: EntryCard}) {
- return <Link className="entry-card" to={'/entries/' + entry.slug}><div><p className="eyebrow">{entry.culture.name} · {entry.category.name}</p><h3>{entry.name} <span className="original">{entry.originalName}</span></h3><p>{entry.summary}</p><div className="tags">{entry.tags.map(t => <span key={t.id}>{t.name}</span>)}</div></div><ChevronRight size={22}/></Link>;
+ return <Link className="entry-card" to={'/entries/' + entry.slug}><div><p className="eyebrow culture" data-culture={entry.culture.id}>{entry.culture.name} · {entry.category.name}</p><h3>{entry.name} <span className="original">{entry.originalName}</span></h3><p>{entry.summary}</p><div className="tags">{entry.tags.map(t => <span key={t.id}>{t.name}</span>)}</div></div><ChevronRight size={22}/></Link>;
 }
 function Home() {
  const entries = useApi<EntryPage>('/api/v1/entries?pageSize=3');
  const cultures = useApi<Lookup[]>('/api/v1/cultures');
- return <><section className="hero"><p className="eyebrow">MYTHOS · 신화와 판타지 사전</p><h1>이름 하나에서<br/>시작되는 신화 탐색</h1><p>신화 속 존재를 찾고,<br className="mobile-break"/> 출처를 따라 이야기를 탐색하세요.</p><SearchForm/></section>
+ return <><section className="hero"><p className="eyebrow">MYTHOS · 신화와 판타지 사전</p><h1>이름 하나에서<br/>시작되는 신화 탐색</h1><p>신화 속 존재를 찾고,<br className="mobile-break"/> 출처를 따라 이야기를 탐색하세요.</p><SearchForm/><span className="meander" aria-hidden="true"/></section>
  <section><div className="section-title"><h2>먼저 만나볼 이야기</h2><Link to="/search">전체 보기</Link></div>{entries.data ? entries.data.items.length ? entries.data.items.map(e => <Card key={e.slug} entry={e}/>) : <div className="notice">아직 등록된 이야기가 없어요.</div> : <Feedback error={entries.error} retry={entries.retry}/>}</section>
- <section><h2>문화권으로 탐색</h2>{cultures.data ? <div className="culture-list">{cultures.data.map(c => <Link key={c.id} to={'/search?culture=' + c.id}>{c.name}<ChevronRight size={20}/></Link>)}</div> : <Feedback error={cultures.error} retry={cultures.retry}/>}</section>
+ <section><h2>문화권으로 탐색</h2>{cultures.data ? <div className="culture-list">{cultures.data.map(c => <Link key={c.id} to={'/search?culture=' + c.id}><span className="culture" data-culture={c.id}>{c.name}</span><ChevronRight size={20}/></Link>)}</div> : <Feedback error={cultures.error} retry={cultures.retry}/>}</section>
  <p className="footnote">개발용 샘플 1건으로 시작합니다. 콘텐츠는 공개 전 검수 예정이에요.</p></>;
 }
 function SearchPage() {
@@ -41,11 +41,15 @@ function DetailPage() {
  const related = useApi<Related[]>('/api/v1/entries/' + encodeURIComponent(slug ?? '') + '/related');
  if (!data.data) return <><Feedback error={data.error} retry={data.retry}/><Link className="text-link" to="/search">사전 탐색하기</Link></>;
  const e = data.data;
- return <><p className="eyebrow">{e.culture.name} · {e.category.name}</p><h1>{e.name}</h1><p className="original">{e.originalName}</p><p className="lead">{e.summary}</p><div className="tags">{e.tags.map(t => <Link key={t.id} to={'/search?tag=' + t.id}>{t.name}</Link>)}</div>
- <section><h2>이야기</h2><p className="description">{e.description}</p><p className="meta">자료 성격 · {e.materialType}</p></section>
+ return <div className="detail"><header className="detail-head"><span className="meander" aria-hidden="true"/><p className="eyebrow culture" data-culture={e.culture.id}>{e.culture.name} · {e.category.name}</p><h1>{e.name}</h1><p className="original">{e.originalName}</p><p className="lead">{e.summary}</p><div className="tags">{e.tags.map(t => <Link key={t.id} to={'/search?tag=' + t.id}>{t.name}</Link>)}</div></header>
+ <span className="cloud" aria-hidden="true"/>
+ <section><h2>이야기</h2><p className="description">{e.description}</p><p className="material">자료 성격 · {e.materialType}</p></section>
+ <span className="cloud" aria-hidden="true"/>
  <section><h2>다른 이름</h2><p>{e.aliases.join(' · ') || '등록된 별칭이 없어요.'}</p></section>
- <section><h2>출처와 참고 문헌</h2>{e.sources.map(s => <article className="source" key={s.url+s.locator}><a href={s.url} target="_blank" rel="noreferrer">{s.title}</a><p>{s.locator}</p></article>)}</section>
- <section><h2>연관 이야기</h2>{related.data ? related.data.length ? related.data.map(r => <Link className="relation" key={r.slug+r.kind} to={'/entries/'+r.slug}>{r.name}<span>{r.kind}</span><ChevronRight size={20}/></Link>) : <p>아직 연결된 항목이 없어요.</p> : <Feedback error={related.error} retry={related.retry}/>}</section><Link className="text-link" to="/search">다른 이야기 찾기</Link></>;
+ <span className="cloud" aria-hidden="true"/>
+ <section className="sources"><h2>출처와 참고 문헌</h2>{e.sources.map(s => <article className="source" key={s.url+s.locator}><a href={s.url} target="_blank" rel="noreferrer">{s.title}</a><p>{s.locator}</p></article>)}</section>
+ <span className="cloud" aria-hidden="true"/>
+ <section><h2>연관 이야기</h2>{related.data ? related.data.length ? related.data.map(r => <Link className="relation" key={r.slug+r.kind} to={'/entries/'+r.slug}>{r.name}<span>{r.kind}</span><ChevronRight size={20}/></Link>) : <p>아직 연결된 항목이 없어요.</p> : <Feedback error={related.error} retry={related.retry}/>}</section><Link className="text-link" to="/search">다른 이야기 찾기</Link></div>;
 }
 export default function App() {
  return <main className="canvas"><div className="content mx-auto w-full"><Routes><Route path="/" element={<Home/>}/><Route path="/search" element={<SearchPage/>}/><Route path="/entries/:slug" element={<DetailPage/>}/><Route path="*" element={<div className="notice"><h1>페이지를 찾을 수 없어요</h1><Link className="button" to="/">홈으로</Link></div>}/></Routes></div></main>;
