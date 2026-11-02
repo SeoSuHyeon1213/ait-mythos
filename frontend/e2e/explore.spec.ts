@@ -14,6 +14,11 @@ test('모바일 홈에서 별칭 검색 후 상세와 출처 확인', async ({pa
  await expect(page.locator('.relation',{hasText:'토르'})).toBeVisible();
  await expect(page.locator('.ad-label')).toHaveText('광고');
  await page.screenshot({path: 'test-results/detail-mobile.png',fullPage:true});
+ await page.getByRole('searchbox',{name:'다른 이야기 검색'}).fill('Thor');
+ await page.getByRole('search').getByRole('button',{name:'검색'}).click();
+ await expect(page).toHaveURL(/search\?q=Thor/);
+ await expect(page.locator('.hero').getByRole('searchbox')).toHaveValue('Thor');
+ await page.screenshot({path: 'test-results/search-mobile.png',fullPage:true});
  const sizes = await page.locator('main *').evaluateAll(nodes => nodes.filter(n=>n.textContent?.trim()).map(n=>parseFloat(getComputedStyle(n).fontSize)));
  expect(Math.min(...sizes)).toBeGreaterThan(11);
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);

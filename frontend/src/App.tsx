@@ -20,6 +20,9 @@ function SearchForm({filters = false}: {filters?: boolean}) {
   {filters && <div className="filters">{([['culture','문화권',cultures.data],['category','존재 유형',categories.data],['tag','주제',tags.data]] as const).map(([name,label,options]) => <label key={name}>{label}<select aria-label={label} key={name + (options?.map(x => x.id).join() ?? "loading")} name={name} defaultValue={params.get(name) ?? ''}><option value="">전체</option>{options?.map(x => <option key={x.id} value={x.id}>{x.name}</option>)}</select></label>)}</div>}
  </form>{filters && filterError && <Feedback error={filterError} retry={() => {cultures.retry(); categories.retry(); tags.retry();}}/>}</>;
 }
+function CompactSearch() {
+ return <form action="/search" className="search-compact" role="search"><Search size={20}/><input name="q" type="search" aria-label="다른 이야기 검색" placeholder="다른 이야기 검색"/><button type="submit" className="primary">검색</button></form>;
+}
 function Card({entry}: {entry: EntryCard}) {
  return <Link className="entry-card" to={'/entries/' + entry.slug}><div><p className="eyebrow culture" data-culture={entry.culture.id}>{entry.culture.name} · {entry.category.name}</p><h3>{entry.name} <span className="original">{entry.originalName}</span></h3><p>{entry.summary}</p><div className="tags">{entry.tags.map(t => <span key={t.id}>{t.name}</span>)}</div></div><ChevronRight size={22}/></Link>;
 }
@@ -35,7 +38,7 @@ function SearchPage() {
  const [params] = useSearchParams();
  const data = useApi<EntryPage>('/api/v1/entries?' + params.toString());
  function pageLink(page: number) {const next = new URLSearchParams(params); next.set('page', String(page)); return '/search?' + next.toString();}
- return <><p className="eyebrow">이야기 찾기</p><h1>신화 탐색</h1><SearchForm filters/>{data.data ? <section aria-live="polite"><div className="section-title"><h2>검색 결과</h2><span>{data.data.total}개</span></div>{data.data.items.length ? data.data.items.map(e => <Card key={e.slug} entry={e}/>) : <div className="notice"><h3>검색 결과가 없어요</h3><p>이름이나 별칭을 바꾸거나 필터를 줄여 보세요.</p><Link className="button" to="/search">조건 초기화</Link></div>}<div className="pagination">{data.data.page > 1 && <Link className="button" to={pageLink(data.data.page-1)}>이전 페이지</Link>}{data.data.page * data.data.pageSize < data.data.total && <Link className="button" to={pageLink(data.data.page+1)}>다음 페이지</Link>}</div></section> : <Feedback error={data.error} retry={data.retry}/>}<Link className="text-link" to="/">홈으로</Link></>;
+ return <><section className="hero"><p className="eyebrow">MYTHOS · 이야기 찾기</p><h1>신화 탐색</h1><SearchForm filters/><span className="meander" aria-hidden="true"/></section>{data.data ? <section aria-live="polite"><div className="section-title"><h2>검색 결과</h2><span>{data.data.total}개</span></div>{data.data.items.length ? data.data.items.map(e => <Card key={e.slug} entry={e}/>) : <div className="notice"><h3>검색 결과가 없어요</h3><p>이름이나 별칭을 바꾸거나 필터를 줄여 보세요.</p><Link className="button" to="/search">조건 초기화</Link></div>}<div className="pagination">{data.data.page > 1 && <Link className="button" to={pageLink(data.data.page-1)}>이전 페이지</Link>}{data.data.page * data.data.pageSize < data.data.total && <Link className="button" to={pageLink(data.data.page+1)}>다음 페이지</Link>}</div></section> : <Feedback error={data.error} retry={data.retry}/>}<Link className="text-link" to="/">홈으로</Link></>;
 }
 function DetailPage() {
  const {slug} = useParams();
@@ -43,7 +46,7 @@ function DetailPage() {
  const related = useApi<Related[]>('/api/v1/entries/' + encodeURIComponent(slug ?? '') + '/related');
  if (!data.data) return <><Feedback error={data.error} retry={data.retry}/><Link className="text-link" to="/search">사전 탐색하기</Link></>;
  const e = data.data;
- return <div className="detail"><header className="detail-head"><span className="meander" aria-hidden="true"/><p className="eyebrow culture" data-culture={e.culture.id}>{e.culture.name} · {e.category.name}</p><h1>{e.name}</h1><p className="original">{e.originalName}</p><p className="lead">{e.summary}</p><div className="tags">{e.tags.map(t => <Link key={t.id} to={'/search?tag=' + t.id}>{t.name}</Link>)}</div></header>
+ return <div className="detail"><CompactSearch/><header className="detail-head"><span className="meander" aria-hidden="true"/><p className="eyebrow culture" data-culture={e.culture.id}>{e.culture.name} · {e.category.name}</p><h1>{e.name}</h1><p className="original">{e.originalName}</p><p className="lead">{e.summary}</p><div className="tags">{e.tags.map(t => <Link key={t.id} to={'/search?tag=' + t.id}>{t.name}</Link>)}</div></header>
  <span className="cloud" aria-hidden="true"/>
  <section><h2>이야기</h2><p className="description">{e.description}</p><p className="material">자료 성격 · {e.materialType}</p></section>
  <span className="cloud" aria-hidden="true"/>
