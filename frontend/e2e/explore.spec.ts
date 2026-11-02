@@ -1,7 +1,7 @@
-import { test, expect } from '@playwright/test';
-test.beforeEach(async ({page}) => { await page.addInitScript(() => localStorage.setItem('mythos.introSeen', '1')); });
+import { test, expect, type Page } from '@playwright/test';
+async function openHome(page: Page) { await page.goto('/'); await page.getByRole('button', {name: '시작하기'}).click(); }
 test('모바일 홈에서 별칭 검색 후 상세와 출처 확인', async ({page}) => {
- await page.goto('/');
+ await openHome(page);
  await expect(page.getByRole('heading', {name: '이름 하나에서 시작되는 신화 탐색'})).toBeVisible();
  await page.getByRole('searchbox').fill('Woden');
  await page.getByRole('button', {name: '검색', exact: true}).click();
@@ -36,7 +36,7 @@ test('필터 URL 공유·새로고침 복원과 빈 결과 초기화',async ({pa
 });
 test('조회 실패·재시도와 없는 항목의 탐색 경로',async ({page})=>{
  await page.route('**/api/v1/entries?*',route=>route.fulfill({status:503,body:'{}'}));
- await page.goto('/');await expect(page.getByRole('button',{name:'다시 시도'})).toBeVisible();
+ await openHome(page);await expect(page.getByRole('button',{name:'다시 시도'})).toBeVisible();
  await page.unroute('**/api/v1/entries?*');await page.getByRole('button',{name:'다시 시도'}).click();await expect(page.locator('.entry-card')).toHaveCount(3);
  await page.screenshot({path:'test-results/home-mobile.png',fullPage:true});
  await page.goto('/entries/missing');await expect(page.getByText('항목을 찾을 수 없어요.')).toBeVisible();await expect(page.getByRole('link',{name:'사전 탐색하기'})).toBeVisible();

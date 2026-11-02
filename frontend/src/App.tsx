@@ -57,8 +57,6 @@ function DetailPage() {
  <span className="cloud" aria-hidden="true"/>
  <section><h2>연관 이야기</h2>{related.data ? related.data.length ? related.data.map(r => <Link className="relation" key={r.slug+r.kind} to={'/entries/'+r.slug}>{r.name}<span>{r.kind}</span><ChevronRight size={20}/></Link>) : <p>아직 연결된 항목이 없어요.</p> : <Feedback error={related.error} retry={related.retry}/>}</section><Link className="text-link" to="/search">다른 이야기 찾기</Link></div>;
 }
-const INTRO_KEY = 'mythos.introSeen';
-function introSeen() { try { return localStorage.getItem(INTRO_KEY) === '1'; } catch { return true; } }
 function Intro({onStart}: {onStart: () => void}) {
  return <main className="intro"><div className="intro-body"><p className="eyebrow">MYTHOS · 신화와 판타지 사전</p><h1>신과 영웅의 이름을<br/>따라가는 이야기 여행</h1><p className="intro-lead">신화 속 존재를 찾고, 원전 출처와 연관 이야기를 따라 탐색해 보세요. 지금은 그리스·북유럽 신화부터 만나볼 수 있어요.</p><span className="meander" aria-hidden="true"/>
   <ul className="intro-points"><li><strong>이름·별칭으로 검색</strong><span>제우스, Jupiter, 미드가르드의 뱀처럼 어떤 이름으로도 찾을 수 있어요.</span></li><li><strong>원전 출처 확인</strong><span>『신통기』, 『에다』 같은 문헌의 위치를 함께 보여드려요.</span></li><li><strong>연관 이야기로 이동</strong><span>부모, 배우자, 숙적을 따라 다음 이야기로 넘어가요.</span></li></ul></div>
@@ -66,8 +64,8 @@ function Intro({onStart}: {onStart: () => void}) {
 }
 export default function App() {
  const {pathname} = useLocation();
- const [intro, setIntro] = useState(() => !introSeen());
- // Only a first visit to home gets the intro; shared deep links open their page directly.
- if (intro && pathname === '/') return <Intro onStart={() => { try { localStorage.setItem(INTRO_KEY, '1'); } catch { /* storage unavailable */ } setIntro(false); }}/>;
+ // Every launch that opens on home starts with the intro; shared deep links and in-app navigation skip it.
+ const [intro, setIntro] = useState(() => pathname === '/');
+ if (intro && pathname === '/') return <Intro onStart={() => setIntro(false)}/>;
  return <main className="canvas"><div className="content mx-auto w-full"><Routes><Route path="/" element={<Home/>}/><Route path="/search" element={<SearchPage/>}/><Route path="/entries/:slug" element={<DetailPage/>}/><Route path="*" element={<div className="notice"><h1>페이지를 찾을 수 없어요</h1><Link className="button" to="/">홈으로</Link></div>}/></Routes></div></main>;
 }
