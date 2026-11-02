@@ -3,18 +3,86 @@
     {
       "id": "norse",
       "name": "북유럽"
+    },
+    {
+      "id": "greek",
+      "name": "그리스·로마"
     }
   ],
   "categories": [
     {
       "id": "god",
       "name": "신"
+    },
+    {
+      "id": "hero",
+      "name": "영웅"
+    },
+    {
+      "id": "spirit",
+      "name": "정령"
+    },
+    {
+      "id": "monster",
+      "name": "괴물"
+    },
+    {
+      "id": "race",
+      "name": "종족"
+    },
+    {
+      "id": "place",
+      "name": "장소"
+    },
+    {
+      "id": "concept",
+      "name": "개념"
     }
   ],
   "tags": [
     {
       "id": "wisdom",
       "name": "지혜"
+    },
+    {
+      "id": "creation",
+      "name": "창세"
+    },
+    {
+      "id": "death",
+      "name": "죽음"
+    },
+    {
+      "id": "war",
+      "name": "전쟁"
+    },
+    {
+      "id": "nature",
+      "name": "자연"
+    },
+    {
+      "id": "fate",
+      "name": "운명"
+    },
+    {
+      "id": "sky",
+      "name": "하늘·천둥"
+    },
+    {
+      "id": "sea",
+      "name": "바다"
+    },
+    {
+      "id": "love",
+      "name": "사랑·혼인"
+    },
+    {
+      "id": "fire",
+      "name": "불"
+    },
+    {
+      "id": "trickery",
+      "name": "계략"
     }
   ],
   "entries": [
@@ -22,27 +90,1303 @@
       "slug": "odin",
       "name": "오딘",
       "originalName": "Óðinn",
-      "summary": "북유럽 신화에서 지혜와 연결되는 신.",
-      "description": "오딘은 북유럽 신화의 신으로, 『산문 에다』의 「길피의 속임수」에서 여러 이름을 지닌 존재로 설명된다. 이 개발용 항목은 해당 전승을 바탕으로 한 짧은 요약이다.",
+      "summary": "북유럽 신화에서 지혜와 전쟁, 죽음과 연결되는 최고신.",
+      "description": "『산문 에다』의 「길피의 속임수」에서 오딘은 아스 신족의 우두머리로, 모든 것의 아버지(알파더)라 불리며 많은 이름을 지닌다. 전사한 자들은 그의 전당 발할라로 모인다. 『시 에다』의 「무녀의 예언」은 라그나로크 때 그가 늑대에게 쓰러진다고 노래한다.",
       "materialType": "중세 문학에 기록된 북유럽 전승",
       "culture": "norse",
       "category": "god",
       "aliases": [
         "Odin",
         "Woden",
-        "알파더"
+        "알파더",
+        "Othin"
       ],
       "tags": [
-        "wisdom"
+        "wisdom",
+        "war"
       ],
       "sources": [
         {
           "title": "Snorri Sturluson, The Younger Edda (Rasmus B. Anderson 번역, 1901)",
           "url": "https://www.gutenberg.org/ebooks/18947",
           "locator": "The Fooling of Gylfe, Chapter VIII: The Asas (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "Snorri Sturluson, The Younger Edda (Rasmus B. Anderson 번역, 1901)",
+          "url": "https://www.gutenberg.org/ebooks/18947",
+          "locator": "The Fooling of Gylfe, Chapter XII: Life in Valhal (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "The Poetic Edda (Henry Adams Bellows 번역, 1923)",
+          "url": "https://www.gutenberg.org/ebooks/73533",
+          "locator": "Voluspo, st. 53 (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "frigg",
+          "kind": "배우자"
+        },
+        {
+          "slug": "thor",
+          "kind": "자녀"
+        },
+        {
+          "slug": "baldr",
+          "kind": "자녀"
+        },
+        {
+          "slug": "valhalla",
+          "kind": "거처"
+        },
+        {
+          "slug": "fenrir",
+          "kind": "대적"
+        },
+        {
+          "slug": "ragnarok",
+          "kind": "관련 사건"
+        }
+      ]
+    },
+    {
+      "slug": "thor",
+      "name": "토르",
+      "originalName": "Þórr",
+      "summary": "망치 묠니르를 든 천둥의 신이자 거인들의 적.",
+      "description": "『산문 에다』에서 토르는 오딘의 아들로, 아스 신족 중 가장 강하며 망치 묠니르와 힘의 허리띠를 지닌다. 거인의 땅을 여행하며 미드가르드의 뱀을 낚으려 한 모험담이 전한다. 「무녀의 예언」은 라그나로크에서 그가 뱀을 죽이고 독에 쓰러진다고 노래한다.",
+      "materialType": "중세 문학에 기록된 북유럽 전승",
+      "culture": "norse",
+      "category": "god",
+      "aliases": [
+        "Thor",
+        "Donar",
+        "Thunor"
+      ],
+      "tags": [
+        "sky",
+        "war"
+      ],
+      "sources": [
+        {
+          "title": "Snorri Sturluson, The Younger Edda (Rasmus B. Anderson 번역, 1901)",
+          "url": "https://www.gutenberg.org/ebooks/18947",
+          "locator": "The Fooling of Gylfe, Chapter VIII: The Asas; Chapter XIV: Thor's Adventures (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "The Poetic Edda (Henry Adams Bellows 번역, 1923)",
+          "url": "https://www.gutenberg.org/ebooks/73533",
+          "locator": "Voluspo, st. 55-56 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "The Poetic Edda (Henry Adams Bellows 번역, 1923)",
+          "url": "https://www.gutenberg.org/ebooks/73533",
+          "locator": "Thrymskvitha (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "odin",
+          "kind": "부모"
+        },
+        {
+          "slug": "jormungandr",
+          "kind": "대적"
+        },
+        {
+          "slug": "jotnar",
+          "kind": "적대"
+        },
+        {
+          "slug": "ragnarok",
+          "kind": "관련 사건"
+        }
+      ]
+    },
+    {
+      "slug": "loki",
+      "name": "로키",
+      "originalName": "Loki",
+      "summary": "신들과 함께 지내면서도 재앙을 불러오는 꾀 많은 존재.",
+      "description": "『산문 에다』에서 로키는 거인 파르바우티의 아들로, 외모는 아름답지만 성품이 변덕스럽고 교활하다고 묘사된다. 그는 거인 앙그르보다와의 사이에서 펜리르, 요르문간드, 헬을 낳는다. 발드르의 죽음을 꾸민 뒤 결박되며, 라그나로크 때 풀려나 신들과 맞선다.",
+      "materialType": "중세 문학에 기록된 북유럽 전승",
+      "culture": "norse",
+      "category": "god",
+      "aliases": [
+        "Loki",
+        "Loke",
+        "Loptr"
+      ],
+      "tags": [
+        "trickery"
+      ],
+      "sources": [
+        {
+          "title": "Snorri Sturluson, The Younger Edda (Rasmus B. Anderson 번역, 1901)",
+          "url": "https://www.gutenberg.org/ebooks/18947",
+          "locator": "The Fooling of Gylfe, Chapter IX: Loke and his Offspring; Chapter XV: The Death of Balder (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "The Poetic Edda (Henry Adams Bellows 번역, 1923)",
+          "url": "https://www.gutenberg.org/ebooks/73533",
+          "locator": "Lokasenna (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "fenrir",
+          "kind": "자녀"
+        },
+        {
+          "slug": "jormungandr",
+          "kind": "자녀"
+        },
+        {
+          "slug": "baldr",
+          "kind": "죽음을 꾸밈"
+        },
+        {
+          "slug": "jotnar",
+          "kind": "혈통"
+        },
+        {
+          "slug": "heimdallr",
+          "kind": "대적"
+        },
+        {
+          "slug": "ragnarok",
+          "kind": "관련 사건"
+        }
+      ]
+    },
+    {
+      "slug": "freyja",
+      "name": "프레이야",
+      "originalName": "Freyja",
+      "summary": "사랑과 연결되며 고양이가 끄는 수레를 타는 바니르 신족의 여신.",
+      "description": "『산문 에다』는 프레이야를 프리그 다음가는 여신으로 소개한다. 남편 오드가 멀리 떠나자 붉은 금빛 눈물을 흘리며 그를 찾아다녔고, 그래서 여러 이름을 갖게 되었다고 한다. 발드르의 장례에는 고양이가 끄는 수레를 타고 왔다.",
+      "materialType": "중세 문학에 기록된 북유럽 전승",
+      "culture": "norse",
+      "category": "god",
+      "aliases": [
+        "Freyja",
+        "Freya",
+        "프레이아"
+      ],
+      "tags": [
+        "love"
+      ],
+      "sources": [
+        {
+          "title": "Snorri Sturluson, The Younger Edda (Rasmus B. Anderson 번역, 1901)",
+          "url": "https://www.gutenberg.org/ebooks/18947",
+          "locator": "The Fooling of Gylfe, Chapter X: The Goddesses (Asynjes); Chapter XV: The Death of Balder (공개 전 편집 검수 필요)"
         }
       ],
       "related": []
+    },
+    {
+      "slug": "frigg",
+      "name": "프리그",
+      "originalName": "Frigg",
+      "summary": "오딘의 아내로 인간의 운명을 아는 여신.",
+      "description": "『산문 에다』에서 프리그는 오딘의 아내이며, 말하지는 않아도 인간의 운명을 모두 안다고 한다. 그녀는 아들 발드르를 지키려고 만물에게서 해치지 않겠다는 맹세를 받았으나, 겨우살이만 빠뜨렸다. 여신들 중 가장 높은 자리에 놓인다.",
+      "materialType": "중세 문학에 기록된 북유럽 전승",
+      "culture": "norse",
+      "category": "god",
+      "aliases": [
+        "Frigg",
+        "Frigga"
+      ],
+      "tags": [
+        "fate",
+        "love"
+      ],
+      "sources": [
+        {
+          "title": "Snorri Sturluson, The Younger Edda (Rasmus B. Anderson 번역, 1901)",
+          "url": "https://www.gutenberg.org/ebooks/18947",
+          "locator": "The Fooling of Gylfe, Chapter VIII: The Asas; Chapter X: The Goddesses (Asynjes); Chapter XV: The Death of Balder (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "odin",
+          "kind": "배우자"
+        },
+        {
+          "slug": "baldr",
+          "kind": "자녀"
+        }
+      ]
+    },
+    {
+      "slug": "baldr",
+      "name": "발드르",
+      "originalName": "Baldr",
+      "summary": "모두에게 사랑받았으나 겨우살이 화살에 죽은 오딘의 아들.",
+      "description": "『산문 에다』에서 발드르는 오딘과 프리그의 아들로, 아름답고 지혜로워 모두가 칭송한다. 로키의 계략으로 눈먼 신 회드가 던진 겨우살이에 맞아 죽고, 그를 저승에서 되찾으려는 시도도 실패한다. 「무녀의 예언」은 라그나로크 이후 그가 돌아온다고 노래한다.",
+      "materialType": "중세 문학에 기록된 북유럽 전승",
+      "culture": "norse",
+      "category": "god",
+      "aliases": [
+        "Baldr",
+        "Balder",
+        "Baldur",
+        "발데르"
+      ],
+      "tags": [
+        "death"
+      ],
+      "sources": [
+        {
+          "title": "Snorri Sturluson, The Younger Edda (Rasmus B. Anderson 번역, 1901)",
+          "url": "https://www.gutenberg.org/ebooks/18947",
+          "locator": "The Fooling of Gylfe, Chapter VIII: The Asas; Chapter XV: The Death of Balder (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "The Poetic Edda (Henry Adams Bellows 번역, 1923)",
+          "url": "https://www.gutenberg.org/ebooks/73533",
+          "locator": "Voluspo, st. 32 (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "odin",
+          "kind": "부모"
+        },
+        {
+          "slug": "frigg",
+          "kind": "부모"
+        },
+        {
+          "slug": "loki",
+          "kind": "죽음을 꾸민 자"
+        }
+      ]
+    },
+    {
+      "slug": "tyr",
+      "name": "티르",
+      "originalName": "Týr",
+      "summary": "펜리르를 묶기 위해 오른손을 내준 용맹한 신.",
+      "description": "『산문 에다』에서 티르는 가장 대담하고 용감한 신으로, 전쟁의 승리와 연결된다. 신들이 늑대 펜리르를 마법의 끈으로 묶을 때 아무도 늑대의 입에 손을 넣으려 하지 않자 그가 오른손을 넣었고, 결국 그 손을 잃었다. 영어 화요일(Tuesday)의 어원과 연결된다.",
+      "materialType": "중세 문학에 기록된 북유럽 전승",
+      "culture": "norse",
+      "category": "god",
+      "aliases": [
+        "Tyr",
+        "Tiw"
+      ],
+      "tags": [
+        "war"
+      ],
+      "sources": [
+        {
+          "title": "Snorri Sturluson, The Younger Edda (Rasmus B. Anderson 번역, 1901)",
+          "url": "https://www.gutenberg.org/ebooks/18947",
+          "locator": "The Fooling of Gylfe, Chapter VIII: The Asas; Chapter IX: Loke and his Offspring (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "fenrir",
+          "kind": "결박함"
+        }
+      ]
+    },
+    {
+      "slug": "heimdallr",
+      "name": "헤임달",
+      "originalName": "Heimdallr",
+      "summary": "무지개 다리 비프로스트를 지키는 신들의 파수꾼.",
+      "description": "『산문 에다』에서 헤임달은 하늘 끝 비프로스트 곁에 살며 거인들을 경계하는 파수꾼이다. 새보다 잠이 적고, 풀과 양털이 자라는 소리까지 듣는다고 한다. 라그나로크가 오면 걀라르호른을 불어 신들을 깨우고, 로키와 맞서 서로를 죽인다.",
+      "materialType": "중세 문학에 기록된 북유럽 전승",
+      "culture": "norse",
+      "category": "god",
+      "aliases": [
+        "Heimdall",
+        "Heimdal",
+        "헤임달르"
+      ],
+      "tags": [
+        "fate"
+      ],
+      "sources": [
+        {
+          "title": "Snorri Sturluson, The Younger Edda (Rasmus B. Anderson 번역, 1901)",
+          "url": "https://www.gutenberg.org/ebooks/18947",
+          "locator": "The Fooling of Gylfe, Chapter VIII: The Asas; Chapter XVI: Ragnarok (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "The Poetic Edda (Henry Adams Bellows 번역, 1923)",
+          "url": "https://www.gutenberg.org/ebooks/73533",
+          "locator": "Grimnismol, st. 13 (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "loki",
+          "kind": "대적"
+        },
+        {
+          "slug": "ragnarok",
+          "kind": "관련 사건"
+        }
+      ]
+    },
+    {
+      "slug": "fenrir",
+      "name": "펜리르",
+      "originalName": "Fenrir",
+      "summary": "신들에게 결박된, 라그나로크에 오딘을 삼킬 거대한 늑대.",
+      "description": "『산문 에다』에서 펜리르는 로키와 거인 앙그르보다의 자식이다. 너무 빠르게 자라 위험해지자 신들은 난쟁이들이 만든 끈 글레이프니르로 그를 묶었고, 이때 티르가 손을 잃었다. 「무녀의 예언」은 라그나로크 때 늑대가 오딘을 쓰러뜨린다고 노래한다.",
+      "materialType": "중세 문학에 기록된 북유럽 전승",
+      "culture": "norse",
+      "category": "monster",
+      "aliases": [
+        "Fenrir",
+        "Fenris",
+        "펜리스 늑대",
+        "Fenris-wolf"
+      ],
+      "tags": [
+        "fate",
+        "death"
+      ],
+      "sources": [
+        {
+          "title": "Snorri Sturluson, The Younger Edda (Rasmus B. Anderson 번역, 1901)",
+          "url": "https://www.gutenberg.org/ebooks/18947",
+          "locator": "The Fooling of Gylfe, Chapter IX: Loke and his Offspring; Chapter XVI: Ragnarok (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "The Poetic Edda (Henry Adams Bellows 번역, 1923)",
+          "url": "https://www.gutenberg.org/ebooks/73533",
+          "locator": "Voluspo, st. 53 (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "loki",
+          "kind": "부모"
+        },
+        {
+          "slug": "tyr",
+          "kind": "결박한 신"
+        },
+        {
+          "slug": "odin",
+          "kind": "대적"
+        },
+        {
+          "slug": "ragnarok",
+          "kind": "관련 사건"
+        }
+      ]
+    },
+    {
+      "slug": "jormungandr",
+      "name": "요르문간드",
+      "originalName": "Jǫrmungandr",
+      "summary": "바다에 던져져 세상을 둘러싼 거대한 뱀.",
+      "description": "『산문 에다』에서 요르문간드는 로키의 자식으로, 오딘이 바다에 던지자 자라나 인간 세계를 둘러싸고 자기 꼬리를 물게 되었다. 토르는 거인 휘미르와 낚시를 나가 그를 낚아 올리려 한 적이 있다. 라그나로크에서 토르와 맞서 서로를 죽인다.",
+      "materialType": "중세 문학에 기록된 북유럽 전승",
+      "culture": "norse",
+      "category": "monster",
+      "aliases": [
+        "Jormungandr",
+        "Jörmungandr",
+        "미드가르드의 뱀",
+        "Midgard-serpent",
+        "Midgard Serpent"
+      ],
+      "tags": [
+        "sea",
+        "fate"
+      ],
+      "sources": [
+        {
+          "title": "Snorri Sturluson, The Younger Edda (Rasmus B. Anderson 번역, 1901)",
+          "url": "https://www.gutenberg.org/ebooks/18947",
+          "locator": "The Fooling of Gylfe, Chapter IX: Loke and his Offspring; Chapter XVI: Ragnarok (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "The Poetic Edda (Henry Adams Bellows 번역, 1923)",
+          "url": "https://www.gutenberg.org/ebooks/73533",
+          "locator": "Voluspo, st. 55-56 (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "loki",
+          "kind": "부모"
+        },
+        {
+          "slug": "thor",
+          "kind": "대적"
+        },
+        {
+          "slug": "ragnarok",
+          "kind": "관련 사건"
+        }
+      ]
+    },
+    {
+      "slug": "valkyries",
+      "name": "발키리",
+      "originalName": "Valkyrjur",
+      "summary": "전장에서 죽을 자를 고르고 발할라에서 시중드는 여성 존재들.",
+      "description": "『산문 에다』는 발키리가 발할라에서 술을 나르고, 오딘의 명을 받아 전장에서 죽을 자를 고르며 승리를 정한다고 설명한다. 「무녀의 예언」은 사방에서 모여드는 발키리들을 묘사한다. 바그너의 오페라나 현대 게임·만화의 이미지는 이 전승을 크게 재해석한 것이다.",
+      "materialType": "중세 문학에 기록된 북유럽 전승",
+      "culture": "norse",
+      "category": "spirit",
+      "aliases": [
+        "Valkyrie",
+        "Valkyries",
+        "Valkyrja",
+        "발퀴레",
+        "발키리아"
+      ],
+      "tags": [
+        "war",
+        "death",
+        "fate"
+      ],
+      "sources": [
+        {
+          "title": "Snorri Sturluson, The Younger Edda (Rasmus B. Anderson 번역, 1901)",
+          "url": "https://www.gutenberg.org/ebooks/18947",
+          "locator": "The Fooling of Gylfe, Chapter X: The Goddesses (Asynjes), §37 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "The Poetic Edda (Henry Adams Bellows 번역, 1923)",
+          "url": "https://www.gutenberg.org/ebooks/73533",
+          "locator": "Voluspo, st. 31 (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "odin",
+          "kind": "섬기는 신"
+        },
+        {
+          "slug": "valhalla",
+          "kind": "활동 장소"
+        }
+      ]
+    },
+    {
+      "slug": "jotnar",
+      "name": "요툰",
+      "originalName": "Jǫtnar",
+      "summary": "신들과 대립하거나 혼인하기도 하는 북유럽 신화의 거인 종족.",
+      "description": "『산문 에다』에서 최초의 존재 이미르로부터 서리 거인 종족이 생겨났고, 신들은 이미르를 죽여 그 몸으로 세상을 만들었다. 거인들은 신들의 적으로 자주 등장하지만, 로키처럼 거인 혈통의 신이나 신과 혼인한 거인도 있다. \"거인\"으로 옮기지만 반드시 몸이 큰 존재를 뜻하지는 않는다.",
+      "materialType": "중세 문학에 기록된 북유럽 전승",
+      "culture": "norse",
+      "category": "race",
+      "aliases": [
+        "Jotunn",
+        "Jötunn",
+        "Jotnar",
+        "거인",
+        "서리 거인",
+        "frost-giants"
+      ],
+      "tags": [
+        "creation",
+        "nature"
+      ],
+      "sources": [
+        {
+          "title": "Snorri Sturluson, The Younger Edda (Rasmus B. Anderson 번역, 1901)",
+          "url": "https://www.gutenberg.org/ebooks/18947",
+          "locator": "The Fooling of Gylfe, Chapter IV: The Creation of the World; Chapter XVI: Ragnarok (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "ragnarok",
+          "kind": "관련 사건"
+        }
+      ]
+    },
+    {
+      "slug": "yggdrasil",
+      "name": "위그드라실",
+      "originalName": "Yggdrasill",
+      "summary": "아홉 세계를 잇는 거대한 물푸레나무, 세계수.",
+      "description": "『산문 에다』에서 위그드라실은 모든 나무 중 가장 크고 좋은 물푸레나무로, 가지가 온 세상과 하늘에 뻗어 있다. 세 뿌리 아래에는 우르드의 샘과 미미르의 샘 등이 있으며, 신들은 날마다 그 곁에서 재판을 연다. 「그림니르의 노래」는 나무가 짐승들에게 시달리며 고통받는다고 노래한다.",
+      "materialType": "중세 문학에 기록된 북유럽 전승",
+      "culture": "norse",
+      "category": "place",
+      "aliases": [
+        "Yggdrasil",
+        "Yggdrasill",
+        "이그드라실",
+        "세계수"
+      ],
+      "tags": [
+        "creation",
+        "fate",
+        "nature"
+      ],
+      "sources": [
+        {
+          "title": "Snorri Sturluson, The Younger Edda (Rasmus B. Anderson 번역, 1901)",
+          "url": "https://www.gutenberg.org/ebooks/18947",
+          "locator": "The Fooling of Gylfe, Chapter VII: On the Wonderful Things in Heaven (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "The Poetic Edda (Henry Adams Bellows 번역, 1923)",
+          "url": "https://www.gutenberg.org/ebooks/73533",
+          "locator": "Voluspo, st. 19 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "The Poetic Edda (Henry Adams Bellows 번역, 1923)",
+          "url": "https://www.gutenberg.org/ebooks/73533",
+          "locator": "Grimnismol, st. 29-35 (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": []
+    },
+    {
+      "slug": "valhalla",
+      "name": "발할라",
+      "originalName": "Valhǫll",
+      "summary": "오딘이 전사한 영웅들을 맞아들이는 거대한 전당.",
+      "description": "『산문 에다』에서 발할라는 방패로 지붕을 덮은 오딘의 전당으로, 전사자들(에인헤랴르)이 모인다. 그들은 날마다 싸우고, 저녁이면 되살아나 함께 먹고 마신다. 이 전사들은 라그나로크에서 신들 편에 서서 싸운다.",
+      "materialType": "중세 문학에 기록된 북유럽 전승",
+      "culture": "norse",
+      "category": "place",
+      "aliases": [
+        "Valhalla",
+        "Valhall",
+        "Valhal",
+        "발홀"
+      ],
+      "tags": [
+        "war",
+        "death"
+      ],
+      "sources": [
+        {
+          "title": "Snorri Sturluson, The Younger Edda (Rasmus B. Anderson 번역, 1901)",
+          "url": "https://www.gutenberg.org/ebooks/18947",
+          "locator": "The Fooling of Gylfe, Chapter II: Gylfe's Journey to Asgard; Chapter XII: Life in Valhal (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "The Poetic Edda (Henry Adams Bellows 번역, 1923)",
+          "url": "https://www.gutenberg.org/ebooks/73533",
+          "locator": "Grimnismol, st. 8-10 (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "odin",
+          "kind": "주인"
+        },
+        {
+          "slug": "valkyries",
+          "kind": "관련 존재"
+        },
+        {
+          "slug": "asgard",
+          "kind": "위치"
+        }
+      ]
+    },
+    {
+      "slug": "ragnarok",
+      "name": "라그나로크",
+      "originalName": "Ragnarǫk",
+      "summary": "신들과 거인들의 최후 전쟁으로 세계가 멸망하고 다시 태어나는 사건.",
+      "description": "「무녀의 예언」과 『산문 에다』는 혹독한 겨울 뒤 결박이 풀린 괴물들과 거인들이 신들과 싸우는 최후의 날을 묘사한다. 오딘은 펜리르에게, 토르는 요르문간드와 싸우다 쓰러지고, 수르트의 불길이 세상을 태운다. 그 뒤 대지가 바다에서 다시 솟아오르고 살아남은 신들이 돌아온다.",
+      "materialType": "중세 문학에 기록된 북유럽 전승",
+      "culture": "norse",
+      "category": "concept",
+      "aliases": [
+        "Ragnarok",
+        "Ragnarök",
+        "Ragnarøkkr",
+        "신들의 황혼"
+      ],
+      "tags": [
+        "fate",
+        "death",
+        "war"
+      ],
+      "sources": [
+        {
+          "title": "The Poetic Edda (Henry Adams Bellows 번역, 1923)",
+          "url": "https://www.gutenberg.org/ebooks/73533",
+          "locator": "Voluspo, st. 44-66 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "Snorri Sturluson, The Younger Edda (Rasmus B. Anderson 번역, 1901)",
+          "url": "https://www.gutenberg.org/ebooks/18947",
+          "locator": "The Fooling of Gylfe, Chapter XVI: Ragnarok; Chapter XVII: Regeneration (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "odin",
+          "kind": "관련 신"
+        },
+        {
+          "slug": "thor",
+          "kind": "관련 신"
+        },
+        {
+          "slug": "fenrir",
+          "kind": "관련 존재"
+        },
+        {
+          "slug": "jormungandr",
+          "kind": "관련 존재"
+        }
+      ]
+    },
+    {
+      "slug": "asgard",
+      "name": "아스가르드",
+      "originalName": "Ásgarðr",
+      "summary": "아스 신족이 사는 신들의 세계.",
+      "description": "『산문 에다』에서 아스가르드는 신들이 세상의 한가운데에 세운 성채이자 거처로, 그 안에 발할라를 비롯한 신들의 궁전이 있다. 「길피의 속임수」는 스웨덴 왕 길피가 이곳을 찾아가 신들에 대해 묻는 틀로 이야기를 전한다. 라그나로크 뒤에는 옛 아스가르드 자리에 살아남은 신들이 모인다.",
+      "materialType": "중세 문학에 기록된 북유럽 전승",
+      "culture": "norse",
+      "category": "place",
+      "aliases": [
+        "Asgard",
+        "Asgardr",
+        "아스가르드르"
+      ],
+      "tags": [
+        "sky"
+      ],
+      "sources": [
+        {
+          "title": "Snorri Sturluson, The Younger Edda (Rasmus B. Anderson 번역, 1901)",
+          "url": "https://www.gutenberg.org/ebooks/18947",
+          "locator": "The Fooling of Gylfe, Chapter II: Gylfe's Journey to Asgard; Chapter V; Chapter XVII: Regeneration (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "valhalla",
+          "kind": "포함 장소"
+        },
+        {
+          "slug": "odin",
+          "kind": "거주하는 신"
+        }
+      ]
+    },
+    {
+      "slug": "zeus",
+      "name": "제우스",
+      "originalName": "Ζεύς",
+      "summary": "그리스 신화에서 신들과 인간의 아버지로 불리는 하늘의 신.",
+      "description": "헤시오도스의 『신통기』에서 제우스는 크로노스와 레아의 막내로 태어나 크레타에서 숨겨져 자란다. 이후 티탄들과의 전쟁에서 승리해 신들의 왕이 되며, 천둥과 번개를 무기로 쓴다. 로마에서는 유피테르와 동일시되었다.",
+      "materialType": "고대 그리스 서사시·찬가에 기록된 전승",
+      "culture": "greek",
+      "category": "god",
+      "aliases": [
+        "Zeus",
+        "Jupiter",
+        "유피테르"
+      ],
+      "tags": [
+        "sky",
+        "war"
+      ],
+      "sources": [
+        {
+          "title": "Hesiod, the Homeric Hymns, and Homerica (Hugh G. Evelyn-White 번역, 1914)",
+          "url": "https://www.gutenberg.org/ebooks/348",
+          "locator": "Theogony, ll. 453-506, 617-735 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "Hesiod, the Homeric Hymns, and Homerica (Hugh G. Evelyn-White 번역, 1914)",
+          "url": "https://www.gutenberg.org/ebooks/348",
+          "locator": "Homeric Hymn XXIII, To the Son of Cronos (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "hera",
+          "kind": "배우자"
+        },
+        {
+          "slug": "titans",
+          "kind": "적대"
+        },
+        {
+          "slug": "olympus",
+          "kind": "거처"
+        },
+        {
+          "slug": "athena",
+          "kind": "자녀"
+        },
+        {
+          "slug": "apollo",
+          "kind": "자녀"
+        },
+        {
+          "slug": "hermes",
+          "kind": "자녀"
+        },
+        {
+          "slug": "heracles",
+          "kind": "자녀"
+        },
+        {
+          "slug": "poseidon",
+          "kind": "형제자매"
+        },
+        {
+          "slug": "hades",
+          "kind": "형제자매"
+        },
+        {
+          "slug": "prometheus",
+          "kind": "징벌함"
+        }
+      ]
+    },
+    {
+      "slug": "hera",
+      "name": "헤라",
+      "originalName": "Ἥρα",
+      "summary": "제우스의 아내이자 혼인과 연결되는 여신.",
+      "description": "『신통기』에서 헤라는 크로노스와 레아의 자녀이며, 제우스가 마지막으로 맞은 아내로 기록된다. 같은 작품에서 헤라클레스에게 크게 분노해 레르나의 히드라를 길렀다고 전한다. 로마에서는 유노와 동일시되었다.",
+      "materialType": "고대 그리스 서사시·찬가에 기록된 전승",
+      "culture": "greek",
+      "category": "god",
+      "aliases": [
+        "Hera",
+        "Juno",
+        "유노"
+      ],
+      "tags": [
+        "love"
+      ],
+      "sources": [
+        {
+          "title": "Hesiod, the Homeric Hymns, and Homerica (Hugh G. Evelyn-White 번역, 1914)",
+          "url": "https://www.gutenberg.org/ebooks/348",
+          "locator": "Theogony, ll. 453-491, 921-923, 306-332 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "Hesiod, the Homeric Hymns, and Homerica (Hugh G. Evelyn-White 번역, 1914)",
+          "url": "https://www.gutenberg.org/ebooks/348",
+          "locator": "Homeric Hymn XII, To Hera (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "zeus",
+          "kind": "배우자"
+        },
+        {
+          "slug": "heracles",
+          "kind": "적대"
+        }
+      ]
+    },
+    {
+      "slug": "poseidon",
+      "name": "포세이돈",
+      "originalName": "Ποσειδῶν",
+      "summary": "바다와 지진을 다스리는 그리스 신화의 신.",
+      "description": "『신통기』에서 포세이돈은 크로노스와 레아의 자녀로, \"대지를 흔드는 자\"라는 별칭으로 불린다. 호메로스 찬가는 그를 말을 길들이고 배를 구하는 바다의 신으로 노래한다. 로마에서는 넵투누스와 동일시되었다.",
+      "materialType": "고대 그리스 서사시·찬가에 기록된 전승",
+      "culture": "greek",
+      "category": "god",
+      "aliases": [
+        "Poseidon",
+        "Neptune",
+        "넵투누스",
+        "대지를 흔드는 자"
+      ],
+      "tags": [
+        "sea",
+        "nature"
+      ],
+      "sources": [
+        {
+          "title": "Hesiod, the Homeric Hymns, and Homerica (Hugh G. Evelyn-White 번역, 1914)",
+          "url": "https://www.gutenberg.org/ebooks/348",
+          "locator": "Theogony, ll. 453-491 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "Hesiod, the Homeric Hymns, and Homerica (Hugh G. Evelyn-White 번역, 1914)",
+          "url": "https://www.gutenberg.org/ebooks/348",
+          "locator": "Homeric Hymn XXII, To Poseidon (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "zeus",
+          "kind": "형제자매"
+        },
+        {
+          "slug": "hades",
+          "kind": "형제자매"
+        }
+      ]
+    },
+    {
+      "slug": "hades",
+      "name": "하데스",
+      "originalName": "ᾍδης",
+      "summary": "죽은 자들의 지하 세계를 다스리는 신.",
+      "description": "『신통기』에서 하데스는 크로노스와 레아의 자녀이며, 지하에 있는 그의 집 문을 무서운 개가 지킨다고 묘사된다. 『데메테르 찬가』는 그가 페르세포네를 데려가 지하 세계의 왕비로 삼은 이야기를 전한다. \"하데스\"라는 이름은 후대에 지하 세계 자체를 가리키기도 했다.",
+      "materialType": "고대 그리스 서사시·찬가에 기록된 전승",
+      "culture": "greek",
+      "category": "god",
+      "aliases": [
+        "Hades",
+        "Pluto",
+        "플루톤"
+      ],
+      "tags": [
+        "death"
+      ],
+      "sources": [
+        {
+          "title": "Hesiod, the Homeric Hymns, and Homerica (Hugh G. Evelyn-White 번역, 1914)",
+          "url": "https://www.gutenberg.org/ebooks/348",
+          "locator": "Theogony, ll. 453-491, 767-774 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "Hesiod, the Homeric Hymns, and Homerica (Hugh G. Evelyn-White 번역, 1914)",
+          "url": "https://www.gutenberg.org/ebooks/348",
+          "locator": "Homeric Hymn II, To Demeter (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "zeus",
+          "kind": "형제자매"
+        },
+        {
+          "slug": "poseidon",
+          "kind": "형제자매"
+        },
+        {
+          "slug": "cerberus",
+          "kind": "지하 세계의 개"
+        }
+      ]
+    },
+    {
+      "slug": "athena",
+      "name": "아테나",
+      "originalName": "Ἀθηνᾶ",
+      "summary": "지혜와 전쟁 전략, 공예를 관장하는 여신.",
+      "description": "『신통기』에서 아테나는 제우스가 메티스를 삼킨 뒤 그의 머리에서 태어나며, 힘과 지혜에서 아버지와 대등한 여신으로 묘사된다. 같은 작품에서 헤라클레스가 히드라를 물리칠 때 아테나의 계획이 함께했다고 전한다. 로마에서는 미네르바와 동일시되었다.",
+      "materialType": "고대 그리스 서사시·찬가에 기록된 전승",
+      "culture": "greek",
+      "category": "god",
+      "aliases": [
+        "Athena",
+        "Athene",
+        "Pallas",
+        "팔라스",
+        "Minerva",
+        "미네르바",
+        "트리토게네이아"
+      ],
+      "tags": [
+        "wisdom",
+        "war"
+      ],
+      "sources": [
+        {
+          "title": "Hesiod, the Homeric Hymns, and Homerica (Hugh G. Evelyn-White 번역, 1914)",
+          "url": "https://www.gutenberg.org/ebooks/348",
+          "locator": "Theogony, ll. 886-900, 924-929, 306-332 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "Hesiod, the Homeric Hymns, and Homerica (Hugh G. Evelyn-White 번역, 1914)",
+          "url": "https://www.gutenberg.org/ebooks/348",
+          "locator": "Homeric Hymn XXVIII, To Athena (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "zeus",
+          "kind": "부모"
+        },
+        {
+          "slug": "heracles",
+          "kind": "조력함"
+        }
+      ]
+    },
+    {
+      "slug": "apollo",
+      "name": "아폴론",
+      "originalName": "Ἀπόλλων",
+      "summary": "음악·예언·궁술과 연결되는 제우스의 아들.",
+      "description": "『신통기』에서 아폴론은 레토가 제우스와의 사이에서 낳은 자녀로, 아르테미스와 남매다. 『아폴론 찬가』는 델로스에서의 탄생과 델포이 신탁소의 건립을 노래한다. 로마에서도 같은 이름으로 숭배되었다.",
+      "materialType": "고대 그리스 서사시·찬가에 기록된 전승",
+      "culture": "greek",
+      "category": "god",
+      "aliases": [
+        "Apollo",
+        "Phoebus",
+        "포이보스"
+      ],
+      "tags": [
+        "wisdom"
+      ],
+      "sources": [
+        {
+          "title": "Hesiod, the Homeric Hymns, and Homerica (Hugh G. Evelyn-White 번역, 1914)",
+          "url": "https://www.gutenberg.org/ebooks/348",
+          "locator": "Theogony, ll. 918-920 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "Hesiod, the Homeric Hymns, and Homerica (Hugh G. Evelyn-White 번역, 1914)",
+          "url": "https://www.gutenberg.org/ebooks/348",
+          "locator": "Homeric Hymn III, To Apollo (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "zeus",
+          "kind": "부모"
+        },
+        {
+          "slug": "hermes",
+          "kind": "형제자매"
+        }
+      ]
+    },
+    {
+      "slug": "aphrodite",
+      "name": "아프로디테",
+      "originalName": "Ἀφροδίτη",
+      "summary": "사랑과 아름다움의 여신.",
+      "description": "『신통기』는 아프로디테가 바다 거품에서 태어났다고 설명하며, 이름을 \"거품\"과 연결한다. 『아프로디테 찬가』는 신과 인간이 대부분 그녀의 힘에 굴복한다고 노래한다. 호메로스의 서사시처럼 제우스와 디오네의 딸로 보는 다른 전승도 있다. 로마에서는 베누스와 동일시되었다.",
+      "materialType": "고대 그리스 서사시·찬가에 기록된 전승",
+      "culture": "greek",
+      "category": "god",
+      "aliases": [
+        "Aphrodite",
+        "Venus",
+        "베누스",
+        "키테레이아"
+      ],
+      "tags": [
+        "love"
+      ],
+      "sources": [
+        {
+          "title": "Hesiod, the Homeric Hymns, and Homerica (Hugh G. Evelyn-White 번역, 1914)",
+          "url": "https://www.gutenberg.org/ebooks/348",
+          "locator": "Theogony, ll. 176-206 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "Hesiod, the Homeric Hymns, and Homerica (Hugh G. Evelyn-White 번역, 1914)",
+          "url": "https://www.gutenberg.org/ebooks/348",
+          "locator": "Homeric Hymn V, To Aphrodite (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": []
+    },
+    {
+      "slug": "hermes",
+      "name": "헤르메스",
+      "originalName": "Ἑρμῆς",
+      "summary": "신들의 전령이자 여행자와 꾀의 신.",
+      "description": "『신통기』에서 헤르메스는 마이아가 제우스와의 사이에서 낳은 아들이며, 불사의 신들의 전령으로 소개된다. 『헤르메스 찬가』는 그가 태어난 날 리라를 만들고 아폴론의 소를 훔친 뒤 화해하는 이야기를 전한다. 로마에서는 메르쿠리우스와 동일시되었다.",
+      "materialType": "고대 그리스 서사시·찬가에 기록된 전승",
+      "culture": "greek",
+      "category": "god",
+      "aliases": [
+        "Hermes",
+        "Mercury",
+        "메르쿠리우스"
+      ],
+      "tags": [
+        "trickery"
+      ],
+      "sources": [
+        {
+          "title": "Hesiod, the Homeric Hymns, and Homerica (Hugh G. Evelyn-White 번역, 1914)",
+          "url": "https://www.gutenberg.org/ebooks/348",
+          "locator": "Theogony, ll. 938-939 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "Hesiod, the Homeric Hymns, and Homerica (Hugh G. Evelyn-White 번역, 1914)",
+          "url": "https://www.gutenberg.org/ebooks/348",
+          "locator": "Homeric Hymn IV, To Hermes (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "zeus",
+          "kind": "부모"
+        },
+        {
+          "slug": "apollo",
+          "kind": "형제자매"
+        }
+      ]
+    },
+    {
+      "slug": "prometheus",
+      "name": "프로메테우스",
+      "originalName": "Προμηθεύς",
+      "summary": "제우스를 속이고 인간에게 불을 가져다준 티탄 가문의 신.",
+      "description": "『신통기』에서 프로메테우스는 이아페토스의 아들로, 제물 분배에서 제우스를 속이고 감춰진 불을 훔쳐 인간에게 준다. 그 벌로 묶인 채 독수리에게 간을 쪼이다가 헤라클레스에게 구출된다. 『일과 날』에도 같은 불 도둑 이야기가 나온다.",
+      "materialType": "고대 그리스 서사시·찬가에 기록된 전승",
+      "culture": "greek",
+      "category": "god",
+      "aliases": [
+        "Prometheus"
+      ],
+      "tags": [
+        "fire",
+        "trickery"
+      ],
+      "sources": [
+        {
+          "title": "Hesiod, the Homeric Hymns, and Homerica (Hugh G. Evelyn-White 번역, 1914)",
+          "url": "https://www.gutenberg.org/ebooks/348",
+          "locator": "Theogony, ll. 507-616 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "Hesiod, the Homeric Hymns, and Homerica (Hugh G. Evelyn-White 번역, 1914)",
+          "url": "https://www.gutenberg.org/ebooks/348",
+          "locator": "Works and Days, ll. 42-105 (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "zeus",
+          "kind": "대적"
+        },
+        {
+          "slug": "titans",
+          "kind": "혈통"
+        },
+        {
+          "slug": "heracles",
+          "kind": "구출됨"
+        }
+      ]
+    },
+    {
+      "slug": "heracles",
+      "name": "헤라클레스",
+      "originalName": "Ἡρακλῆς",
+      "summary": "제우스의 아들로 괴물들을 물리친 그리스 신화의 대표 영웅.",
+      "description": "『신통기』에서 헤라클레스는 제우스와 알크메네의 아들로, 헤라의 미움을 받으며 레르나의 히드라 같은 괴물을 물리친다. 같은 작품은 그가 프로메테우스를 괴롭히던 독수리를 죽이고, 죽은 뒤 신들 사이에서 헤베와 결혼했다고 전한다. 열두 과업의 체계적인 목록은 후대 문헌에서 정리되었다.",
+      "materialType": "고대 그리스 서사시·찬가에 기록된 전승",
+      "culture": "greek",
+      "category": "hero",
+      "aliases": [
+        "Heracles",
+        "Herakles",
+        "Hercules",
+        "헤르쿨레스"
+      ],
+      "tags": [
+        "war"
+      ],
+      "sources": [
+        {
+          "title": "Hesiod, the Homeric Hymns, and Homerica (Hugh G. Evelyn-White 번역, 1914)",
+          "url": "https://www.gutenberg.org/ebooks/348",
+          "locator": "Theogony, ll. 306-332, 507-543, 943-955 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "Hesiod, the Homeric Hymns, and Homerica (Hugh G. Evelyn-White 번역, 1914)",
+          "url": "https://www.gutenberg.org/ebooks/348",
+          "locator": "The Shield of Heracles (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "zeus",
+          "kind": "부모"
+        },
+        {
+          "slug": "hera",
+          "kind": "적대"
+        },
+        {
+          "slug": "prometheus",
+          "kind": "구출함"
+        },
+        {
+          "slug": "athena",
+          "kind": "조력받음"
+        }
+      ]
+    },
+    {
+      "slug": "perseus",
+      "name": "페르세우스",
+      "originalName": "Περσεύς",
+      "summary": "고르곤 메두사의 목을 벤 영웅.",
+      "description": "『신통기』는 페르세우스가 메두사의 목을 베자 그 몸에서 크리사오르와 천마 페가소스가 태어났다고 전한다. 헤시오도스에게 귀속된 『헤라클레스의 방패』는 날개 달린 샌들을 신고 고르곤에게 쫓기는 그의 모습을 묘사한다. 안드로메다 구출 등 자세한 모험담은 후대 문헌에 더 풍부하게 나온다.",
+      "materialType": "고대 그리스 서사시·찬가에 기록된 전승",
+      "culture": "greek",
+      "category": "hero",
+      "aliases": [
+        "Perseus"
+      ],
+      "tags": [
+        "war"
+      ],
+      "sources": [
+        {
+          "title": "Hesiod, the Homeric Hymns, and Homerica (Hugh G. Evelyn-White 번역, 1914)",
+          "url": "https://www.gutenberg.org/ebooks/348",
+          "locator": "Theogony, ll. 270-294 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "Hesiod, the Homeric Hymns, and Homerica (Hugh G. Evelyn-White 번역, 1914)",
+          "url": "https://www.gutenberg.org/ebooks/348",
+          "locator": "The Shield of Heracles, ll. 216-237 (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "medusa",
+          "kind": "처치함"
+        }
+      ]
+    },
+    {
+      "slug": "medusa",
+      "name": "메두사",
+      "originalName": "Μέδουσα",
+      "summary": "세 고르곤 자매 중 유일하게 죽을 운명이었던 존재.",
+      "description": "『신통기』에서 메두사는 포르키스와 케토의 딸인 고르곤 자매 중 하나로, 두 자매와 달리 불사가 아니었다. 페르세우스가 그녀의 목을 베자 크리사오르와 페가소스가 태어났다. 바라보는 이를 돌로 만든다는 묘사와 저주로 괴물이 되었다는 이야기는 후대 문헌, 특히 로마의 오비디우스에게서 두드러진다.",
+      "materialType": "고대 그리스 서사시·찬가에 기록된 전승",
+      "culture": "greek",
+      "category": "monster",
+      "aliases": [
+        "Medusa",
+        "고르곤"
+      ],
+      "tags": [
+        "death"
+      ],
+      "sources": [
+        {
+          "title": "Hesiod, the Homeric Hymns, and Homerica (Hugh G. Evelyn-White 번역, 1914)",
+          "url": "https://www.gutenberg.org/ebooks/348",
+          "locator": "Theogony, ll. 270-294 (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "perseus",
+          "kind": "처치됨"
+        }
+      ]
+    },
+    {
+      "slug": "cerberus",
+      "name": "케르베로스",
+      "originalName": "Κέρβερος",
+      "summary": "하데스의 집 문을 지키는 지하 세계의 개.",
+      "description": "『신통기』에서 케르베로스는 티폰과 에키드나의 자식으로, 날고기를 먹는 하데스의 개로 묘사된다. 이 작품은 그를 머리가 쉰 개라고 쓰지만, 후대 전승과 미술에서는 머리 셋으로 굳어졌다. 들어오는 자는 반기지만 나가려는 자는 붙잡아 삼킨다고 한다.",
+      "materialType": "고대 그리스 서사시·찬가에 기록된 전승",
+      "culture": "greek",
+      "category": "monster",
+      "aliases": [
+        "Cerberus",
+        "Kerberos"
+      ],
+      "tags": [
+        "death"
+      ],
+      "sources": [
+        {
+          "title": "Hesiod, the Homeric Hymns, and Homerica (Hugh G. Evelyn-White 번역, 1914)",
+          "url": "https://www.gutenberg.org/ebooks/348",
+          "locator": "Theogony, ll. 306-332, 767-774 (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "hades",
+          "kind": "섬기는 신"
+        }
+      ]
+    },
+    {
+      "slug": "olympus",
+      "name": "올림포스",
+      "originalName": "Ὄλυμπος",
+      "summary": "제우스를 비롯한 신들이 머무는 눈 덮인 산.",
+      "description": "헤시오도스는 무사 여신들과 불사의 신들이 \"눈 덮인 올림포스\"의 봉우리에 산다고 반복해서 노래한다. 티탄 전쟁에서 제우스 편의 신들은 올림포스에서 싸웠으며, 이들을 흔히 올림포스 신들이라 부른다. 그리스 북부에 실제로 같은 이름의 산이 있다.",
+      "materialType": "고대 그리스 서사시·찬가에 기록된 전승",
+      "culture": "greek",
+      "category": "place",
+      "aliases": [
+        "Olympus",
+        "Olympos",
+        "올림포스산"
+      ],
+      "tags": [
+        "sky"
+      ],
+      "sources": [
+        {
+          "title": "Hesiod, the Homeric Hymns, and Homerica (Hugh G. Evelyn-White 번역, 1914)",
+          "url": "https://www.gutenberg.org/ebooks/348",
+          "locator": "Theogony, ll. 36-74, 617-643 (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "zeus",
+          "kind": "거주하는 신"
+        }
+      ]
+    },
+    {
+      "slug": "titans",
+      "name": "티탄",
+      "originalName": "Τιτᾶνες",
+      "summary": "가이아와 우라노스에게서 태어난 올림포스 이전 세대의 신들.",
+      "description": "『신통기』에서 티탄은 가이아와 우라노스의 자녀들로, 크로노스·레아·이아페토스 등이 포함된다. 크로노스가 아버지를 몰아낸 뒤 이들이 다스렸으나, 제우스와 그 형제들과의 십 년 전쟁에서 패해 타르타로스에 갇힌다. 현대어의 \"타이탄\"은 이 이름에서 나왔다.",
+      "materialType": "고대 그리스 서사시·찬가에 기록된 전승",
+      "culture": "greek",
+      "category": "race",
+      "aliases": [
+        "Titans",
+        "Titan",
+        "티타네스",
+        "타이탄"
+      ],
+      "tags": [
+        "creation",
+        "war"
+      ],
+      "sources": [
+        {
+          "title": "Hesiod, the Homeric Hymns, and Homerica (Hugh G. Evelyn-White 번역, 1914)",
+          "url": "https://www.gutenberg.org/ebooks/348",
+          "locator": "Theogony, ll. 116-138, 207-210, 617-735 (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "zeus",
+          "kind": "적대"
+        }
+      ]
     }
   ]
 }
