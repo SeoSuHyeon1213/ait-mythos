@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+test.beforeEach(async ({page}) => { await page.addInitScript(() => localStorage.setItem('mythos.introSeen', '1')); });
 test('모바일 홈에서 별칭 검색 후 상세와 출처 확인', async ({page}) => {
  await page.goto('/');
  await expect(page.getByRole('heading', {name: '이름 하나에서 시작되는 신화 탐색'})).toBeVisible();
@@ -11,6 +12,7 @@ test('모바일 홈에서 별칭 검색 후 상세와 출처 확인', async ({pa
  await expect(page.getByRole('heading', {name: '오딘',exact:true})).toBeVisible();
  await expect(page.locator('.source a').first()).toHaveAttribute('href','https://www.gutenberg.org/ebooks/18947');
  await expect(page.locator('.relation',{hasText:'토르'})).toBeVisible();
+ await expect(page.locator('.ad-label')).toHaveText('광고');
  await page.screenshot({path: 'test-results/detail-mobile.png',fullPage:true});
  const sizes = await page.locator('main *').evaluateAll(nodes => nodes.filter(n=>n.textContent?.trim()).map(n=>parseFloat(getComputedStyle(n).fontSize)));
  expect(Math.min(...sizes)).toBeGreaterThan(11);

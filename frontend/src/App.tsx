@@ -1,4 +1,6 @@
-import { Link, Route, Routes, useParams, useSearchParams } from 'react-router-dom';
+import { useState } from 'react';
+import { Link, Route, Routes, useLocation, useParams, useSearchParams } from 'react-router-dom';
+import { AdBanner } from './ads';
 import { useApi } from './api';
 import type { EntryCard, EntryDetail, EntryPage, Lookup, Related } from './api';
 import { ChevronRight, Search } from './components/icons';
@@ -27,7 +29,7 @@ function Home() {
  return <><section className="hero"><p className="eyebrow">MYTHOS · 신화와 판타지 사전</p><h1>이름 하나에서<br/>시작되는 신화 탐색</h1><p>신화 속 존재를 찾고,<br className="mobile-break"/> 출처를 따라 이야기를 탐색하세요.</p><SearchForm/><span className="meander" aria-hidden="true"/></section>
  <section><div className="section-title"><h2>먼저 만나볼 이야기</h2><Link to="/search">전체 보기</Link></div>{entries.data ? entries.data.items.length ? entries.data.items.map(e => <Card key={e.slug} entry={e}/>) : <div className="notice">아직 등록된 이야기가 없어요.</div> : <Feedback error={entries.error} retry={entries.retry}/>}</section>
  <section><h2>문화권으로 탐색</h2>{cultures.data ? <div className="culture-list">{cultures.data.map(c => <Link key={c.id} to={'/search?culture=' + c.id}><span className="culture" data-culture={c.id}>{c.name}</span><ChevronRight size={20}/></Link>)}</div> : <Feedback error={cultures.error} retry={cultures.retry}/>}</section>
- <p className="footnote">개발용 샘플 1건으로 시작합니다. 콘텐츠는 공개 전 검수 예정이에요.</p></>;
+ <p className="footnote">콘텐츠와 출처는 공개 전 편집 검수를 거치고 있어요.</p></>;
 }
 function SearchPage() {
  const [params] = useSearchParams();
@@ -46,11 +48,23 @@ function DetailPage() {
  <section><h2>이야기</h2><p className="description">{e.description}</p><p className="material">자료 성격 · {e.materialType}</p></section>
  <span className="cloud" aria-hidden="true"/>
  <section><h2>다른 이름</h2><p>{e.aliases.join(' · ') || '등록된 별칭이 없어요.'}</p></section>
+ <AdBanner key={e.slug}/>
  <span className="cloud" aria-hidden="true"/>
  <section className="sources"><h2>출처와 참고 문헌</h2>{e.sources.map(s => <article className="source" key={s.url+s.locator}><a href={s.url} target="_blank" rel="noreferrer">{s.title}</a><p>{s.locator}</p></article>)}</section>
  <span className="cloud" aria-hidden="true"/>
  <section><h2>연관 이야기</h2>{related.data ? related.data.length ? related.data.map(r => <Link className="relation" key={r.slug+r.kind} to={'/entries/'+r.slug}>{r.name}<span>{r.kind}</span><ChevronRight size={20}/></Link>) : <p>아직 연결된 항목이 없어요.</p> : <Feedback error={related.error} retry={related.retry}/>}</section><Link className="text-link" to="/search">다른 이야기 찾기</Link></div>;
 }
+const INTRO_KEY = 'mythos.introSeen';
+function introSeen() { try { return localStorage.getItem(INTRO_KEY) === '1'; } catch { return true; } }
+function Intro({onStart}: {onStart: () => void}) {
+ return <main className="intro"><div className="intro-body"><p className="eyebrow">MYTHOS · 신화와 판타지 사전</p><h1>신과 영웅의 이름을<br/>따라가는 이야기 여행</h1><p className="intro-lead">신화 속 존재를 찾고, 원전 출처와 연관 이야기를 따라 탐색해 보세요. 지금은 그리스·북유럽 신화부터 만나볼 수 있어요.</p><span className="meander" aria-hidden="true"/>
+  <ul className="intro-points"><li><strong>이름·별칭으로 검색</strong><span>제우스, Jupiter, 미드가르드의 뱀처럼 어떤 이름으로도 찾을 수 있어요.</span></li><li><strong>원전 출처 확인</strong><span>『신통기』, 『에다』 같은 문헌의 위치를 함께 보여드려요.</span></li><li><strong>연관 이야기로 이동</strong><span>부모, 배우자, 숙적을 따라 다음 이야기로 넘어가요.</span></li></ul></div>
+  <button type="button" className="primary intro-start" onClick={onStart}>시작하기</button></main>;
+}
 export default function App() {
+ const {pathname} = useLocation();
+ const [intro, setIntro] = useState(() => !introSeen());
+ // Only a first visit to home gets the intro; shared deep links open their page directly.
+ if (intro && pathname === '/') return <Intro onStart={() => { try { localStorage.setItem(INTRO_KEY, '1'); } catch { /* storage unavailable */ } setIntro(false); }}/>;
  return <main className="canvas"><div className="content mx-auto w-full"><Routes><Route path="/" element={<Home/>}/><Route path="/search" element={<SearchPage/>}/><Route path="/entries/:slug" element={<DetailPage/>}/><Route path="*" element={<div className="notice"><h1>페이지를 찾을 수 없어요</h1><Link className="button" to="/">홈으로</Link></div>}/></Routes></div></main>;
 }
