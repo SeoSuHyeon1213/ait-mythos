@@ -20,6 +20,10 @@
     {
       "id": "mesopotamia",
       "name": "메소포타미아"
+    },
+    {
+      "id": "fantasy",
+      "name": "판타지"
     }
   ],
   "categories": [
@@ -3192,6 +3196,702 @@
         {
           "slug": "odin",
           "kind": "벌을 내린 신"
+        }
+      ]
+    },
+    {
+      "slug": "alfar",
+      "name": "알파르",
+      "originalName": "Álfar",
+      "summary": "알브헤임에 사는 북유럽 신화의 요정 종족으로, 현대 판타지 엘프의 신화적 뿌리.",
+      "description": "『산문 에다』는 알브헤임이라는 곳에 \"빛의 요정(리오살파르)\"이 살며, 그들은 해보다 더 아름답게 빛난다고 설명한다. 반면 \"어둠의 요정\"은 땅속에 살며 생김새도 행실도 빛의 요정과 전혀 다르다고 한다. 고대 영어 서사시 『베오울프』에서는 요정(ylfe)이 거인, 악령과 함께 카인의 후손인 사악한 무리로 언급되어, 요정에 대한 인식이 전승마다 달랐음을 보여 준다.",
+      "materialType": "중세 문학에 기록된 북유럽 전승",
+      "culture": "norse",
+      "category": "race",
+      "aliases": [
+        "Alfar",
+        "Álfar",
+        "Ljósálfar",
+        "빛의 요정",
+        "북유럽의 엘프"
+      ],
+      "tags": [
+        "nature"
+      ],
+      "sources": [
+        {
+          "title": "Snorri Sturluson, The Younger Edda (Rasmus B. Anderson 번역, 1901)",
+          "url": "https://www.gutenberg.org/ebooks/18947",
+          "locator": "The Fooling of Gylfe, Chapter VII: On the Wonderful Things in Heaven (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "Beowulf (Francis B. Gummere 번역, 1910)",
+          "url": "https://www.gutenberg.org/ebooks/981",
+          "locator": "Fitt I (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "dvergar",
+          "kind": "관련 종족"
+        },
+        {
+          "slug": "elves",
+          "kind": "현대 판타지 계승"
+        }
+      ]
+    },
+    {
+      "slug": "dvergar",
+      "name": "드베르그",
+      "originalName": "Dvergar",
+      "summary": "이미르의 몸에서 생겨나 땅속과 바위에 사는 북유럽 신화의 장인 종족.",
+      "description": "『산문 에다』에 따르면 드베르그는 거인 이미르의 몸에서 구더기처럼 생겨났으나, 신들의 결정으로 사람의 모습과 지혜를 얻어 땅속과 바위 속에 살게 되었다. 하늘의 네 귀퉁이를 떠받치는 네 드베르그(동·서·남·북)도 있다. 「무녀의 예언」에는 드베르그들의 이름 목록이 실려 있는데, 그 가운데 간달프와 트라인 같은 이름은 톨킨이 『호빗』의 등장인물 이름으로 가져다 썼다. 신들의 보물과 펜리르를 묶은 끈 글레이프니르 같은 마법 물건을 만든 장인들로도 전한다.",
+      "materialType": "중세 문학에 기록된 북유럽 전승",
+      "culture": "norse",
+      "category": "race",
+      "aliases": [
+        "Dvergar",
+        "Dvergr",
+        "Dwarf",
+        "북유럽의 드워프",
+        "난쟁이"
+      ],
+      "tags": [
+        "creation",
+        "nature"
+      ],
+      "sources": [
+        {
+          "title": "Snorri Sturluson, The Younger Edda (Rasmus B. Anderson 번역, 1901)",
+          "url": "https://www.gutenberg.org/ebooks/18947",
+          "locator": "The Fooling of Gylfe, Chapter IV; Chapter VI; Chapter IX (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "The Poetic Edda (Henry Adams Bellows 번역, 1923)",
+          "url": "https://www.gutenberg.org/ebooks/73533",
+          "locator": "Voluspo, st. 9-16 (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "alfar",
+          "kind": "관련 종족"
+        },
+        {
+          "slug": "fenrir",
+          "kind": "결박 끈을 만듦"
+        },
+        {
+          "slug": "dwarves",
+          "kind": "현대 판타지 계승"
+        }
+      ]
+    },
+    {
+      "slug": "high-fantasy",
+      "name": "하이 판타지",
+      "originalName": "High fantasy",
+      "summary": "현실과 다른 독립된 세계를 무대로, 그 세계 전체의 운명을 다루는 판타지.",
+      "description": "하이 판타지는 우리 현실과 이어지지 않은 독자적인 세계(2차 세계)를 무대로 삼고, 그 세계의 운명이 걸린 사건을 다루는 판타지를 말한다. 톨킨의 『반지의 제왕』(1954–1955)이 대표적인 본보기가 되었고, 이후 많은 작품이 고유한 역사·지도·종족·언어를 갖춘 세계를 만들었다. 현실 세계를 배경으로 초자연적 요소가 끼어드는 \"로 판타지\"나 어반 판타지와 흔히 대비된다. 이 장르의 종족과 존재들은 북유럽·켈트 신화와 중세 문학에서 많은 재료를 가져왔지만, 그 설정은 현대 작가들이 새로 만든 것이다.",
+      "materialType": "현대 판타지 장르 관습 (20세기 이후)",
+      "culture": "fantasy",
+      "category": "concept",
+      "aliases": [
+        "High fantasy",
+        "Epic fantasy",
+        "에픽 판타지"
+      ],
+      "tags": [
+        "fate",
+        "war"
+      ],
+      "sources": [
+        {
+          "title": "The Encyclopedia of Fantasy (John Clute & John Grant 편, 1997) — High Fantasy",
+          "url": "https://sf-encyclopedia.com/fe/high_fantasy",
+          "locator": "항목 전체 요약 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "The Encyclopedia of Fantasy (John Clute & John Grant 편, 1997) — Tolkien, J R R",
+          "url": "https://sf-encyclopedia.com/fe/tolkien_j_r_r",
+          "locator": "항목 전체 요약 (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "secondary-world",
+          "kind": "무대"
+        },
+        {
+          "slug": "dark-lord",
+          "kind": "흔한 적대자"
+        },
+        {
+          "slug": "quest",
+          "kind": "흔한 서사 구조"
+        },
+        {
+          "slug": "sword-and-sorcery",
+          "kind": "대비되는 하위 장르"
+        }
+      ]
+    },
+    {
+      "slug": "secondary-world",
+      "name": "2차 세계",
+      "originalName": "Secondary world",
+      "summary": "현실과 독립되어 있으면서 스스로의 규칙으로 일관되게 움직이는 상상의 세계.",
+      "description": "\"2차 세계\"는 톨킨이 강연 「요정 이야기에 대하여」(1939년 강연, 1947년 출간)에서 쓴 말로, 작가가 만들어 낸 독립된 세계를 가리킨다. 이 세계는 현실의 상식으로는 불가능하지만, 그 안의 규칙은 일관되어 독자가 그 세계를 \"믿을\" 수 있어야 한다. 이상한 나라처럼 규칙이 제멋대로인 세계와 구별된다. 로드 던세이니의 『페가나의 신들』(1905)처럼 고유한 신화와 신들을 통째로 창조한 작품이 그 선구로 꼽힌다.",
+      "materialType": "현대 판타지 장르 관습 (20세기 이후)",
+      "culture": "fantasy",
+      "category": "concept",
+      "aliases": [
+        "Secondary world",
+        "Fantasy world",
+        "판타지 세계",
+        "세컨더리 월드"
+      ],
+      "tags": [
+        "creation"
+      ],
+      "sources": [
+        {
+          "title": "The Encyclopedia of Fantasy (John Clute & John Grant 편, 1997) — Secondary World",
+          "url": "https://sf-encyclopedia.com/fe/secondary_world",
+          "locator": "항목 전체 요약 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "Lord Dunsany, The Gods of Pegana (1905)",
+          "url": "https://www.gutenberg.org/ebooks/8395",
+          "locator": "작품 전체 (고유 신화를 창조한 초기 사례) (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "high-fantasy",
+          "kind": "대표 장르"
+        }
+      ]
+    },
+    {
+      "slug": "sword-and-sorcery",
+      "name": "소드 앤 소서리",
+      "originalName": "Sword and sorcery",
+      "summary": "근육질 영웅이 마법사와 괴물에 맞서 칼로 싸우는 모험 중심의 판타지 하위 장르.",
+      "description": "소드 앤 소서리는 초자연적인 힘을 가진 마법사·마녀·악령 등에 맞서 평범한 인간의 힘과 칼로 싸우는 영웅의 모험을 그린다. 1961년 마이클 무어콕이 팬진에서 이런 작품을 부를 이름을 청하자, 프리츠 라이버가 다른 팬진에서 막 쓰기 시작한 \"sword-and-sorcery\"라는 말이 자리 잡았다. 세계 전체의 운명보다 주인공 개인의 생존과 모험에 초점을 맞춘다는 점에서 하이 판타지와 대비된다. 1930년대 로버트 E. 하워드의 코난 이야기가 대표적인 원형으로 꼽힌다.",
+      "materialType": "현대 판타지 장르 관습 (20세기 이후)",
+      "culture": "fantasy",
+      "category": "concept",
+      "aliases": [
+        "Sword and sorcery",
+        "Sword & sorcery",
+        "검과 마법",
+        "히로익 판타지"
+      ],
+      "tags": [
+        "war",
+        "magic"
+      ],
+      "sources": [
+        {
+          "title": "The Encyclopedia of Fantasy (John Clute & John Grant 편, 1997) — Sword and Sorcery",
+          "url": "https://sf-encyclopedia.com/fe/sword_and_sorcery",
+          "locator": "항목 전체 요약 (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "high-fantasy",
+          "kind": "대비되는 장르"
+        },
+        {
+          "slug": "wizard",
+          "kind": "흔한 적대자"
+        }
+      ]
+    },
+    {
+      "slug": "magic",
+      "name": "마법",
+      "originalName": "Magic",
+      "summary": "판타지 세계에서 거의 무엇이든 할 수 있지만 나름의 규칙을 따르는 초자연적 힘.",
+      "description": "판타지 작가들 사이에는 마법이 거의 모든 일을 할 수 있지만, 그 본성에 따른 일정한 규칙을 따른다는 넓은 합의가 있다. 많은 작품은 그 규칙을 분명히 밝히지 않은 채 신비로 남겨 두지만, 어떤 작품은 마법의 원리와 대가를 체계적으로 설계하는데, 오늘날 이를 흔히 \"마법 체계\"라 부른다. 규칙이 지나치게 기계적이면 이야기가 얕아진다는 비판도 있다. 이런 마법 개념은 고대·중세의 주술 신앙, 연금술, 근대 오컬티즘 등에서 다양한 재료를 가져왔다.",
+      "materialType": "현대 판타지 장르 관습 (20세기 이후)",
+      "culture": "fantasy",
+      "category": "concept",
+      "aliases": [
+        "Magic",
+        "마법 체계",
+        "Magic system",
+        "마술"
+      ],
+      "tags": [
+        "magic"
+      ],
+      "sources": [
+        {
+          "title": "The Encyclopedia of Fantasy (John Clute & John Grant 편, 1997) — Magic",
+          "url": "https://sf-encyclopedia.com/fe/magic",
+          "locator": "항목 전체 요약 (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "mana",
+          "kind": "마법의 자원 개념"
+        },
+        {
+          "slug": "wizard",
+          "kind": "마법을 쓰는 자"
+        },
+        {
+          "slug": "thoth",
+          "kind": "신화 속 마법의 신"
+        },
+        {
+          "slug": "isis",
+          "kind": "신화 속 마법의 신"
+        }
+      ]
+    },
+    {
+      "slug": "mana",
+      "name": "마나",
+      "originalName": "Mana",
+      "summary": "멜라네시아·폴리네시아의 초자연적 힘 개념에서 나와, 판타지와 게임의 마법 에너지가 된 말.",
+      "description": "\"마나\"는 원래 멜라네시아와 폴리네시아 사회에서 사람·영혼·물건에 깃들어 일을 이루게 하는 초자연적인 힘이나 효험을 가리키는 말이다. 영국 선교사 코드링턴의 『멜라네시아인』(1891)이 이 개념을 서구 학계에 자세히 소개했고, 이후 인류학자들이 종교와 주술을 설명하는 일반 개념으로 넓혀 썼다. 20세기 후반 판타지 소설과 게임은 이를 마법을 쓰는 데 소모되는 에너지로 바꾸어, 오늘날 \"마나(MP)\"라는 게임 용어로 굳어졌다. 원래의 종교적 의미와 게임 속 의미는 크게 다르다.",
+      "materialType": "현대 판타지 장르 관습 (20세기 이후)",
+      "culture": "fantasy",
+      "category": "concept",
+      "aliases": [
+        "Mana",
+        "MP",
+        "마력"
+      ],
+      "tags": [
+        "magic"
+      ],
+      "sources": [
+        {
+          "title": "R. H. Codrington, The Melanesians (1891)",
+          "url": "https://archive.org/details/melanesians01unkngoog",
+          "locator": "Chapter VII: Religion; Chapter XII: Magic (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "magic",
+          "kind": "관련 개념"
+        }
+      ]
+    },
+    {
+      "slug": "wizard",
+      "name": "마법사",
+      "originalName": "Wizard",
+      "summary": "지식과 수련으로 마법을 다루는 판타지의 대표 인물 유형.",
+      "description": "판타지에서 마법사는 흔히 오랜 공부로 마법을 익힌 인물로 그려지며, 메이지·소서러·인챈터·네크로맨서 등 여러 이름과 위계가 있다. 지혜로운 노인 안내자형 마법사는 아서왕 전설의 멀린 같은 인물에서 이어져, 톨킨의 간달프를 거쳐 장르의 전형이 되었다. 간달프라는 이름 자체는 「무녀의 예언」의 드베르그 이름 목록에서 왔다. 반대로 권력을 탐하는 사악한 마법사는 주인공의 적으로 자주 등장한다.",
+      "materialType": "현대 판타지 장르 관습 (20세기 이후)",
+      "culture": "fantasy",
+      "category": "concept",
+      "aliases": [
+        "Wizard",
+        "Mage",
+        "Sorcerer",
+        "메이지",
+        "소서러",
+        "위저드"
+      ],
+      "tags": [
+        "magic",
+        "wisdom"
+      ],
+      "sources": [
+        {
+          "title": "The Encyclopedia of Fantasy (John Clute & John Grant 편, 1997) — Wizards",
+          "url": "https://sf-encyclopedia.com/fe/wizards",
+          "locator": "항목 전체 요약 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "The Poetic Edda (Henry Adams Bellows 번역, 1923)",
+          "url": "https://www.gutenberg.org/ebooks/73533",
+          "locator": "Voluspo, st. 12 (간달프라는 이름의 출처) (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "magic",
+          "kind": "다루는 힘"
+        },
+        {
+          "slug": "dvergar",
+          "kind": "이름의 출처"
+        }
+      ]
+    },
+    {
+      "slug": "dark-lord",
+      "name": "다크 로드",
+      "originalName": "Dark Lord",
+      "summary": "세상을 지배하려는, 하이 판타지의 전형적인 최종 적대자.",
+      "description": "톨킨식 판타지에서 주된 적대자는 흔히 \"다크 로드\", 곧 이 세상의 군주가 되려는 어둠의 지배자다. 그는 신들을 흉내 낸 악의적인 모조품처럼 그려지며, 악마나 적그리스도와 직접 동일시되지 않더라도 그 이미지를 강하게 띤다. 바그너의 「니벨룽의 반지」에서 반지를 만든 알베리히가 중요한 원형으로 꼽히며, 톨킨의 사우론이 장르의 본보기가 되었다. 동아시아 게임·웹소설의 \"마왕\"도 비슷한 역할을 한다.",
+      "materialType": "현대 판타지 장르 관습 (20세기 이후)",
+      "culture": "fantasy",
+      "category": "concept",
+      "aliases": [
+        "Dark Lord",
+        "마왕",
+        "암흑군주"
+      ],
+      "tags": [
+        "war",
+        "chaos"
+      ],
+      "sources": [
+        {
+          "title": "The Encyclopedia of Fantasy (John Clute & John Grant 편, 1997) — Dark Lord",
+          "url": "https://sf-encyclopedia.com/fe/dark_lord",
+          "locator": "항목 전체 요약 (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "high-fantasy",
+          "kind": "등장 장르"
+        }
+      ]
+    },
+    {
+      "slug": "quest",
+      "name": "퀘스트",
+      "originalName": "Quest",
+      "summary": "중요한 무언가를 찾아 미지의 땅으로 떠났다 돌아오는 판타지의 기본 서사 구조.",
+      "description": "퀘스트는 주인공이 자신이나 나라의 존속에 꼭 필요한 대상을 찾아, 익숙한 땅 너머로 떠나 시험을 거친 뒤 목표를 이루고 돌아오는 이야기 구조다. 이렇게 바깥 세계를 향한 탐색 외에, 자기 자신을 찾아가는 내면의 퀘스트도 있다. 『판타지 백과사전』은 서양 문학에서 가장 이른 바깥 퀘스트 이야기로 호메로스의 『오디세이아』를 꼽으며, 중세의 성배 탐색 이야기를 거쳐 현대 판타지의 기본 줄거리가 되었다. 게임에서는 플레이어에게 주어지는 임무를 가리키는 말로도 쓰인다.",
+      "materialType": "현대 판타지 장르 관습 (20세기 이후)",
+      "culture": "fantasy",
+      "category": "concept",
+      "aliases": [
+        "Quest",
+        "탐색 서사",
+        "모험 여정"
+      ],
+      "tags": [
+        "fate"
+      ],
+      "sources": [
+        {
+          "title": "The Encyclopedia of Fantasy (John Clute & John Grant 편, 1997) — Quests",
+          "url": "https://sf-encyclopedia.com/fe/quests",
+          "locator": "항목 전체 요약 (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "high-fantasy",
+          "kind": "흔히 쓰는 장르"
+        },
+        {
+          "slug": "dungeon",
+          "kind": "흔한 시험의 장소"
+        }
+      ]
+    },
+    {
+      "slug": "elves",
+      "name": "엘프",
+      "originalName": "Elf",
+      "summary": "오래 살고 아름다우며 자연·마법과 가까운, 판타지의 대표 종족.",
+      "description": "\"엘프\"라는 말은 고대 영어 ælf에서 왔고, 북유럽 신화의 알파르와 뿌리가 같다. 민담 속 요정은 작고 장난스럽거나 위험한 존재로도 그려졌지만, 톨킨은 키가 크고 지혜로우며 죽지 않는 고귀한 종족으로 엘프를 다시 만들었다. 이후 판타지와 게임에서 엘프는 숲에 살고, 오래 살며, 활과 마법에 능한 종족이라는 이미지로 굳어졌다. 켈트 전승의 요정 나라(페어리) 이미지도 함께 섞여 있다.",
+      "materialType": "현대 판타지 장르 관습 (20세기 이후)",
+      "culture": "fantasy",
+      "category": "race",
+      "aliases": [
+        "Elf",
+        "Elves",
+        "요정",
+        "하이 엘프",
+        "우드 엘프"
+      ],
+      "tags": [
+        "nature",
+        "magic"
+      ],
+      "sources": [
+        {
+          "title": "The Encyclopedia of Fantasy (John Clute & John Grant 편, 1997) — Elves",
+          "url": "https://sf-encyclopedia.com/fe/elves",
+          "locator": "항목 전체 요약 (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "alfar",
+          "kind": "신화 원형"
+        },
+        {
+          "slug": "dwarves",
+          "kind": "흔히 짝을 이루는 종족"
+        }
+      ]
+    },
+    {
+      "slug": "dwarves",
+      "name": "드워프",
+      "originalName": "Dwarf",
+      "summary": "산과 광산에 살며 대장장이 솜씨가 뛰어난, 수염 난 판타지 종족.",
+      "description": "판타지의 드워프는 작지만 단단하고 힘이 세며, 거의 언제나 수염을 기르고 도끼를 든 장인 종족으로 그려진다. 광산과 지하 도시에 살고, 황금과 보물에 집착하는 모습도 자주 나타난다. 이런 이미지는 북유럽 신화의 드베르그가 땅속에 살며 신들의 보물을 만드는 장인이라는 전승에서 왔고, 톨킨은 드워프들의 이름을 「무녀의 예언」의 드베르그 목록에서 가져왔다. 엘프와는 사이가 나쁜 이웃으로 그려지는 경우가 많다.",
+      "materialType": "현대 판타지 장르 관습 (20세기 이후)",
+      "culture": "fantasy",
+      "category": "race",
+      "aliases": [
+        "Dwarf",
+        "Dwarves",
+        "Dwarfs",
+        "난쟁이"
+      ],
+      "tags": [
+        "nature"
+      ],
+      "sources": [
+        {
+          "title": "The Encyclopedia of Fantasy (John Clute & John Grant 편, 1997) — Dwarfs",
+          "url": "https://sf-encyclopedia.com/fe/dwarfs",
+          "locator": "항목 전체 요약 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "The Poetic Edda (Henry Adams Bellows 번역, 1923)",
+          "url": "https://www.gutenberg.org/ebooks/73533",
+          "locator": "Voluspo, st. 9-16 (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "dvergar",
+          "kind": "신화 원형"
+        },
+        {
+          "slug": "elves",
+          "kind": "흔히 짝을 이루는 종족"
+        }
+      ]
+    },
+    {
+      "slug": "orcs",
+      "name": "오크",
+      "originalName": "Orc",
+      "summary": "톨킨이 대중화한, 사납고 호전적인 판타지의 적대 종족.",
+      "description": "오크는 톨킨의 『반지의 제왕』을 통해 판타지의 대표적인 적대 종족이 되었다. 단어 자체는 더 오래되어, 고대 영어 서사시 『베오울프』는 카인의 후손인 사악한 무리를 \"거인과 요정과 orcnēas\"로 나열한다(Gummere의 번역은 이를 \"악령\"으로 옮겼다). 이후 게임에서는 녹색 피부에 힘이 세고 부족 단위로 사는 종족으로 그려졌고, 최근에는 고유한 문화와 명예를 지닌 종족으로 다시 그리는 작품도 많다.",
+      "materialType": "현대 판타지 장르 관습 (20세기 이후)",
+      "culture": "fantasy",
+      "category": "race",
+      "aliases": [
+        "Orc",
+        "Orcs",
+        "Ork"
+      ],
+      "tags": [
+        "war"
+      ],
+      "sources": [
+        {
+          "title": "Beowulf (Francis B. Gummere 번역, 1910)",
+          "url": "https://www.gutenberg.org/ebooks/981",
+          "locator": "Fitt I (orcnēas가 나오는 대목) (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "The Encyclopedia of Fantasy (John Clute & John Grant 편, 1997) — Tolkien, J R R",
+          "url": "https://sf-encyclopedia.com/fe/tolkien_j_r_r",
+          "locator": "항목 전체 요약 (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "beowulf-epic",
+          "kind": "어원이 나오는 작품"
+        },
+        {
+          "slug": "goblins",
+          "kind": "혼용되는 종족"
+        },
+        {
+          "slug": "dark-lord",
+          "kind": "흔히 섬기는 지배자"
+        }
+      ]
+    },
+    {
+      "slug": "goblins",
+      "name": "고블린",
+      "originalName": "Goblin",
+      "summary": "민담의 장난스럽거나 사악한 정령에서 나와, 판타지의 작고 교활한 종족이 된 존재.",
+      "description": "고블린은 원래 장난을 치거나 해를 끼치는 정령을 두루 가리키는 말로, 14세기 무렵부터 민간 전승에 쓰였다. 그리스어 kobalos에서 온 것으로 보이며, 독일의 코볼트도 같은 뿌리다. 초기 민담에서 고블린은 주로 아이들을 괴롭히는 존재였고, 19세기 문학에서는 땅속에 사는 무리로 그려지기도 했다. 현대 판타지와 게임에서는 작고 교활하며 무리 지어 다니는 종족으로 굳어졌고, 톨킨의 작품에서는 오크와 거의 같은 뜻으로 쓰였다.",
+      "materialType": "현대 판타지 장르 관습 (20세기 이후)",
+      "culture": "fantasy",
+      "category": "race",
+      "aliases": [
+        "Goblin",
+        "Goblins",
+        "Kobold",
+        "코볼트",
+        "도깨비"
+      ],
+      "tags": [
+        "trickery"
+      ],
+      "sources": [
+        {
+          "title": "The Encyclopedia of Fantasy (John Clute & John Grant 편, 1997) — Goblin",
+          "url": "https://sf-encyclopedia.com/fe/goblin",
+          "locator": "항목 전체 요약 (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "orcs",
+          "kind": "혼용되는 종족"
+        }
+      ]
+    },
+    {
+      "slug": "halflings",
+      "name": "하플링",
+      "originalName": "Halfling",
+      "summary": "사람의 절반쯤 되는 키로 평화롭게 사는, 판타지의 작은 종족.",
+      "description": "\"하플링\"은 원래 반은 사람이고 반은 다른 존재인 혼혈을 가리키는 말이었다. 톨킨은 이 말을 혼혈이 아닌 자신의 호빗을 가리키는 데도 썼다. 이후 테이블 롤플레잉 게임과 판타지 작품에서는 작은 키에 소박하고 평화로운 삶을 즐기며, 뜻밖의 용기와 재주를 보이는 종족을 부르는 일반 명칭으로 널리 쓰이게 되었다.",
+      "materialType": "현대 판타지 장르 관습 (20세기 이후)",
+      "culture": "fantasy",
+      "category": "race",
+      "aliases": [
+        "Halfling",
+        "Halflings",
+        "소인족"
+      ],
+      "tags": [
+        "nature"
+      ],
+      "sources": [
+        {
+          "title": "The Encyclopedia of Fantasy (John Clute & John Grant 편, 1997) — Halflings",
+          "url": "https://sf-encyclopedia.com/fe/halflings",
+          "locator": "항목 전체 요약 (공개 전 편집 검수 필요)"
+        },
+        {
+          "title": "The Encyclopedia of Fantasy (John Clute & John Grant 편, 1997) — Tolkien, J R R",
+          "url": "https://sf-encyclopedia.com/fe/tolkien_j_r_r",
+          "locator": "항목 전체 요약 (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": []
+    },
+    {
+      "slug": "trolls",
+      "name": "트롤",
+      "originalName": "Troll",
+      "summary": "산과 추위에 사는, 햇빛을 받으면 돌이 된다는 거대하고 흉포한 존재.",
+      "description": "트롤은 스칸디나비아 민간 전승의 괴물로, 거인처럼 크고 사나우며 사람을 잡아먹는다고 전한다. 산과 추위에 연결되며, 햇빛을 받으면 돌로 변한다는 이야기가 유명하고 톨킨의 『호빗』에도 그대로 쓰였다. 게임 속 트롤은 폴 앤더슨의 『세 개의 심장과 세 마리의 사자』(1961)에 나오는, 베어도 다시 붙어 살아나 불로 태워야 하는 트롤을 본보기로 삼는 경우가 많다.",
+      "materialType": "현대 판타지 장르 관습 (20세기 이후)",
+      "culture": "fantasy",
+      "category": "race",
+      "aliases": [
+        "Troll",
+        "Trolls",
+        "Trow"
+      ],
+      "tags": [
+        "nature",
+        "death"
+      ],
+      "sources": [
+        {
+          "title": "The Encyclopedia of Fantasy (John Clute & John Grant 편, 1997) — Trolls",
+          "url": "https://sf-encyclopedia.com/fe/trolls",
+          "locator": "항목 전체 요약 (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "jotnar",
+          "kind": "신화 원형"
+        }
+      ]
+    },
+    {
+      "slug": "dragon",
+      "name": "드래곤",
+      "originalName": "Dragon",
+      "summary": "보물을 지키고 불을 뿜는 거대한 날개 달린 파충류, 판타지의 대표 괴물.",
+      "description": "유럽 신화와 전설에서 용은 거대한 뱀의 일종으로 악과 연결되었고, 영웅이 생애 마지막에 맞서는 최종 적대자였다. 『베오울프』의 늙은 영웅이 보물을 지키는 용과 싸우다 죽는 장면과 북유럽의 파프니르 이야기는 \"보물을 지키는 용\"이라는 판타지의 전형을 남겼다. 반면 중국 신화의 용은 대체로 상서로운 존재여서, 이를 바탕으로 선한 용을 그리는 현대 판타지도 많다. 현대 작품의 용은 말을 하고 지혜로운 고대 존재로 그려지는 경우가 흔하다.",
+      "materialType": "현대 판타지 장르 관습 (20세기 이후)",
+      "culture": "fantasy",
+      "category": "monster",
+      "aliases": [
+        "Dragon",
+        "Dragons",
+        "용",
+        "Wyrm",
+        "웜"
+      ],
+      "tags": [
+        "chaos",
+        "fate"
+      ],
+      "sources": [
+        {
+          "title": "The Encyclopedia of Fantasy (John Clute & John Grant 편, 1997) — Dragons",
+          "url": "https://sf-encyclopedia.com/fe/dragons",
+          "locator": "항목 전체 요약 (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "fafnir",
+          "kind": "신화 원형"
+        },
+        {
+          "slug": "beowulf-dragon",
+          "kind": "신화 원형"
+        },
+        {
+          "slug": "apep",
+          "kind": "비교되는 신화 속 뱀"
+        }
+      ]
+    },
+    {
+      "slug": "dungeon",
+      "name": "던전",
+      "originalName": "Dungeon",
+      "summary": "괴물과 보물이 가득한 지하 미궁으로, 판타지 모험의 대표적인 무대.",
+      "description": "\"던전\"은 원래 성의 중심 탑(donjon)이나 그 아래 감옥을 뜻하는 말이었다. 판타지에서 땅속 공간은 지상 세계를 거울처럼 비추는 시험의 장소로 자주 쓰이며, 주인공은 그곳에 내려가 위험을 넘고 보물이나 지식을 얻어 돌아온다. 1970년대 테이블 롤플레잉 게임이 괴물과 함정, 보물이 가득한 지하 미궁 탐험을 놀이의 중심에 두면서, \"던전\"은 판타지 게임과 웹소설의 기본 무대를 가리키는 말이 되었다.",
+      "materialType": "현대 판타지 장르 관습 (20세기 이후)",
+      "culture": "fantasy",
+      "category": "place",
+      "aliases": [
+        "Dungeon",
+        "Dungeons",
+        "지하 미궁",
+        "미궁"
+      ],
+      "tags": [
+        "death",
+        "fate"
+      ],
+      "sources": [
+        {
+          "title": "The Encyclopedia of Fantasy (John Clute & John Grant 편, 1997) — Underground",
+          "url": "https://sf-encyclopedia.com/fe/underground",
+          "locator": "항목 전체 요약 (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "quest",
+          "kind": "관련 서사"
+        },
+        {
+          "slug": "dragon",
+          "kind": "흔히 기다리는 괴물"
         }
       ]
     }
