@@ -1,8 +1,13 @@
 {
   "cultures": [
     {
+      "id": "germanic",
+      "name": "게르만"
+    },
+    {
       "id": "norse",
-      "name": "북유럽"
+      "name": "북유럽",
+      "parent": "germanic"
     },
     {
       "id": "greek",
@@ -45,6 +50,10 @@
     {
       "id": "concept",
       "name": "개념"
+    },
+    {
+      "id": "work",
+      "name": "작품"
     }
   ],
   "tags": [
@@ -2405,6 +2414,784 @@
         {
           "slug": "marduk",
           "kind": "대응하는 신"
+        }
+      ]
+    },
+    {
+      "slug": "iliad",
+      "name": "일리아스",
+      "originalName": "Ἰλιάς",
+      "summary": "트로이아 전쟁 마지막 해, 아킬레우스의 분노를 노래한 호메로스의 서사시.",
+      "description": "『일리아스』는 트로이아 전쟁 10년째의 몇십 일을 다룬 24권의 서사시다. 아가멤논에게 전리품을 빼앗긴 아킬레우스가 싸움에서 물러나면서 그리스군이 위기에 빠지고, 친구 파트로클로스가 헥토르에게 죽자 아킬레우스가 다시 나서 헥토르를 죽인다. 서사시는 트로이아 왕 프리아모스가 아들의 시신을 되찾아 장례를 치르는 장면으로 끝난다. 목마와 트로이아 함락은 이 작품이 아니라 후대 서사시와 『오디세이아』, 베르길리우스 등에서 전한다.",
+      "materialType": "고대 그리스 서사시 (호메로스)",
+      "culture": "greek",
+      "category": "work",
+      "aliases": [
+        "Iliad",
+        "Ilias",
+        "일리아드"
+      ],
+      "tags": [
+        "war",
+        "fate"
+      ],
+      "sources": [
+        {
+          "title": "Homer, The Iliad (Samuel Butler 번역, 1898)",
+          "url": "https://www.gutenberg.org/ebooks/2199",
+          "locator": "Books I, XVI, XXII, XXIV (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "achilles",
+          "kind": "주인공"
+        },
+        {
+          "slug": "hector",
+          "kind": "등장 인물"
+        },
+        {
+          "slug": "agamemnon",
+          "kind": "등장 인물"
+        },
+        {
+          "slug": "helen",
+          "kind": "등장 인물"
+        },
+        {
+          "slug": "paris",
+          "kind": "등장 인물"
+        },
+        {
+          "slug": "troy",
+          "kind": "배경"
+        }
+      ]
+    },
+    {
+      "slug": "achilles",
+      "name": "아킬레우스",
+      "originalName": "Ἀχιλλεύς",
+      "summary": "『일리아스』의 주인공으로, 분노와 슬픔 끝에 헥토르를 쓰러뜨린 그리스 최고의 전사.",
+      "description": "아킬레우스는 바다 여신 테티스와 펠레우스의 아들로, 그리스군에서 가장 뛰어난 전사다. 『일리아스』 첫 권에서 그는 아가멤논에게 모욕을 당하자 칼을 뽑으려 하지만 아테나가 말리고, 결국 싸움에서 물러난다. 친구 파트로클로스가 죽은 뒤 다시 싸움터에 나가 헥토르를 죽이고 시신을 욕보이지만, 마지막에는 프리아모스의 간청을 받아들여 시신을 돌려준다. 발뒤꿈치가 약점이었다는 이야기는 『일리아스』에 없고 후대 전승에서 나온다.",
+      "materialType": "고대 그리스 서사시 (호메로스)",
+      "culture": "greek",
+      "category": "hero",
+      "aliases": [
+        "Achilles",
+        "Achilleus",
+        "아킬레스"
+      ],
+      "tags": [
+        "war",
+        "fate"
+      ],
+      "sources": [
+        {
+          "title": "Homer, The Iliad (Samuel Butler 번역, 1898)",
+          "url": "https://www.gutenberg.org/ebooks/2199",
+          "locator": "Book I; Book XVI; Book XXII; Book XXIV (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "iliad",
+          "kind": "등장 작품"
+        },
+        {
+          "slug": "agamemnon",
+          "kind": "갈등"
+        },
+        {
+          "slug": "hector",
+          "kind": "처치함"
+        },
+        {
+          "slug": "athena",
+          "kind": "조력받음"
+        }
+      ]
+    },
+    {
+      "slug": "hector",
+      "name": "헥토르",
+      "originalName": "Ἕκτωρ",
+      "summary": "트로이아를 지키다 아킬레우스에게 쓰러진 프리아모스의 맏아들.",
+      "description": "헥토르는 트로이아 왕 프리아모스의 맏아들이자 트로이아군의 대장이다. 『일리아스』 6권에서 그는 아내 안드로마케와 어린 아들에게 작별하고 싸움터로 돌아가는데, 이 장면은 서사시에서 가장 유명한 대목 중 하나다. 아폴론의 도움을 받아 파트로클로스를 쓰러뜨리지만, 22권에서 아킬레우스에게 죽는다.",
+      "materialType": "고대 그리스 서사시 (호메로스)",
+      "culture": "greek",
+      "category": "hero",
+      "aliases": [
+        "Hector",
+        "Hektor",
+        "헥터"
+      ],
+      "tags": [
+        "war",
+        "death"
+      ],
+      "sources": [
+        {
+          "title": "Homer, The Iliad (Samuel Butler 번역, 1898)",
+          "url": "https://www.gutenberg.org/ebooks/2199",
+          "locator": "Book VI; Book XVI; Book XXII; Book XXIV (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "iliad",
+          "kind": "등장 작품"
+        },
+        {
+          "slug": "achilles",
+          "kind": "대적"
+        },
+        {
+          "slug": "troy",
+          "kind": "지킨 도시"
+        },
+        {
+          "slug": "apollo",
+          "kind": "조력받음"
+        },
+        {
+          "slug": "paris",
+          "kind": "형제자매"
+        }
+      ]
+    },
+    {
+      "slug": "agamemnon",
+      "name": "아가멤논",
+      "originalName": "Ἀγαμέμνων",
+      "summary": "트로이아 원정 그리스 연합군의 총사령관이자 미케네의 왕.",
+      "description": "아가멤논은 미케네의 왕으로, 동생 메넬라오스의 아내 헬레네를 되찾기 위한 원정에서 그리스군 전체를 이끈다. 『일리아스』는 그가 자신의 전리품을 내주게 되자 아킬레우스의 전리품인 브리세이스를 빼앗으면서 시작된다. 귀향 뒤 아내 클리타임네스트라에게 살해된다는 이야기는 『오디세이아』와 아이스킬로스의 비극 등에서 전한다.",
+      "materialType": "고대 그리스 서사시 (호메로스)",
+      "culture": "greek",
+      "category": "hero",
+      "aliases": [
+        "Agamemnon"
+      ],
+      "tags": [
+        "war"
+      ],
+      "sources": [
+        {
+          "title": "Homer, The Iliad (Samuel Butler 번역, 1898)",
+          "url": "https://www.gutenberg.org/ebooks/2199",
+          "locator": "Book I; Book II (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "iliad",
+          "kind": "등장 작품"
+        },
+        {
+          "slug": "achilles",
+          "kind": "갈등"
+        }
+      ]
+    },
+    {
+      "slug": "helen",
+      "name": "헬레네",
+      "originalName": "Ἑλένη",
+      "summary": "파리스와 함께 트로이아로 떠나 전쟁의 원인이 된 제우스의 딸.",
+      "description": "헬레네는 제우스의 딸로, 스파르타 왕 메넬라오스의 아내였으나 트로이아 왕자 파리스와 함께 떠나며 전쟁의 원인이 된다. 『일리아스』 3권에서 그녀는 트로이아 성벽 위에서 프리아모스에게 그리스 장수들의 이름을 알려 주며, 자신이 불러온 전쟁을 후회하는 모습을 보인다. 파리스의 심판과 납치 이야기는 『일리아스』보다 후대 서사시와 문헌에서 자세히 전한다.",
+      "materialType": "고대 그리스 서사시 (호메로스)",
+      "culture": "greek",
+      "category": "hero",
+      "aliases": [
+        "Helen",
+        "Helene",
+        "Helen of Troy",
+        "트로이의 헬렌"
+      ],
+      "tags": [
+        "love",
+        "war"
+      ],
+      "sources": [
+        {
+          "title": "Homer, The Iliad (Samuel Butler 번역, 1898)",
+          "url": "https://www.gutenberg.org/ebooks/2199",
+          "locator": "Book III; Book VI; Book XXIV (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "iliad",
+          "kind": "등장 작품"
+        },
+        {
+          "slug": "paris",
+          "kind": "배우자"
+        },
+        {
+          "slug": "zeus",
+          "kind": "부모"
+        },
+        {
+          "slug": "troy",
+          "kind": "머문 도시"
+        }
+      ]
+    },
+    {
+      "slug": "paris",
+      "name": "파리스",
+      "originalName": "Πάρις",
+      "summary": "헬레네를 데려와 트로이아 전쟁을 일으킨 트로이아의 왕자.",
+      "description": "파리스(알렉산드로스)는 프리아모스의 아들로, 헬레네를 트로이아로 데려와 전쟁을 불러온다. 『일리아스』 3권에서 그는 메넬라오스와 일대일로 싸우다 질 위기에 처하자 아프로디테가 그를 안개로 감싸 구해 낸다. 형 헥토르는 그가 싸움을 피한다고 자주 꾸짖는다. 그가 아킬레우스를 화살로 쓰러뜨린다는 이야기는 『일리아스』 밖의 후대 전승이다.",
+      "materialType": "고대 그리스 서사시 (호메로스)",
+      "culture": "greek",
+      "category": "hero",
+      "aliases": [
+        "Paris",
+        "Alexandros",
+        "알렉산드로스"
+      ],
+      "tags": [
+        "love",
+        "war"
+      ],
+      "sources": [
+        {
+          "title": "Homer, The Iliad (Samuel Butler 번역, 1898)",
+          "url": "https://www.gutenberg.org/ebooks/2199",
+          "locator": "Book III; Book VI (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "iliad",
+          "kind": "등장 작품"
+        },
+        {
+          "slug": "helen",
+          "kind": "배우자"
+        },
+        {
+          "slug": "aphrodite",
+          "kind": "조력받음"
+        },
+        {
+          "slug": "hector",
+          "kind": "형제자매"
+        }
+      ]
+    },
+    {
+      "slug": "troy",
+      "name": "트로이아",
+      "originalName": "Τροία",
+      "summary": "프리아모스가 다스리던, 트로이아 전쟁의 무대가 된 성벽 도시.",
+      "description": "트로이아(일리온)는 소아시아 북서쪽의 성벽 도시로, 『일리아스』의 제목도 그 다른 이름 일리온에서 나왔다. 서사시 속에서 그리스군은 도시 앞 평야와 해안 진영에서 싸우고, 트로이아 사람들은 성벽 위에서 싸움을 지켜본다. 오늘날 튀르키예의 히사를리크 유적이 그 자리로 여겨지지만, 서사시와 실제 역사의 관계는 아직 논쟁 중이다.",
+      "materialType": "고대 그리스 서사시 (호메로스)",
+      "culture": "greek",
+      "category": "place",
+      "aliases": [
+        "Troy",
+        "Troia",
+        "Ilion",
+        "일리온",
+        "트로이"
+      ],
+      "tags": [
+        "war"
+      ],
+      "sources": [
+        {
+          "title": "Homer, The Iliad (Samuel Butler 번역, 1898)",
+          "url": "https://www.gutenberg.org/ebooks/2199",
+          "locator": "Book III; Book XXII (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "iliad",
+          "kind": "배경 작품"
+        },
+        {
+          "slug": "hector",
+          "kind": "지킨 영웅"
+        }
+      ]
+    },
+    {
+      "slug": "beowulf-epic",
+      "name": "베오울프 서사시",
+      "originalName": "Bēowulf",
+      "summary": "괴물 그렌델과 그 어머니, 그리고 용과 싸운 영웅의 일생을 그린 고대 영어 서사시.",
+      "description": "『베오울프』는 약 3,000행으로 이루어진 고대 영어 서사시로, 앵글로색슨 시대 잉글랜드에서 쓰였지만 무대는 6세기 무렵의 덴마크와 스웨덴 남부다. 젊은 베오울프는 덴마크 왕 흐로트가르의 궁전 헤오로트를 습격하는 그렌델과 그 어머니를 물리치고, 수십 년 뒤 자기 나라의 왕이 되어 보물을 지키는 용과 싸우다 목숨을 잃는다. 기독교적 관점의 서술과 이교 시대 영웅 전통이 함께 나타나는 작품이다.",
+      "materialType": "고대 영어 서사시 (앵글로색슨)",
+      "culture": "germanic",
+      "category": "work",
+      "aliases": [
+        "Beowulf",
+        "Beowulf epic"
+      ],
+      "tags": [
+        "war",
+        "death"
+      ],
+      "sources": [
+        {
+          "title": "Beowulf (Francis B. Gummere 번역, 1910)",
+          "url": "https://www.gutenberg.org/ebooks/981",
+          "locator": "Prelude; Fitts I–XLIII (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "beowulf",
+          "kind": "주인공"
+        },
+        {
+          "slug": "grendel",
+          "kind": "등장 존재"
+        },
+        {
+          "slug": "grendels-mother",
+          "kind": "등장 존재"
+        },
+        {
+          "slug": "beowulf-dragon",
+          "kind": "등장 존재"
+        },
+        {
+          "slug": "heorot",
+          "kind": "배경"
+        }
+      ]
+    },
+    {
+      "slug": "beowulf",
+      "name": "베오울프",
+      "originalName": "Bēowulf",
+      "summary": "그렌델과 그 어머니, 그리고 용을 물리친 기아트족의 영웅이자 왕.",
+      "description": "베오울프는 기아트족(예아타스) 왕 휘엘라크의 조카로, 맨손으로 그렌델과 싸워 그의 팔을 뜯어낸다. 이어 늪 아래 동굴로 내려가 그렌델의 어머니를 거인의 칼로 쓰러뜨린다. 훗날 오십 년 동안 기아트족을 다스린 왕이 되었을 때, 보물을 빼앗긴 용이 나라를 불태우자 늙은 몸으로 맞서 용을 죽이지만 그 자신도 치명상을 입고 죽는다.",
+      "materialType": "고대 영어 서사시 (앵글로색슨)",
+      "culture": "germanic",
+      "category": "hero",
+      "aliases": [
+        "Beowulf",
+        "Biowulf"
+      ],
+      "tags": [
+        "war",
+        "death"
+      ],
+      "sources": [
+        {
+          "title": "Beowulf (Francis B. Gummere 번역, 1910)",
+          "url": "https://www.gutenberg.org/ebooks/981",
+          "locator": "Fitts XI–XII; Fitts XXII–XXIII; Fitts XXXII–XLIII (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "beowulf-epic",
+          "kind": "등장 작품"
+        },
+        {
+          "slug": "grendel",
+          "kind": "처치함"
+        },
+        {
+          "slug": "grendels-mother",
+          "kind": "처치함"
+        },
+        {
+          "slug": "beowulf-dragon",
+          "kind": "처치함·죽음"
+        },
+        {
+          "slug": "heorot",
+          "kind": "지킨 궁전"
+        }
+      ]
+    },
+    {
+      "slug": "grendel",
+      "name": "그렌델",
+      "originalName": "Grendel",
+      "summary": "밤마다 헤오로트를 습격해 사람들을 잡아먹은 늪지의 괴물.",
+      "description": "그렌델은 늪지에 사는 괴물로, 서사시는 그를 성경 속 카인의 후손이라고 설명한다. 헤오로트에서 들려오는 잔치의 노래를 견디지 못해 열두 해 동안 밤마다 궁전을 습격해 전사들을 잡아먹는다. 베오울프와의 맨손 싸움에서 팔이 뜯겨 늪으로 달아난 뒤 죽는다.",
+      "materialType": "고대 영어 서사시 (앵글로색슨)",
+      "culture": "germanic",
+      "category": "monster",
+      "aliases": [
+        "Grendel"
+      ],
+      "tags": [
+        "death"
+      ],
+      "sources": [
+        {
+          "title": "Beowulf (Francis B. Gummere 번역, 1910)",
+          "url": "https://www.gutenberg.org/ebooks/981",
+          "locator": "Fitts I–II; Fitts XI–XII (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "beowulf-epic",
+          "kind": "등장 작품"
+        },
+        {
+          "slug": "beowulf",
+          "kind": "처치한 영웅"
+        },
+        {
+          "slug": "grendels-mother",
+          "kind": "부모"
+        },
+        {
+          "slug": "heorot",
+          "kind": "습격한 곳"
+        }
+      ]
+    },
+    {
+      "slug": "grendels-mother",
+      "name": "그렌델의 어머니",
+      "originalName": "Grendles mōdor",
+      "summary": "아들의 죽음에 복수하려 헤오로트를 습격한 늪 아래의 존재.",
+      "description": "그렌델의 어머니는 이름이 전해지지 않으며, 깊은 늪 아래 동굴에 산다. 아들이 죽자 복수를 위해 헤오로트를 습격해 흐로트가르의 신하를 데려간다. 베오울프는 늪 속으로 내려가 그녀와 싸우는데, 자신의 칼이 통하지 않자 동굴에 있던 거인의 칼로 그녀를 쓰러뜨린다. 그녀를 묘사하는 고대 영어 낱말의 뜻을 두고 \"괴물\"인지 \"여전사\"인지 해석이 엇갈린다.",
+      "materialType": "고대 영어 서사시 (앵글로색슨)",
+      "culture": "germanic",
+      "category": "monster",
+      "aliases": [
+        "Grendel's mother",
+        "그렌델 어미"
+      ],
+      "tags": [
+        "death",
+        "sea"
+      ],
+      "sources": [
+        {
+          "title": "Beowulf (Francis B. Gummere 번역, 1910)",
+          "url": "https://www.gutenberg.org/ebooks/981",
+          "locator": "Fitts XIX–XXIII (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "beowulf-epic",
+          "kind": "등장 작품"
+        },
+        {
+          "slug": "grendel",
+          "kind": "자녀"
+        },
+        {
+          "slug": "beowulf",
+          "kind": "처치한 영웅"
+        }
+      ]
+    },
+    {
+      "slug": "beowulf-dragon",
+      "name": "베오울프의 용",
+      "originalName": "draca",
+      "summary": "보물 무덤을 지키다 잔 하나를 도둑맞고 기아트족의 나라를 불태운 용.",
+      "description": "이 용은 옛 사람들이 묻어 둔 보물 무덤을 삼백 년 동안 지켜 왔다. 한 도망자가 그 보물 가운데 잔 하나를 훔쳐 가자, 용은 밤마다 불을 뿜으며 기아트족의 마을과 베오울프의 궁전까지 태운다. 늙은 왕 베오울프는 젊은 전사 위글라프의 도움으로 용을 죽이지만, 용에게 물린 상처로 죽는다. 보물을 지키는 용이라는 모티프는 북유럽의 파프니르 이야기와도 비교된다.",
+      "materialType": "고대 영어 서사시 (앵글로색슨)",
+      "culture": "germanic",
+      "category": "monster",
+      "aliases": [
+        "Beowulf dragon",
+        "The dragon",
+        "용"
+      ],
+      "tags": [
+        "death",
+        "fate"
+      ],
+      "sources": [
+        {
+          "title": "Beowulf (Francis B. Gummere 번역, 1910)",
+          "url": "https://www.gutenberg.org/ebooks/981",
+          "locator": "Fitts XXX–XLIII (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "beowulf-epic",
+          "kind": "등장 작품"
+        },
+        {
+          "slug": "beowulf",
+          "kind": "대적"
+        },
+        {
+          "slug": "fafnir",
+          "kind": "비교되는 존재"
+        }
+      ]
+    },
+    {
+      "slug": "heorot",
+      "name": "헤오로트",
+      "originalName": "Heorot",
+      "summary": "덴마크 왕 흐로트가르가 세운 황금 지붕의 큰 전당.",
+      "description": "헤오로트(\"수사슴\")는 덴마크 왕 흐로트가르가 신하들과 잔치를 열기 위해 세운 큰 전당이다. 이곳에서 울려 퍼지는 노래가 그렌델을 자극해 열두 해 동안의 습격이 시작되고, 베오울프는 이곳에서 그렌델을 기다려 맞선다. 서사시는 이 전당이 훗날 집안싸움 속에서 불타 사라질 것을 미리 암시한다.",
+      "materialType": "고대 영어 서사시 (앵글로색슨)",
+      "culture": "germanic",
+      "category": "place",
+      "aliases": [
+        "Heorot",
+        "Heort",
+        "사슴의 전당"
+      ],
+      "tags": [
+        "war"
+      ],
+      "sources": [
+        {
+          "title": "Beowulf (Francis B. Gummere 번역, 1910)",
+          "url": "https://www.gutenberg.org/ebooks/981",
+          "locator": "Fitts I–II; Fitts XI–XII (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "beowulf-epic",
+          "kind": "배경 작품"
+        },
+        {
+          "slug": "grendel",
+          "kind": "습격한 괴물"
+        },
+        {
+          "slug": "beowulf",
+          "kind": "지킨 영웅"
+        }
+      ]
+    },
+    {
+      "slug": "volsunga-saga",
+      "name": "볼숭 일족의 사가",
+      "originalName": "Vǫlsunga saga",
+      "summary": "오딘의 후손 볼숭 일족과 용을 죽인 영웅 시구르드의 비극을 그린 아이슬란드 사가.",
+      "description": "『볼숭 일족의 사가』는 13세기 아이슬란드에서 『시 에다』의 영웅시들을 바탕으로 산문으로 엮은 전설 사가다. 오딘의 후손 시기에서 시작해 볼숭, 시그문드, 시구르드로 이어지는 일족의 이야기를 다루며, 시구르드가 용 파프니르를 죽이고 저주받은 황금을 얻은 뒤 브륀힐드와 구드룬 사이의 비극 속에서 죽는 과정이 중심이다. 같은 이야기가 독일의 『니벨룽의 노래』와 바그너의 오페라 「니벨룽의 반지」로도 이어졌다.",
+      "materialType": "중세 아이슬란드 전설 사가 (포르날다르 사가)",
+      "culture": "norse",
+      "category": "work",
+      "aliases": [
+        "Volsunga saga",
+        "Völsunga saga",
+        "The Saga of the Volsungs",
+        "볼숭 사가"
+      ],
+      "tags": [
+        "fate",
+        "war"
+      ],
+      "sources": [
+        {
+          "title": "The Story of the Volsungs (William Morris & Eiríkr Magnússon 번역, 1870)",
+          "url": "https://www.gutenberg.org/ebooks/1152",
+          "locator": "Chapters I–XLIII (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "sigurd",
+          "kind": "주인공"
+        },
+        {
+          "slug": "sigmund",
+          "kind": "등장 인물"
+        },
+        {
+          "slug": "fafnir",
+          "kind": "등장 존재"
+        },
+        {
+          "slug": "brynhild",
+          "kind": "등장 인물"
+        },
+        {
+          "slug": "odin",
+          "kind": "등장 신"
+        }
+      ]
+    },
+    {
+      "slug": "sigurd",
+      "name": "시구르드",
+      "originalName": "Sigurðr",
+      "summary": "검 그람으로 용 파프니르를 죽인 볼숭 일족의 영웅.",
+      "description": "시구르드는 시그문드의 아들로, 대장장이 레긴이 아버지의 부러진 검 조각을 다시 벼려 만든 검 그람을 받는다. 레긴의 부추김으로 용 파프니르를 구덩이에서 찔러 죽이고, 그 심장 피를 맛본 뒤 새들의 말을 알아들어 레긴의 배신을 깨닫는다. 이후 브륀힐드와 사랑을 맹세하지만 마법의 술 때문에 구드룬과 결혼하고, 그 속임이 드러나며 결국 살해된다. 독일 전승에서는 지크프리트로 불린다.",
+      "materialType": "중세 아이슬란드 전설 사가 (포르날다르 사가)",
+      "culture": "norse",
+      "category": "hero",
+      "aliases": [
+        "Sigurd",
+        "Sigurðr",
+        "Siegfried",
+        "지크프리트",
+        "파프니르를 죽인 자",
+        "그람"
+      ],
+      "tags": [
+        "war",
+        "fate"
+      ],
+      "sources": [
+        {
+          "title": "The Story of the Volsungs (William Morris & Eiríkr Magnússon 번역, 1870)",
+          "url": "https://www.gutenberg.org/ebooks/1152",
+          "locator": "Chapters XIII–XX; Chapters XXVI–XXX (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "volsunga-saga",
+          "kind": "등장 작품"
+        },
+        {
+          "slug": "sigmund",
+          "kind": "부모"
+        },
+        {
+          "slug": "fafnir",
+          "kind": "처치함"
+        },
+        {
+          "slug": "brynhild",
+          "kind": "연인"
+        }
+      ]
+    },
+    {
+      "slug": "sigmund",
+      "name": "시그문드",
+      "originalName": "Sigmundr",
+      "summary": "오딘이 나무에 꽂은 검을 홀로 뽑아낸 볼숭 왕의 아들.",
+      "description": "시그문드는 볼숭 왕의 아들로, 궁전의 큰 나무에 낯선 노인(오딘)이 꽂고 간 검을 아무도 뽑지 못할 때 홀로 뽑아낸다. 그는 누이 시그니와 함께 아버지를 죽인 시게이르 왕에게 복수한다. 마지막 전투에서 다시 나타난 오딘의 창에 검이 부러지며 쓰러지고, 그 검 조각은 훗날 아들 시구르드의 검 그람이 된다. 『베오울프』에도 용을 죽인 영웅 시게문드로 짧게 언급된다.",
+      "materialType": "중세 아이슬란드 전설 사가 (포르날다르 사가)",
+      "culture": "norse",
+      "category": "hero",
+      "aliases": [
+        "Sigmund",
+        "Sigmundr",
+        "지그문트"
+      ],
+      "tags": [
+        "war",
+        "fate"
+      ],
+      "sources": [
+        {
+          "title": "The Story of the Volsungs (William Morris & Eiríkr Magnússon 번역, 1870)",
+          "url": "https://www.gutenberg.org/ebooks/1152",
+          "locator": "Chapters III–VIII; Chapters XI–XII (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "volsunga-saga",
+          "kind": "등장 작품"
+        },
+        {
+          "slug": "sigurd",
+          "kind": "자녀"
+        },
+        {
+          "slug": "odin",
+          "kind": "검을 준 신"
+        }
+      ]
+    },
+    {
+      "slug": "fafnir",
+      "name": "파프니르",
+      "originalName": "Fáfnir",
+      "summary": "저주받은 황금을 독차지하려다 용으로 변한 레긴의 형.",
+      "description": "대장장이 레긴이 전하는 이야기에 따르면, 파프니르는 신들이 배상금으로 내놓은 저주받은 황금을 차지하려고 아버지 흐레이드마르를 죽인다. 그는 황금 위에 엎드려 그것을 지키다 용(벌레)의 모습이 된다. 시구르드가 그의 길목에 판 구덩이에 숨어 있다가 아래에서 찔러 죽이며, 죽어 가는 파프니르는 황금이 시구르드에게도 죽음을 불러올 것이라고 경고한다.",
+      "materialType": "중세 아이슬란드 전설 사가 (포르날다르 사가)",
+      "culture": "norse",
+      "category": "monster",
+      "aliases": [
+        "Fafnir",
+        "Fáfnir",
+        "Fafner"
+      ],
+      "tags": [
+        "death",
+        "fate"
+      ],
+      "sources": [
+        {
+          "title": "The Story of the Volsungs (William Morris & Eiríkr Magnússon 번역, 1870)",
+          "url": "https://www.gutenberg.org/ebooks/1152",
+          "locator": "Chapter XIV: Regin's Tale of his Brothers; Chapter XVIII: Of the Slaying of the Worm Fafnir (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "volsunga-saga",
+          "kind": "등장 작품"
+        },
+        {
+          "slug": "sigurd",
+          "kind": "처치한 영웅"
+        },
+        {
+          "slug": "beowulf-dragon",
+          "kind": "비교되는 존재"
+        }
+      ]
+    },
+    {
+      "slug": "brynhild",
+      "name": "브륀힐드",
+      "originalName": "Brynhildr",
+      "summary": "오딘의 벌로 잠들었다가 시구르드에게 깨어난 방패 처녀.",
+      "description": "브륀힐드는 오딘의 뜻을 거스른 벌로 잠의 가시에 찔려 불꽃 울타리 안에서 잠들어 있다가 시구르드에게 깨어난다. 둘은 사랑을 맹세하지만, 시구르드는 마법의 술로 기억을 잃고 구드룬과 결혼하며, 모습을 바꾼 채 브륀힐드를 군나르의 아내로 얻어 준다. 속임을 알게 된 브륀힐드는 시구르드의 죽음을 부추긴 뒤 스스로 목숨을 끊어 그의 화장 불길에 함께 오른다. 발키리로 그려지는 경우가 많으며, 바그너의 오페라에서는 브륀힐데로 등장한다.",
+      "materialType": "중세 아이슬란드 전설 사가 (포르날다르 사가)",
+      "culture": "norse",
+      "category": "hero",
+      "aliases": [
+        "Brynhild",
+        "Brynhildr",
+        "Brünnhilde",
+        "브룬힐데"
+      ],
+      "tags": [
+        "love",
+        "fate",
+        "war"
+      ],
+      "sources": [
+        {
+          "title": "The Story of the Volsungs (William Morris & Eiríkr Magnússon 번역, 1870)",
+          "url": "https://www.gutenberg.org/ebooks/1152",
+          "locator": "Chapter XX; Chapters XXIV–XXIX; Chapter XXXII (공개 전 편집 검수 필요)"
+        }
+      ],
+      "related": [
+        {
+          "slug": "volsunga-saga",
+          "kind": "등장 작품"
+        },
+        {
+          "slug": "sigurd",
+          "kind": "연인"
+        },
+        {
+          "slug": "valkyries",
+          "kind": "관련 존재"
+        },
+        {
+          "slug": "odin",
+          "kind": "벌을 내린 신"
         }
       ]
     }

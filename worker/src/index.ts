@@ -10,7 +10,7 @@ async function route(request: Request, env: Env): Promise<Response> {
  if(path==='/health') {await env.DB.prepare('SELECT 1').first();return Response.json({status:'ok'});}
  const service=new EntryService(env.DB);
  if(path==='/api/v1/entries') return Response.json(await service.search(url.searchParams));
- if(path==='/api/v1/cultures') return Response.json(await service.lookups('cultures'));
+ if(path==='/api/v1/cultures') return Response.json(await service.cultures());
  if(path==='/api/v1/categories') return Response.json(await service.lookups('categories'));
  if(path==='/api/v1/tags') return Response.json(await service.lookups('tags'));
  const match=/^\/api\/v1\/entries\/([^/]+)(\/related)?$/.exec(path);

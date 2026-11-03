@@ -1,4 +1,4 @@
-import type { EntryCard, EntryRow, Lookup } from '../types';
+import type { CultureLookup, EntryCard, EntryRow, Lookup } from '../types';
 const select = `SELECT e.slug, e.name, e.original_name AS originalName, e.summary,
  e.description, e.material_type AS materialType, c.id AS cultureId, c.name AS cultureName,
  k.id AS categoryId, k.name AS categoryName FROM entries e
@@ -8,7 +8,8 @@ export class EntryRepository {
  async search(q: string, culture: string, category: string, tag: string, page: number, pageSize: number) {
   const where: string[] = []; const args: string[] = [];
   if (q.trim()) { where.push('EXISTS(SELECT 1 FROM entry_names n WHERE n.entry_slug=e.slug AND instr(n.normalized,?)>0)'); args.push(q.trim().normalize('NFC').toLowerCase()); }
-  if (culture) { where.push('e.culture_id=?'); args.push(culture); }
+  // A parent culture (e.g. germanic) also matches entries of its child cultures (e.g. norse).
+  if (culture) { where.push('e.culture_id IN (SELECT id FROM cultures WHERE id=? OR parent_id=?)'); args.push(culture,culture); }
   if (category) { where.push('e.category_id=?'); args.push(category); }
   if (tag) { where.push('EXISTS(SELECT 1 FROM entry_tags t WHERE t.entry_slug=e.slug AND t.tag_id=?)'); args.push(tag); }
   const filter = where.length ? ' WHERE '+where.join(' AND ') : '';
@@ -44,5 +45,8 @@ export class EntryRepository {
  }
  async lookups(table: 'cultures'|'categories'|'tags') {
   return (await this.db.prepare(`SELECT id,name FROM ${table} ORDER BY id`).all<Lookup>()).results;
+ }
+ async cultures() {
+  return (await this.db.prepare('SELECT id,name,parent_id AS parentId FROM cultures ORDER BY id').all<CultureLookup>()).results;
  }
 }

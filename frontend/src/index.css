@@ -31,7 +31,7 @@ button,.button { display: inline-flex; align-items: center; justify-content: cen
 .culture { display: inline-flex; align-items: center; gap: 6px; }
 .culture::before { content: ""; width: 8px; height: 8px; flex: none; background: var(--dot, var(--color-text-subtle)); transform: rotate(45deg); }
 [data-culture="greek"] { --dot: var(--culture-greek); }
-[data-culture="norse"] { --dot: var(--culture-norse); }
+[data-culture="germanic"],[data-culture="norse"] { --dot: var(--culture-norse); }
 [data-culture="east"],[data-culture="korean"],[data-culture="chinese"],[data-culture="japanese"] { --dot: var(--culture-east); }
 [data-culture="egypt"],[data-culture="mesopotamia"] { --dot: var(--culture-egypt); }
 [data-culture="fantasy"] { --dot: var(--culture-fantasy); }
@@ -80,6 +80,7 @@ section { margin-bottom: var(--space-6); }
 .culture-list { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: var(--space-2); }
 .culture-list a { display: flex; align-items: center; justify-content: space-between; gap: var(--space-2); min-height: 56px; border: 1px solid var(--color-line); border-radius: var(--radius-xs); padding: var(--space-3) var(--space-4); background: var(--color-bg); color: var(--color-text-strong); font-size: var(--font-size-body-small); font-weight: 600; }
 .culture-list a > svg { flex: none; color: var(--color-text-hint); }
+.culture-list a.child { font-weight: 400; color: var(--color-text-default); }
 
 .footnote,.meta { font-size: var(--font-size-caption); color: var(--color-text-subtle); }
 

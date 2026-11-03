@@ -1,5 +1,10 @@
 import { useEffect, useState } from 'react';
 export interface Lookup { id: string; name: string }
+export interface Culture extends Lookup { parentId: string | null }
+// Parents first, each followed by its child cultures, so nesting reads top-down.
+export function nestCultures(cultures: Culture[]) {
+ return cultures.filter(c => !c.parentId).flatMap(p => [p, ...cultures.filter(c => c.parentId === p.id)]);
+}
 export interface EntryCard { slug: string; name: string; originalName: string; summary: string; culture: Lookup; category: Lookup; tags: Lookup[] }
 export interface EntryDetail extends EntryCard { description: string; materialType: string; aliases: string[]; sources: { title: string; url: string; locator: string }[] }
 export interface EntryPage { items: EntryCard[]; total: number; page: number; pageSize: number }

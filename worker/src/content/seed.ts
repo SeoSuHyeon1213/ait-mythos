@@ -4,7 +4,8 @@ export interface SeedEntry {
  culture:string;category:string;aliases:string[];tags:string[];
  sources:{title:string;url:string;locator:string}[];related:{slug:string;kind:string}[];
 }
-export interface SeedDocument { cultures:Lookup[];categories:Lookup[];tags:Lookup[];entries:SeedEntry[] }
+export interface SeedCulture extends Lookup { parent?:string }
+export interface SeedDocument { cultures:SeedCulture[];categories:Lookup[];tags:Lookup[];entries:SeedEntry[] }
 const text=(value:unknown):value is string=>typeof value==='string'&&value.trim().length>0;
 function check(condition: unknown, message: string): asserts condition { if(!condition) throw new Error(message); }
 function record(value:unknown):value is Record<string,unknown> {return !!value&&typeof value==='object'&&!Array.isArray(value);}
@@ -16,6 +17,8 @@ export function validateSeed(input: unknown): asserts input is SeedDocument {
   const ids=new Set<string>();
   for(const x of data[key]) {check(record(x)&&text(x.id)&&/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(x.id)&&text(x.name),`${key}: 분류 형식 오류`);check(!ids.has(x.id),`${key}: 중복 ID`);ids.add(x.id);}
  }
+ // Cultures nest one level: a parent must exist and must not itself have a parent.
+ for(const c of data.cultures) if(c.parent!==undefined) {const p=data.cultures.find(x=>x.id===c.parent);check(text(c.parent)&&p&&p.id!==c.id&&p.parent===undefined,`cultures: ${c.id} 상위 문화권 오류`);}
  const slugs=new Set<string>();
  for(const e of data.entries) {
   check(record(e)&&text(e.slug)&&/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(e.slug),'항목 slug 형식 오류');check(!slugs.has(e.slug),'중복 slug');slugs.add(e.slug);
@@ -35,7 +38,8 @@ export function validateSeed(input: unknown): asserts input is SeedDocument {
 export function seedStatements(input: unknown): string[] {
  validateSeed(input);const d=input;const sql:string[]=[];
  const quote=(s:string)=>"'"+s.replaceAll("'","''")+"'";
- for(const table of ['cultures','categories','tags'] as const) for(const x of d[table]) sql.push(`INSERT INTO ${table}(id,name) VALUES(${quote(x.id)},${quote(x.name)}) ON CONFLICT(id) DO UPDATE SET name=excluded.name;`);
+ for(const c of [...d.cultures].sort((a,b)=>Number(a.parent!==undefined)-Number(b.parent!==undefined))) sql.push(`INSERT INTO cultures(id,name,parent_id) VALUES(${quote(c.id)},${quote(c.name)},${c.parent===undefined?'NULL':quote(c.parent)}) ON CONFLICT(id) DO UPDATE SET name=excluded.name,parent_id=excluded.parent_id;`);
+ for(const table of ['categories','tags'] as const) for(const x of d[table]) sql.push(`INSERT INTO ${table}(id,name) VALUES(${quote(x.id)},${quote(x.name)}) ON CONFLICT(id) DO UPDATE SET name=excluded.name;`);
  for(const e of d.entries) {
   const values=[e.slug,e.name,e.originalName,e.summary,e.description,e.materialType,e.culture,e.category].map(quote).join(',');
   sql.push(`INSERT INTO entries(slug,name,original_name,summary,description,material_type,culture_id,category_id) VALUES(${values}) ON CONFLICT(slug) DO UPDATE SET name=excluded.name,original_name=excluded.original_name,summary=excluded.summary,description=excluded.description,material_type=excluded.material_type,culture_id=excluded.culture_id,category_id=excluded.category_id;`);

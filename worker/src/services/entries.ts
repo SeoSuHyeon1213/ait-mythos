@@ -18,5 +18,6 @@ export class EntryService {
  }
  detail(slug:string) { return this.repository.detail(slug); }
  related(slug:string) { return this.repository.related(slug); }
- lookups(table:'cultures'|'categories'|'tags') { return this.repository.lookups(table); }
+ lookups(table:'categories'|'tags') { return this.repository.lookups(table); }
+ cultures() { return this.repository.cultures(); }
 }
