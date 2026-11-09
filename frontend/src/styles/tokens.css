@@ -59,6 +59,9 @@
   --theme-germanic: #8e3b24; /* 룬스톤 붉은 안료 */
   --theme-germanic-on-band: #c96a4a;
   --theme-germanic-band: #20262b; /* 철 */
+  --theme-japanese: #3d3a35; /* 먹(墨) */
+  --theme-japanese-on-band: #e0603f; /* 주홍(朱) — 도리이·시메나와의 붉은색 */
+  --theme-japanese-band: #1c2735; /* 쪽빛(藍) 밤 */
   --theme-fantasy: #8a6a2a; /* 별빛 금 */
   --theme-fantasy-on-band: #e6c66a;
   --theme-fantasy-band: #1a1d2e; /* 밤하늘 */
