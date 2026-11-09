@@ -1,0 +1,61 @@
+/**
+ * 문화권별 문양 테마 — data-theme-culture를 단 요소 아래에서 프리즈(.meander),
+ * 섹션 구분선(.cloud), 어두운 띠(.hero) 색을 바꾼다. 문양은 mask로만 그리므로
+ * 색은 아래 변수, 모양은 data URI SVG가 정한다. 색 값은 tokens.css에 있다.
+ * 기본값(그리스·로마)은 메안더 프리즈와 운기문 구분선이다.
+ */
+
+:root {
+  /* 메안더 = 회문(回紋) */
+  --frieze: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M0 1H24M0 23H24M20 23V5H4V19H16V9H8V15' fill='none' stroke='%23000' stroke-width='2'/%3E%3C/svg%3E");
+  --frieze-h: 16px;
+  --frieze-color: var(--color-ochre);
+  --frieze-on-band: var(--color-ochre);
+  /* 운기문(雲氣紋) 소용돌이 */
+  --divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='16'%3E%3Cpath d='M0 12C10 12 12 3 20 3C26 3 27 10 22 10C19 10 19 7 21 7M20 3C30 3 36 12 48 12' fill='none' stroke='%23000' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+  --divider-h: 16px;
+  --divider-color: var(--color-line-strong);
+  --band: var(--color-lacquer);
+}
+
+/* 이집트 — 연꽃과 봉오리가 번갈아 서는 프리즈, 물결 기호(𓈖) 지그재그 구분선 */
+[data-theme-culture="egypt"] {
+  --frieze: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='16'%3E%3Cpath d='M8 13C6.5 9 6.8 4 8 1.5C9.2 4 9.5 9 8 13ZM7.5 13C4 11.5 2 8 1.5 5C4.5 6 6.5 9 7.5 13ZM8.5 13C12 11.5 14 8 14.5 5C11.5 6 9.5 9 8.5 13ZM24 13C21.5 10.5 22 6.5 24 4.5C26 6.5 26.5 10.5 24 13ZM0 14H32V16H0Z'/%3E%3C/svg%3E");
+  --frieze-color: var(--theme-egypt);
+  --frieze-on-band: var(--theme-egypt-on-band);
+  --divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='16'%3E%3Cpath d='M0 10L3 6L6 10L9 6L12 10' fill='none' stroke='%23000' stroke-width='1.5' stroke-linejoin='round'/%3E%3C/svg%3E");
+  --divider-color: var(--theme-egypt);
+  --band: var(--theme-egypt-band);
+}
+
+/* 메소포타미아 — 이슈타르 문 유약 벽돌의 로제트 프리즈, 지구라트 계단형 성가퀴 구분선 */
+[data-theme-culture="mesopotamia"] {
+  --frieze: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M0 0H24V1.5H0ZM0 22.5H24V24H0Z'/%3E%3Cg transform='translate(12 12)'%3E%3Ccircle r='2.2'/%3E%3Ccircle cx='6' r='1.9'/%3E%3Ccircle cx='-6' r='1.9'/%3E%3Ccircle cy='6' r='1.9'/%3E%3Ccircle cy='-6' r='1.9'/%3E%3Ccircle cx='4.24' cy='4.24' r='1.9'/%3E%3Ccircle cx='-4.24' cy='4.24' r='1.9'/%3E%3Ccircle cx='4.24' cy='-4.24' r='1.9'/%3E%3Ccircle cx='-4.24' cy='-4.24' r='1.9'/%3E%3C/g%3E%3C/svg%3E");
+  --frieze-h: 20px;
+  --frieze-color: var(--theme-mesopotamia);
+  --frieze-on-band: var(--theme-mesopotamia-on-band);
+  --divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='16'%3E%3Cpath d='M0 13H4V9H8V5H16V9H20V13H24' fill='none' stroke='%23000' stroke-width='1.5'/%3E%3C/svg%3E");
+  --divider-color: var(--theme-mesopotamia);
+  --band: var(--theme-mesopotamia-band);
+}
+
+/* 게르만·북유럽 — 위아래로 엇갈리는 두 가닥 매듭 띠, 룬스톤 띠처럼 X가 박힌 두 줄 구분선 */
+[data-theme-culture="germanic"],
+[data-theme-culture="norse"] {
+  --frieze: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='16'%3E%3Cdefs%3E%3Cmask id='a'%3E%3Crect width='32' height='16' fill='white'/%3E%3Cpath d='M0 4C8 4 8 12 16 12' fill='none' stroke='black' stroke-width='5'/%3E%3C/mask%3E%3Cmask id='b'%3E%3Crect width='32' height='16' fill='white'/%3E%3Cpath d='M16 4C24 4 24 12 32 12' fill='none' stroke='black' stroke-width='5'/%3E%3C/mask%3E%3C/defs%3E%3Cg fill='none' stroke='%23000' stroke-width='2'%3E%3Cpath d='M0 4C8 4 8 12 16 12C24 12 24 4 32 4' mask='url(%23b)'/%3E%3Cpath d='M0 12C8 12 8 4 16 4C24 4 24 12 32 12' mask='url(%23a)'/%3E%3C/g%3E%3C/svg%3E");
+  --frieze-color: var(--theme-germanic);
+  --frieze-on-band: var(--theme-germanic-on-band);
+  --divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M0 5H16M0 11H16M6 5L10 11M10 5L6 11' fill='none' stroke='%23000' stroke-width='1.25'/%3E%3C/svg%3E");
+  --divider-color: var(--theme-germanic);
+  --band: var(--theme-germanic-band);
+}
+
+/* 판타지 — 네 갈래 별과 점이 이어지는 프리즈, 잎이 달린 덩굴 구분선 */
+[data-theme-culture="fantasy"] {
+  --frieze: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='16'%3E%3Cpath d='M8 1L9.5 6.5L15 8L9.5 9.5L8 15L6.5 9.5L1 8L6.5 6.5Z'/%3E%3Ccircle cx='19.5' cy='8' r='1.3'/%3E%3Ccircle cx='26' cy='8' r='0.9'/%3E%3C/svg%3E");
+  --frieze-color: var(--theme-fantasy);
+  --frieze-on-band: var(--theme-fantasy-on-band);
+  --divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='16'%3E%3Cpath d='M0 8C5 2 11 2 16 8C21 14 27 14 32 8' fill='none' stroke='%23000' stroke-width='1.25'/%3E%3Cpath d='M8 3.6C9.5 0.8 12.5 0.6 14 1.6C12.5 3.8 10 4.6 8 3.6ZM24 12.4C22.5 15.2 19.5 15.4 18 14.4C19.5 12.2 22 11.4 24 12.4Z'/%3E%3C/svg%3E");
+  --divider-color: var(--theme-fantasy);
+  --band: var(--theme-fantasy-band);
+}

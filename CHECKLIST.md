@@ -61,6 +61,7 @@
 - [x] 모바일에서 검색 → 상세 → 출처 → 연관 이동 흐름을 확인한다.
 - [x] Mythos 디자인 시스템(전한 칠기·그리스 도기 팔레트, 메안더·운기문, 명조 제목) light 테마를 frontend 토큰·홈·검색·상세에 적용했다. 2026-11-02 루트에서 `npm run lint`, `npm run build` 통과, `npm run test:e2e`의 explore 3건 통과(모바일 스크린샷 확인). cloudflare 1건은 `.env.production`의 원격 API 주소로 빌드된 dist가 로컬 5080에서 `Failed to fetch`로 실패했다(스타일 변경과 무관, 미해결).
 - [ ] 다크 테마, 필터를 select에서 칩으로 바꾸는 작업, Google Fonts의 토스 앱 WebView 로딩 확인은 남아 있다.
+- [x] 문화권별 문양 테마(이집트·메소포타미아·게르만/북유럽·판타지, 기본은 그리스)를 `frontend/src/styles/culture-themes.css`로 추가하고 상세·문화권 필터 검색 히어로·홈 문화권 타일에 적용했다. 2026-11-09 `npm run lint` 통과, `npm run test:e2e` 6건 중 5건 통과(cloudflare 1건은 기존과 같은 원격 API 주소 문제), 문화권별 모바일 스크린샷 확인.
 
 ## 5. 검증과 공개 베타 준비
 - [ ] Workers/D1 통합 테스트로 이름·별칭 검색과 동일 항목 중복 제거를 검증한다.

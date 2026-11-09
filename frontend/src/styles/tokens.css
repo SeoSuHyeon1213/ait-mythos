@@ -42,10 +42,26 @@
 
   /* 문화권 표식 — 마름모 점에만, 항상 이름과 함께 */
   --culture-greek: #b8592a;
-  --culture-norse: #4a5866;
+  --culture-norse: #8e3b24; /* 게르만·북유럽 — 룬스톤 붉은 안료 */
   --culture-east: #a3301e;
-  --culture-egypt: #2a4a8a;
+  --culture-egypt: #1d7470;
+  --culture-mesopotamia: #2a4a8a;
   --culture-fantasy: #7a5a32;
+
+  /* 문화권 문양 테마 — 문양 색(밝은 바탕 위), 띠 위 문양 색, 띠 색.
+     문양은 장식이라 텍스트 대비 대상이 아니다. 띠 위 텍스트는 --color-on-lacquer. */
+  --theme-egypt: #1d7470; /* 파이앙스 청록 */
+  --theme-egypt-on-band: #d4a64a; /* 금 */
+  --theme-egypt-band: #10292b;
+  --theme-mesopotamia: #2a4a8a; /* 청금석 */
+  --theme-mesopotamia-on-band: #e8d9a8; /* 유약 크림 */
+  --theme-mesopotamia-band: #1b3566; /* 이슈타르 문 유약 벽돌 */
+  --theme-germanic: #8e3b24; /* 룬스톤 붉은 안료 */
+  --theme-germanic-on-band: #c96a4a;
+  --theme-germanic-band: #20262b; /* 철 */
+  --theme-fantasy: #8a6a2a; /* 별빛 금 */
+  --theme-fantasy-on-band: #e6c66a;
+  --theme-fantasy-band: #1a1d2e; /* 밤하늘 */
 
   /* 글꼴 — 제목·원어명은 명조, 본문·UI는 고딕 */
   --font-serif: "Noto Serif KR", "Noto Serif", "AppleMyungjo", serif;

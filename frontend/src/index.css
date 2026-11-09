@@ -1,4 +1,5 @@
 @import "./styles/base.css";
+@import "./styles/culture-themes.css";
 @import "tailwindcss";
 body { font-size: var(--font-size-body); line-height: 1.65; }
 .canvas { --pad-top: max(var(--space-5), env(safe-area-inset-top)); background: var(--color-bg-page); padding: var(--pad-top) var(--space-4) max(var(--space-6), env(safe-area-inset-bottom)); }
@@ -12,13 +13,14 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible { 
 button,.button { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-1); min-height: 48px; padding: var(--space-2) var(--space-5); border: 1px solid var(--color-line-strong); border-radius: var(--radius-sm); font: inherit; font-size: var(--font-size-subtitle); font-weight: 600; color: var(--brand-primary); background: var(--color-bg); cursor: pointer; }
 .primary { background: var(--brand-primary); color: var(--color-text-inverse); border-color: var(--brand-primary); }
 
-/* 문양 — 메안더(그리스) = 회문(回紋, 중국 청동기), 운기문(雲氣紋, 전한 칠기) */
-.meander,.cloud { display: block; height: 16px; background: currentColor; }
-.meander { color: var(--color-ochre); -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M0 1H24M0 23H24M20 23V5H4V19H16V9H8V15' fill='none' stroke='%23000' stroke-width='2'/%3E%3C/svg%3E") repeat-x left center / 16px 16px; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M0 1H24M0 23H24M20 23V5H4V19H16V9H8V15' fill='none' stroke='%23000' stroke-width='2'/%3E%3C/svg%3E") repeat-x left center / 16px 16px; }
-.cloud { color: var(--color-line-strong); margin: var(--space-5) 0; -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='16'%3E%3Cpath d='M0 12C10 12 12 3 20 3C26 3 27 10 22 10C19 10 19 7 21 7M20 3C30 3 36 12 48 12' fill='none' stroke='%23000' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x left center / 48px 16px; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='16'%3E%3Cpath d='M0 12C10 12 12 3 20 3C26 3 27 10 22 10C19 10 19 7 21 7M20 3C30 3 36 12 48 12' fill='none' stroke='%23000' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x left center / 48px 16px; }
+/* 문양 — 프리즈(.meander)와 구분선(.cloud). 모양·색은 styles/culture-themes.css의 문화권 테마가 정한다. */
+.meander,.cloud { display: block; background: currentColor; }
+.meander { height: var(--frieze-h); color: var(--frieze-color); -webkit-mask: var(--frieze) repeat-x left center / auto var(--frieze-h); mask: var(--frieze) repeat-x left center / auto var(--frieze-h); }
+.cloud { height: var(--divider-h); color: var(--divider-color); margin: var(--space-5) 0; -webkit-mask: var(--divider) repeat-x left center / auto var(--divider-h); mask: var(--divider) repeat-x left center / auto var(--divider-h); }
+.hero .meander,.intro .meander { color: var(--frieze-on-band); }
 
-/* 홈 히어로 — 칠기 띠, 아래 경계에 메안더 프리즈 */
-.hero { margin: calc(-1 * var(--pad-top)) calc(-1 * var(--space-4)) var(--space-5); padding: calc(var(--pad-top) + var(--space-2)) var(--space-4) var(--space-3); background: var(--color-lacquer); color: var(--color-on-lacquer); }
+/* 히어로 — 문화권 테마의 어두운 띠, 아래 경계에 프리즈 */
+.hero { margin: calc(-1 * var(--pad-top)) calc(-1 * var(--space-4)) var(--space-5); padding: calc(var(--pad-top) + var(--space-2)) var(--space-4) var(--space-3); background: var(--band); color: var(--color-on-lacquer); }
 .hero h1 { color: var(--color-on-lacquer); margin: var(--space-2) 0 var(--space-3); }
 .hero > p { color: var(--color-on-lacquer); font-size: var(--font-size-body-small); }
 .hero .eyebrow { color: var(--color-on-lacquer); }
@@ -33,7 +35,8 @@ button,.button { display: inline-flex; align-items: center; justify-content: cen
 [data-culture="greek"] { --dot: var(--culture-greek); }
 [data-culture="germanic"],[data-culture="norse"] { --dot: var(--culture-norse); }
 [data-culture="east"],[data-culture="korean"],[data-culture="chinese"],[data-culture="japanese"] { --dot: var(--culture-east); }
-[data-culture="egypt"],[data-culture="mesopotamia"] { --dot: var(--culture-egypt); }
+[data-culture="egypt"] { --dot: var(--culture-egypt); }
+[data-culture="mesopotamia"] { --dot: var(--culture-mesopotamia); }
 [data-culture="fantasy"] { --dot: var(--culture-fantasy); }
 
 /* 검색 */
@@ -80,6 +83,9 @@ section { margin-bottom: var(--space-6); }
 .culture-list { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: var(--space-2); }
 .culture-list a { display: flex; align-items: center; justify-content: space-between; gap: var(--space-2); min-height: 56px; border: 1px solid var(--color-line); border-radius: var(--radius-xs); padding: var(--space-3) var(--space-4); background: var(--color-bg); color: var(--color-text-strong); font-size: var(--font-size-body-small); font-weight: 600; }
 .culture-list a > svg { flex: none; color: var(--color-text-hint); }
+/* 타일 아래에 그 문화권의 프리즈를 작게 깔아 테마를 미리 보여 준다 */
+.culture-list a[data-theme-culture] { position: relative; padding-bottom: 22px; }
+.culture-list a[data-theme-culture]::after { content: ""; position: absolute; left: var(--space-4); right: var(--space-4); bottom: 6px; height: 10px; background: var(--frieze-color); opacity: .75; -webkit-mask: var(--frieze) repeat-x left center / auto 10px; mask: var(--frieze) repeat-x left center / auto 10px; pointer-events: none; }
 .culture-list a.child { font-weight: 400; color: var(--color-text-default); }
 
 .footnote,.meta { font-size: var(--font-size-caption); color: var(--color-text-subtle); }

@@ -32,14 +32,14 @@ function Home() {
  const cultures = useApi<Culture[]>('/api/v1/cultures');
  return <><section className="hero"><p className="eyebrow">MYTHOS · 신화와 판타지 사전</p><h1>이름 하나에서<br/>시작되는 신화 탐색</h1><p>신화 속 존재를 찾고,<br className="mobile-break"/> 출처를 따라 이야기를 탐색하세요.</p><SearchForm/><span className="meander" aria-hidden="true"/></section>
  <section><div className="section-title"><h2>먼저 만나볼 이야기</h2><Link to="/search">전체 보기</Link></div>{entries.data ? entries.data.items.length ? entries.data.items.map(e => <Card key={e.slug} entry={e}/>) : <div className="notice">아직 등록된 이야기가 없어요.</div> : <Feedback error={entries.error} retry={entries.retry}/>}</section>
- <section><h2>문화권으로 탐색</h2>{cultures.data ? <div className="culture-list">{nestCultures(cultures.data).map(c => <Link key={c.id} className={c.parentId ? 'child' : undefined} to={'/search?culture=' + c.id}><span className="culture" data-culture={c.id}>{c.name}</span><ChevronRight size={20}/></Link>)}</div> : <Feedback error={cultures.error} retry={cultures.retry}/>}</section>
+ <section><h2>문화권으로 탐색</h2>{cultures.data ? <div className="culture-list">{nestCultures(cultures.data).map(c => <Link key={c.id} className={c.parentId ? 'child' : undefined} data-theme-culture={c.id} to={'/search?culture=' + c.id}><span className="culture" data-culture={c.id}>{c.name}</span><ChevronRight size={20}/></Link>)}</div> : <Feedback error={cultures.error} retry={cultures.retry}/>}</section>
  <p className="footnote">콘텐츠와 출처는 공개 전 편집 검수를 거치고 있어요.</p></>;
 }
 function SearchPage() {
  const [params] = useSearchParams();
  const data = useApi<EntryPage>('/api/v1/entries?' + params.toString());
  function pageLink(page: number) {const next = new URLSearchParams(params); next.set('page', String(page)); return '/search?' + next.toString();}
- return <><section className="hero"><p className="eyebrow">MYTHOS · 이야기 찾기</p><h1>신화 탐색</h1><SearchForm filters/><span className="meander" aria-hidden="true"/></section>{data.data ? <section aria-live="polite"><div className="section-title"><h2>검색 결과</h2><span>{data.data.total}개</span></div>{data.data.items.length ? data.data.items.map(e => <Card key={e.slug} entry={e}/>) : <div className="notice"><h3>검색 결과가 없어요</h3><p>이름이나 별칭을 바꾸거나 필터를 줄여 보세요.</p><Link className="button" to="/search">조건 초기화</Link></div>}<div className="pagination">{data.data.page > 1 && <Link className="button" to={pageLink(data.data.page-1)}>이전 페이지</Link>}{data.data.page * data.data.pageSize < data.data.total && <Link className="button" to={pageLink(data.data.page+1)}>다음 페이지</Link>}</div></section> : <Feedback error={data.error} retry={data.retry}/>}<Link className="text-link" to="/">홈으로</Link></>;
+ return <><section className="hero" data-theme-culture={params.get('culture') ?? undefined}><p className="eyebrow">MYTHOS · 이야기 찾기</p><h1>신화 탐색</h1><SearchForm filters/><span className="meander" aria-hidden="true"/></section>{data.data ? <section aria-live="polite"><div className="section-title"><h2>검색 결과</h2><span>{data.data.total}개</span></div>{data.data.items.length ? data.data.items.map(e => <Card key={e.slug} entry={e}/>) : <div className="notice"><h3>검색 결과가 없어요</h3><p>이름이나 별칭을 바꾸거나 필터를 줄여 보세요.</p><Link className="button" to="/search">조건 초기화</Link></div>}<div className="pagination">{data.data.page > 1 && <Link className="button" to={pageLink(data.data.page-1)}>이전 페이지</Link>}{data.data.page * data.data.pageSize < data.data.total && <Link className="button" to={pageLink(data.data.page+1)}>다음 페이지</Link>}</div></section> : <Feedback error={data.error} retry={data.retry}/>}<Link className="text-link" to="/">홈으로</Link></>;
 }
 function DetailPage() {
  const {slug} = useParams();
@@ -47,7 +47,7 @@ function DetailPage() {
  const related = useApi<Related[]>('/api/v1/entries/' + encodeURIComponent(slug ?? '') + '/related');
  if (!data.data) return <><Feedback error={data.error} retry={data.retry}/><Link className="text-link" to="/search">사전 탐색하기</Link></>;
  const e = data.data;
- return <div className="detail"><CompactSearch/><header className="detail-head"><span className="meander" aria-hidden="true"/><p className="eyebrow culture" data-culture={e.culture.id}>{e.culture.name} · {e.category.name}</p><h1>{e.name}</h1><p className="original">{e.originalName}</p><p className="lead">{e.summary}</p><div className="tags">{e.tags.map(t => <Link key={t.id} to={'/search?tag=' + t.id}>{t.name}</Link>)}</div></header>
+ return <div className="detail" data-theme-culture={e.culture.id}><CompactSearch/><header className="detail-head"><span className="meander" aria-hidden="true"/><p className="eyebrow culture" data-culture={e.culture.id}>{e.culture.name} · {e.category.name}</p><h1>{e.name}</h1><p className="original">{e.originalName}</p><p className="lead">{e.summary}</p><div className="tags">{e.tags.map(t => <Link key={t.id} to={'/search?tag=' + t.id}>{t.name}</Link>)}</div></header>
  <span className="cloud" aria-hidden="true"/>
  <section><h2>이야기</h2><p className="description">{e.description}</p><p className="material">자료 성격 · {e.materialType}</p></section>
  <span className="cloud" aria-hidden="true"/>
